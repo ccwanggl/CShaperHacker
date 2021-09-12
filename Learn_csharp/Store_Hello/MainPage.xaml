@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="Store_Hello.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Store_Hello"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="btntextout" HorizontalAlignment="Left" Margin="0,75,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="1490"/>
+        <Button Content="Click Me" Margin="0,226,0,0" VerticalAlignment="Top" Width="1490" Click="Button_Click"/>
+
+    </Grid>
+</Page>
