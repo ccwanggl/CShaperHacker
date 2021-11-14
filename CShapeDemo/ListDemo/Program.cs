@@ -9,12 +9,11 @@ Console.WriteLine(array is IEnumerable<int>);
 // NOTE(guoliang) Method 2
 //List<int> list = new List<int>(50);
 
-List<int> list = new List<int>();
-for(int i = 1; i < 100; i++)
-{
-    list.Add(i);
-    Console.WriteLine($"{list.Count}/{list.Capacity}");
-}
+// NOTE(guoliang) Method 3
+List<int> list = new List<int>() { 100, 200, 300, 400 };
+Console.WriteLine($"{list.Count}/{list.Capacity}");
+
+
 
 Console.WriteLine(String.Join(",", list));
 
