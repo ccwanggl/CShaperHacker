@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2ece284f-bb30-481a-85df-dc18308aea83": {
+      "ProjectGuid": "2ece284f-bb30-481a-85df-dc18308aea83",
+      "DisplayName": "ConsoleCoreHelloWorld",
+      "ColorIndex": 0
+    },
+    "b44a5b59-0458-48c1-ba75-9f8f7c6f404f": {
+      "ProjectGuid": "b44a5b59-0458-48c1-ba75-9f8f7c6f404f",
+      "DisplayName": "ConsoleFrameworkHelloWorld",
+      "ColorIndex": 1
+    },
+    "f6906a89-3ff7-4f72-b11f-48fb048d0c3e": {
+      "ProjectGuid": "f6906a89-3ff7-4f72-b11f-48fb048d0c3e",
+      "DisplayName": "WindowsFormsFramework",
+      "ColorIndex": 2
+    },
+    "64ec1095-7a49-4de1-8ea1-baec63a23316": {
+      "ProjectGuid": "64ec1095-7a49-4de1-8ea1-baec63a23316",
+      "DisplayName": "WinFormsCore",
+      "ColorIndex": 3
+    },
+    "1593c4ef-977a-4310-8906-7d1fb85084d6": {
+      "ProjectGuid": "1593c4ef-977a-4310-8906-7d1fb85084d6",
+      "DisplayName": "SuperCalculator",
+      "ColorIndex": 4
+    },
+    "8461c91b-01cb-4efd-9563-e877e7d1ef0b": {
+      "ProjectGuid": "8461c91b-01cb-4efd-9563-e877e7d1ef0b",
+      "DisplayName": "SandBox",
+      "ColorIndex": 5
+    },
+    "90cb11d8-dd40-43af-89a2-948e15978515": {
+      "ProjectGuid": "90cb11d8-dd40-43af-89a2-948e15978515",
+      "DisplayName": "ClassAndInstance",
+      "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 7
+}
