@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertySamples", "Property
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodSample", "MothodSample\MethodSample.csproj", "{C790CDB6-DFBC-4586-B22D-31EA9026F5D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSample", "EventSample\EventSample.csproj", "{F65612C7-75ED-4C40-96A7-A90E05CDB44D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,14 @@ Global
 		{C790CDB6-DFBC-4586-B22D-31EA9026F5D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C790CDB6-DFBC-4586-B22D-31EA9026F5D7}.Release|x64.ActiveCfg = Release|Any CPU
 		{C790CDB6-DFBC-4586-B22D-31EA9026F5D7}.Release|x64.Build.0 = Release|Any CPU
+		{F65612C7-75ED-4C40-96A7-A90E05CDB44D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65612C7-75ED-4C40-96A7-A90E05CDB44D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65612C7-75ED-4C40-96A7-A90E05CDB44D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F65612C7-75ED-4C40-96A7-A90E05CDB44D}.Debug|x64.Build.0 = Debug|Any CPU
+		{F65612C7-75ED-4C40-96A7-A90E05CDB44D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65612C7-75ED-4C40-96A7-A90E05CDB44D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65612C7-75ED-4C40-96A7-A90E05CDB44D}.Release|x64.ActiveCfg = Release|Any CPU
+		{F65612C7-75ED-4C40-96A7-A90E05CDB44D}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
