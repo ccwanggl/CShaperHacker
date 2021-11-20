@@ -40,7 +40,32 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "370433e7-ad7f-44d3-b5e9-f05115bce50c": {
+      "ProjectGuid": "370433e7-ad7f-44d3-b5e9-f05115bce50c",
+      "DisplayName": "PropertySamples",
+      "ColorIndex": 7
+    },
+    "c790cdb6-dfbc-4586-b22d-31ea9026f5d7": {
+      "ProjectGuid": "c790cdb6-dfbc-4586-b22d-31ea9026f5d7",
+      "DisplayName": "MethodSample",
+      "ColorIndex": 8
+    },
+    "f65612c7-75ed-4c40-96a7-a90e05cdb44d": {
+      "ProjectGuid": "f65612c7-75ed-4c40-96a7-a90e05cdb44d",
+      "DisplayName": "EventSample",
+      "ColorIndex": 9
+    },
+    "5593bb5f-b3cf-4e48-b639-775e961edfc8": {
+      "ProjectGuid": "5593bb5f-b3cf-4e48-b639-775e961edfc8",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 10
+    },
+    "b4a5d703-25d0-4493-b66d-03b22bb16db9": {
+      "ProjectGuid": "b4a5d703-25d0-4493-b66d-03b22bb16db9",
+      "DisplayName": "ListDemo",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 12
 }
