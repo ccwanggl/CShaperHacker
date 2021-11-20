@@ -153,6 +153,8 @@ Console.WriteLine(res4);
 bool res5 = list2.TrueForAll(b => b.Price <= 40);
 Console.WriteLine(res5);
 
+int res6 = list1.IndexOf(300);
+Console.WriteLine(res6);
 
 
 
