@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using ListDemo;
+
 // NOTE (guoliang) Method 1
 void test_init_with_array()
 {
@@ -91,7 +93,65 @@ test_InsertRange();
 test_remove();
 
 
+List<int> intList = new List<int>() { 100, 200, 300, 400 };
+List<Book> bookList = new List<Book>();
 
+for (int j = 0; j  < 10; j ++) {
+    bookList.Add(new Book { Id = j, Name = $"Book-{j}", Price = 10 * j });
+}
+
+Console.WriteLine($"intList:{intList.Count}/{intList.Capacity}");
+Console.WriteLine($"bookList:{bookList.Count}/{bookList.Capacity}");
+Console.WriteLine("=====================");
+
+Console.WriteLine(bookList[0]);
+Console.WriteLine(bookList[bookList.Count - 1]);
+
+var e = intList.GetEnumerator();
+Console.WriteLine(e.Current);
+while (e.MoveNext())
+{
+    Console.WriteLine( e.Current);
+}
+
+foreach(var val in intList)
+{
+    Console.WriteLine(val);
+}
+
+int sum = 0;
+intList.ForEach(val => sum += val);
+Console.WriteLine(sum);
+
+
+
+Console.WriteLine("List Part3 ===========================================>");
+
+List<double> list1 = new List<double> { 100.0, 200.0, 300.0, 400.0, 100.0, 200.0, 300.0, 400.0 };
+Book book1 = new Book { Id = 1, Name = "Book-1", Price = 10 };
+Book book2 = new Book { Id = 2, Name = "Book-2", Price = 20 };
+Book book3 = new Book { Id = 3, Name = "Book-3", Price = 30 };
+Book book4 = new Book { Id = 4, Name = "Book-4", Price = 40 };
+Book book5 = new Book { Id = 1, Name = "Book-1", Price = 10 };
+Book book6 = book1;
+List<Book> list2 = new List<Book> { book1, book2, book3, book4 };
+
+var res = list2.Contains(book5);
+Console.WriteLine(res);    
+var res1 = list2.Contains(book6);
+Console.WriteLine(res1);
+
+bool res2 = list1.Exists(e => e >= 500);
+Console.WriteLine(res2);
+
+bool res3 = list2.Exists(b => b.Price <= 40);
+Console.WriteLine(res3);
+
+bool res4 = list1.TrueForAll(e => e % 100 == 0);
+Console.WriteLine(res4);
+
+bool res5 = list2.TrueForAll(b => b.Price <= 40);
+Console.WriteLine(res5);
 
 
 

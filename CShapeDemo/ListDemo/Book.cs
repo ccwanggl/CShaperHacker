@@ -11,5 +11,14 @@ namespace ListDemo
         {
             return JsonSerializer.Serialize(this);
         }
+
+        public override bool Equals(object? obj)
+        {
+            if(obj == null) return false;
+            Book other = obj as Book;
+            if(other.Id == this.Id && other.Name == this.Name && other.Price == this.Price)
+                return true;
+            return false;
+        }
     }
 }
