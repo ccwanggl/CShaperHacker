@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// 存储数据、组合起来表示类或对象当前的状态
+
 namespace PropertySamples
 {
     internal class Program
