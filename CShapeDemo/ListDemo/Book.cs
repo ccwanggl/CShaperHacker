@@ -16,9 +16,9 @@ namespace ListDemo
         {
             if(obj == null) return false;
             Book other = obj as Book;
-            if(other.Id == this.Id && other.Name == this.Name && other.Price == this.Price)
-                return true;
-            return false;
+            return other.Id == Id
+                   && other.Name == Name
+                   && other.Price == Price;
         }
     }
 }
