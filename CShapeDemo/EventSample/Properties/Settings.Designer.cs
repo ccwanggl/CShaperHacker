@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EventSample.Properties
+namespace EventSample_timer_App.Properties
 {
 
 

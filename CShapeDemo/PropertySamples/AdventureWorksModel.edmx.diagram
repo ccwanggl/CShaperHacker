@@ -5,8 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="1e305ea24b614eaab17349aa15402dde" Name="Diagram1">
-        <EntityTypeShape EntityType="AdventureWorksLT2012Model.Address" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AdventureWorksLT2012Model.Product" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksLT2012Model.Address" Width="1.5" PointX="2.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksLT2012Model.Product" Width="1.5" PointX="2.75" PointY="1.5" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
