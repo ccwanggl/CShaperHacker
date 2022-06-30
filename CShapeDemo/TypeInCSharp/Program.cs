@@ -23,11 +23,9 @@ namespace TypeInCSharp
             object obj = x;
 
             int y = (int) obj;
-
      
         }
     }
-
 
     enum Color
     {
