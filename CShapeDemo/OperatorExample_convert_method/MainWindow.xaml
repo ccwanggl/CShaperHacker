@@ -1,0 +1,16 @@
+﻿<Window x:Class="OperatorExample_convert_method.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OperatorExample_convert_method"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="tb1" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="780" RenderTransformOrigin="0.446,-2.124"/>
+        <TextBox x:Name="tb2" HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="780"/>
+        <TextBox x:Name="tb3" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="780"/>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,97,0,0" VerticalAlignment="Top" Width="780" Click="Button_Click"/>
+
+    </Grid>
+</Window>
