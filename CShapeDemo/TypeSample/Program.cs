@@ -18,6 +18,14 @@ namespace TypeSample
             PropertyInfo[] pInfo = myType.GetProperties();
             MethodInfo[] mInfo = myType.GetMethods();
 
+            //var pInfo = myType.GetProperties();
+            //var mInfo = myType.GetMethods();
+
+            Console.WriteLine(pInfo.GetType().Name);
+            Console.WriteLine(mInfo.GetType().Name);
+
+            Console.WriteLine("===============================");
+
             foreach(var m in pInfo)
             {
                 Console.WriteLine(m.Name);

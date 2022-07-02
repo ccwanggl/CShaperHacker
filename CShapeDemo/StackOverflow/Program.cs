@@ -14,6 +14,7 @@ namespace StackOverflow
                BadGuy bg = new BadGuy();
                bg.BadMethod();
             */
+
             unsafe
             {
                 int* p = stackalloc int[9999999];

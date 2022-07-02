@@ -41,7 +41,7 @@ namespace OperatorExample_delegate_oldschool
             InitializeComponent();
 
             this.myButton.Click += delegate (object sender, RoutedEventArgs e) {
-                this.myTextBox.Text = "Hello world";
+                this.myTextBox.Text = "Use delegate as an opeator, this is an oldschool";
             };
         }
 
