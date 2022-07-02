@@ -23,7 +23,8 @@
     class CsStudent:Student
     {
         // 子类隐藏了父类的方法，不值得推广的
-        new public void Report()
+        //note(guoliang): Use new to hide the base class method
+        public new void Report()
         {
             Console.WriteLine("I'm a cs student");
         }
