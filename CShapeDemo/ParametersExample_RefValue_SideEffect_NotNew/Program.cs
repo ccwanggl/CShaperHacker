@@ -7,6 +7,7 @@
             Student outterStu = new Student() { Name = "Tim" };
             Console.WriteLine("HashCode={0}, Name={1}", outterStu.GetHashCode(), outterStu.Name);
             Console.WriteLine("--------------------------");
+
             IWantSideEffect(ref outterStu);
             Console.WriteLine("HashCode={0}, Name={1}", outterStu.GetHashCode(), outterStu.Name);
         }
@@ -20,6 +21,6 @@
 
     class Student
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 }

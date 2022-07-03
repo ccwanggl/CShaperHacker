@@ -8,9 +8,6 @@
             Console.WriteLine(student.Name);
         }
     }
-    // note to
-    // to-do(guooiang  this ia 
-    //hack(guoliang) tssdflsdjflsdl
 
     class Student
     {
