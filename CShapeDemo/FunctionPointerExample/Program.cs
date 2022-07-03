@@ -5,16 +5,19 @@
         static void Main(string[] args)
         {
             Calculator calculator = new Calculator();
-            Action action = new Action(calculator.Report);
-
             calculator.Report();
+
+            Action action = new(calculator.Report);
             action.Invoke();
             action();
 
-            Func<int, int, int> funcAdd = new Func<int, int, int>(calculator.Add);
-            Func<int, int, int> funcSub = new Func<int, int, int>(calculator.Sub);
+            var funcAdd = new Func<int, int, int>(calculator.Add);
+            Func<int, int, int> funcSub = new(calculator.Sub);
             Console.WriteLine("{0}", funcAdd(1, 2));
             Console.WriteLine("{0}", funcAdd.Invoke(1, 2));
+
+            Console.WriteLine("{0}", funcSub(1, 2));
+            Console.WriteLine("{0}", funcSub.Invoke(1, 2));
         }
     }
 
