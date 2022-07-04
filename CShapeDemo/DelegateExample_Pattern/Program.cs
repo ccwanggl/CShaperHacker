@@ -28,6 +28,7 @@
         public Product Product { get; set; }
     }
 
+    //note(guoliang): template pattern
     class WrapFactory
     {
         public Box WrapProduct(Func<Product> getProduct)

@@ -114,7 +114,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParametersExample_valuePass
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateExample_FuncPointer", "FunctionPointerExample\DelegateExample_FuncPointer.csproj", "{03653478-83A6-4DA8-BCD3-E22D3216B8D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateExample", "DelegateExample\DelegateExample.csproj", "{CF450690-934A-40AD-A684-2F4A228A2E63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateExample_custom_delegate", "DelegateExample\DelegateExample_custom_delegate.csproj", "{CF450690-934A-40AD-A684-2F4A228A2E63}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateExample_Template", "DelegateExample_Pattern\DelegateExample_Template.csproj", "{C5106817-D2FE-493F-98E9-AB0981337CD6}"
 EndProject
@@ -122,13 +122,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateExample_callback", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MulticastDelegateExample", "MulticastDelegateExample\MulticastDelegateExample.csproj", "{FF0D27DB-4BF9-4C82-B718-E523CFFB1173}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MulticastDelegateExample_asyn", "MulticastDelegateExample_asyn\MulticastDelegateExample_asyn.csproj", "{BBBD0429-28D8-4457-81B4-343B21827322}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MulticastDelegateExample_asyn_implicit", "MulticastDelegateExample_asyn\MulticastDelegateExample_asyn_implicit.csproj", "{BBBD0429-28D8-4457-81B4-343B21827322}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MulticastDelegateExample_thread", "MulticastDelegateExample_thread\MulticastDelegateExample_thread.csproj", "{FB4822B1-FE4E-4137-9C11-6D569E534DF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MulticastDelegateExample_asyn_thread", "MulticastDelegateExample_thread\MulticastDelegateExample_asyn_thread.csproj", "{FB4822B1-FE4E-4137-9C11-6D569E534DF5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MulticastDelegateExample_task", "MulticastDelegateExample_task\MulticastDelegateExample_task.csproj", "{796BC809-C8F0-414D-9C19-A37BAF9AA972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MulticastDelegateExample_async_task", "MulticastDelegateExample_task\MulticastDelegateExample_async_task.csproj", "{796BC809-C8F0-414D-9C19-A37BAF9AA972}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateExample_interface", "DelegateExample_interface\DelegateExample_interface.csproj", "{41B1C408-CDF3-491A-8A1D-5AAEE71C2AF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateExample_refact_DelegateWithInterface", "DelegateExample_interface\DelegateExample_refact_DelegateWithInterface.csproj", "{41B1C408-CDF3-491A-8A1D-5AAEE71C2AF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Event", "Event", "{C1860092-3EBB-4708-94FE-8229885F84B5}"
 EndProject
@@ -356,35 +356,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatorExample_convert_met
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Property", "Property", "{3DAFB6FD-D157-47DB-8C5E-9138FD54C7D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyExample_pro_full", "PropertyExample_pro_full\PropertyExample_pro_full.csproj", "{4E36EF2F-A233-4B08-9C4F-78B379F6CDF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyExample_pro_full", "PropertyExample_pro_full\PropertyExample_pro_full.csproj", "{4E36EF2F-A233-4B08-9C4F-78B379F6CDF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyExample_property_lite", "PropertyExample_property_lite\PropertyExample_property_lite.csproj", "{0524DE1A-5FD1-481A-A8A4-C45FA4160482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyExample_property_lite", "PropertyExample_property_lite\PropertyExample_property_lite.csproj", "{0524DE1A-5FD1-481A-A8A4-C45FA4160482}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyExample_readonly_property", "PropertyExample_readonly_property\PropertyExample_readonly_property.csproj", "{6C6E98A9-CAEC-46E0-BDC9-3C61E87B73F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyExample_readonly_property", "PropertyExample_readonly_property\PropertyExample_readonly_property.csproj", "{6C6E98A9-CAEC-46E0-BDC9-3C61E87B73F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyExample_readonly_property_2", "PropertyExample_readonly_property_2\PropertyExample_readonly_property_2.csproj", "{712A57C2-EB8F-4688-9857-7E30325F2925}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyExample_readonly_property_2", "PropertyExample_readonly_property_2\PropertyExample_readonly_property_2.csproj", "{712A57C2-EB8F-4688-9857-7E30325F2925}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexerExample_with_Dic", "IndexerExample_with_Dic\IndexerExample_with_Dic.csproj", "{D04B9811-0D3F-4AC2-9E73-1F1A41080E0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndexerExample_with_Dic", "IndexerExample_with_Dic\IndexerExample_with_Dic.csproj", "{D04B9811-0D3F-4AC2-9E73-1F1A41080E0D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Indexer", "Indexer", "{3597D13C-31CF-44AB-8B20-4D64FD1388AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerameterExample_valuePass_valueType", "PerameterExample_para_value\PerameterExample_valuePass_valueType.csproj", "{0CAF6E21-D411-4FE3-9612-505B7EA90D6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerameterExample_valuePass_valueType", "PerameterExample_para_value\PerameterExample_valuePass_valueType.csproj", "{0CAF6E21-D411-4FE3-9612-505B7EA90D6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parameter", "Parameter", "{91CA9F36-E6DC-4CF2-8921-88F35747A2B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterExample_valuePass_valueType_newObject", "ParameterExample_valuePass_valueType_newObject\ParameterExample_valuePass_valueType_newObject.csproj", "{7A4AE0BD-84AA-4774-A7F6-83CAE7419C0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParameterExample_valuePass_valueType_newObject", "ParameterExample_valuePass_valueType_newObject\ParameterExample_valuePass_valueType_newObject.csproj", "{7A4AE0BD-84AA-4774-A7F6-83CAE7419C0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterExample_valuePass_refType_outputPara", "ParameterExample_valuePass_refType_outputPara\ParameterExample_valuePass_refType_outputPara.csproj", "{2A7FDF7F-9CFC-46BB-8BE4-B1170D85B6C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParameterExample_valuePass_refType_outputPara", "ParameterExample_valuePass_refType_outputPara\ParameterExample_valuePass_refType_outputPara.csproj", "{2A7FDF7F-9CFC-46BB-8BE4-B1170D85B6C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterExample_array", "ParameterExample_array\ParameterExample_array.csproj", "{82D63C2A-CB9C-45F4-B1DA-2435E527003B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParameterExample_array", "ParameterExample_array\ParameterExample_array.csproj", "{82D63C2A-CB9C-45F4-B1DA-2435E527003B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterExample_named_para", "ParameterExample_named_para\ParameterExample_named_para.csproj", "{497B10CB-60CE-4887-92C0-B6BE37F1D238}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParameterExample_named_para", "ParameterExample_named_para\ParameterExample_named_para.csproj", "{497B10CB-60CE-4887-92C0-B6BE37F1D238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterExample_defaultValue_param", "ParameterExample_defaultValue_param\ParameterExample_defaultValue_param.csproj", "{C487F936-FD8C-4C11-958A-C31CA27E28DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParameterExample_defaultValue_param", "ParameterExample_defaultValue_param\ParameterExample_defaultValue_param.csproj", "{C487F936-FD8C-4C11-958A-C31CA27E28DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterExample_ScalAble_para", "ParameterExample_ScalAble_para\ParameterExample_ScalAble_para.csproj", "{28D87EBA-9897-4E81-93A3-12B5DED9756C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParameterExample_ScalAble_para", "ParameterExample_ScalAble_para\ParameterExample_ScalAble_para.csproj", "{28D87EBA-9897-4E81-93A3-12B5DED9756C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterExample_LINQ", "ParameterExample_LINQ\ParameterExample_LINQ.csproj", "{B62FEBB1-A5DC-491A-8706-66409D381C82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParameterExample_LINQ", "ParameterExample_LINQ\ParameterExample_LINQ.csproj", "{B62FEBB1-A5DC-491A-8706-66409D381C82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delegate", "Delegate", "{4669E7FB-70AD-45AF-A611-D4589E71C49E}"
 EndProject

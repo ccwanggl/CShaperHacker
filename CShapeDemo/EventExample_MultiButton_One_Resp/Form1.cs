@@ -15,8 +15,12 @@ namespace EventExample_MultiButton_One_Resp
         public Form1()
         {
             InitializeComponent();
+
             this.button3.Click += this.ButtonClicked;
+
             this.button4.Click += new EventHandler(this.ButtonClicked);
+
+            // OldSchool
             this.button5.Click += delegate (object sender, EventArgs e) {
                 this.textBox1.Text = "delegate";
             };
@@ -26,7 +30,7 @@ namespace EventExample_MultiButton_One_Resp
             };
 
             this.button7.Click += (sender, e) => {
-                this.textBox1.Text = "lambda method";
+                this.textBox1.Text = "lambda method ignore parameter type";
             };
         }
 
@@ -42,7 +46,7 @@ namespace EventExample_MultiButton_One_Resp
                 this.textBox1.Text = "+=";
 
             if (sender == this.button4)
-                this.textBox1.Text = "EventHandler";
+                this.textBox1.Text = "EventHandler delegate";
         }
     }
 }
