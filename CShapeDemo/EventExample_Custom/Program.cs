@@ -6,6 +6,7 @@
         {
             Customer customer = new Customer(); ;
             Waiter waiter = new Waiter();
+
             customer.Order += waiter.Action;
 
             customer.Action();
@@ -13,14 +14,19 @@
         }
     }
 
+    //note(guoliang): event
+    //note(guoliang): declaration delegate
     public class OrderEventArgs:EventArgs
     {
         public string DishName { get; set; }
         public string Size { get; set; }
     }
 
+    //note(guoliang): 
+    public delegate void OrderEventHandler(Customer customer, OrderEventArgs s);
     public delegate void OrderEventHandler(Customer customer, OrderEventArgs s);
 
+    //note(guoliang): Event owner
     public class Customer
     {
         private OrderEventHandler orderEventHandler;
@@ -59,15 +65,20 @@
                 Thread.Sleep(1000);
             }
 
+            //note(guoliang): "null" means no one subscribe the order event
+            OnOrder("Kongpao Chicken", "large");
+        }
+
+        protected void OnOrder(string dishName, string size)
+        {
             if(this.orderEventHandler != null)
             {
                 OrderEventArgs e = new OrderEventArgs();
-                e.DishName = "Kongpao Chicken";
-                e.Size = "large";
+                e.DishName = dishName;
+                e.Size = size;
                 this.orderEventHandler.Invoke(this, e);
             }
         }
-
         public void Action()
         {
             Console.ReadLine();
@@ -77,8 +88,10 @@
         }
     }
 
+    //note(guoliang): event respone
     class Waiter
     {
+        //note(guoliang): event deal function
         public void Action(Customer customer, OrderEventArgs s)
         {
             Console.WriteLine("I will serve you the dish - {0}.", s.DishName);
