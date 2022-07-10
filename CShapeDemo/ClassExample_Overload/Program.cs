@@ -10,12 +10,19 @@ namespace ClassExample_Override
     {
         static void Main(string[] args)
         {
+            Type t = typeof(Car);
+            Type tb = t.BaseType;
+            Type tTop = tb.BaseType;
+
+            Console.WriteLine(tTop.FullName);
+
+
             var v = new Car();
             v.Run();
         }
     }
 
-    class Vehicle
+    internal class Vehicle
     {
         public virtual void Run()
         {
@@ -23,7 +30,7 @@ namespace ClassExample_Override
         }
     }
 
-    class Car : Vehicle
+    internal class Car : Vehicle
     {
         public override void Run()
         {
@@ -31,7 +38,7 @@ namespace ClassExample_Override
         }
     }
 
-    class RaseCar : Car
+    internal class RaseCar : Car
     {
         public override void Run()
         {

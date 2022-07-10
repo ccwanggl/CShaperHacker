@@ -21,7 +21,7 @@
         }
     }
 
-    class Student
+    internal class Student
     {
 
         public static int Amount { get; set; }

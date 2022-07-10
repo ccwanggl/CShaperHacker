@@ -29,6 +29,7 @@
 
     class Car
     {
+        //note(guoliang):此处之后，两个类已经紧密耦合在了一起了
         private Engine _engine;
         public Car(Engine engine)
         {

@@ -8,6 +8,7 @@ namespace InterfaceExample_DIP.Tests
         {
             var mock = new Mock<IPowerSupply>();
             mock.Setup(ps => ps.GetPower()).Returns(() => 0);
+
             var fan = new DeskFan(mock.Object);
             var expected = "Won't work.";
             var actual = fan.Work();
