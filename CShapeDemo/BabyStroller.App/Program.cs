@@ -15,12 +15,13 @@ namespace BabyStroller.App
             {
                 var assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(file);
                 var types = assembly.GetTypes();
+
                 foreach (var t in types)
                 {
                     if(t.GetInterfaces().Contains(typeof(IAnimal)))
                     {
-                        var isUnifinished = t.GetCustomAttributes(false).Any(a => a.GetType() == typeof(UnfinishedAttribute));
-                        if (isUnifinished)
+                        var isUnfinished = t.GetCustomAttributes(false).Any(a => a.GetType() == typeof(UnfinishedAttribute));
+                        if (isUnfinished)
                             continue;
                         animalTypes.Add(t);
 

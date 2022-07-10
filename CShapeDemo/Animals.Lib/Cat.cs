@@ -2,9 +2,9 @@
 
 namespace Animals.Lib
 {
+    [Unfinished]
     public class Cat:IAnimal
     {
-        [Unfinished]
         public void Voice(int times)
         {
             for (int i = 0; i < times; i++)
