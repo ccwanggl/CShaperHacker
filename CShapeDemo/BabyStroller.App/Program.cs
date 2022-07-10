@@ -31,7 +31,7 @@ namespace BabyStroller.App
             {
                 for (int i = 0; i < animalTypes.Count; i++)
                 {
-                    Console.WriteLine($"(i + ), {animalTypes[i].Name}");
+                    Console.WriteLine($"{i +1}.{animalTypes[i].Name}");
                 }
 
                 Console.WriteLine("==========================");
@@ -44,15 +44,14 @@ namespace BabyStroller.App
                 }
 
 
+                Console.WriteLine("How many times?");
                 int times = int.Parse(Console.ReadLine());
                 var t = animalTypes[index - 1];
                 var m = t.GetMethod("Voice");
                 var o = Activator.CreateInstance(t);
                 var a = o as IAnimal;
                 a.Voice(times);
-
             }
-            
         }
     }
 }
