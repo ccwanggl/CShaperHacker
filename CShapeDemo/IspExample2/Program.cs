@@ -8,10 +8,11 @@ namespace IspExample2
         {
             int[] nums1 = { 1, 2, 3,4,5 };
             ArrayList nums2 = new ArrayList { 1, 2, 3, 4, 5 };
+
             var nums3 = new ReadOnlyCollection(nums1);
-            Console.WriteLine(Sum(nums1)); ;
-            Console.WriteLine(Sum(nums2)); ;
-            Console.WriteLine(Sum(nums3)); ;
+            Console.WriteLine(Sum(nums1));
+            Console.WriteLine(Sum(nums2));
+            Console.WriteLine(Sum(nums3));
         }
 
         static int Sum(IEnumerable nums)
@@ -40,6 +41,7 @@ namespace IspExample2
             return new Enumerator(this);
         }
 
+        //note(guoliang): 成员类
         public class Enumerator : IEnumerator
         {
             private ReadOnlyCollection _collection;

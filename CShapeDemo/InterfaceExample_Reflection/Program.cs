@@ -6,6 +6,7 @@ namespace IspExample
     {
         static void Main(string[] args)
         {
+            //note(guoliang): manually call refaction
             ITank tank = new HeavyTank();
 
             // ============= Below call use dynamic call ===================

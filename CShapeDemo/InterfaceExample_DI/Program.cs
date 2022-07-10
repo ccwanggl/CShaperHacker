@@ -14,12 +14,13 @@ namespace InterfaceExample_DI
             sc.AddScoped<Driver>();
             var sp = sc.BuildServiceProvider();
             // ==================================================
-            ITank tank = sp.GetService<ITank>();
-            tank.Fire();
-            tank.Run();
 
             var driver = sp.GetService<Driver>();
             driver.Drive();
+
+            ITank tank = sp.GetService<ITank>();
+            tank.Fire();
+            tank.Run();
         }
 
     }

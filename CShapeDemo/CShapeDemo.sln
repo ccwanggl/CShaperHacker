@@ -166,7 +166,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IspExample2", "IspExample2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IspExample3", "IspExample3\IspExample3.csproj", "{4540EF56-0F6C-4C5C-90E7-C0597A0353C9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceExample_DI", "InterfaceExample_DI\InterfaceExample_DI.csproj", "{B2F8A63A-18D6-4CFD-96BB-B59B6353DB6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceExample_DI_using_DIFramework", "InterfaceExample_DI\InterfaceExample_DI_using_DIFramework.csproj", "{B2F8A63A-18D6-4CFD-96BB-B59B6353DB6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DI", "DI", "{BDAAF7FA-3C53-4C34-A809-017154C327ED}"
 EndProject
