@@ -182,15 +182,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generic", "Generic", "{45DA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample", "GenericExample\GenericExample.csproj", "{E108F1D4-53A2-4BFA-8569-B2EC1379194D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample2", "GenericExample2\GenericExample2.csproj", "{581B54C6-B66E-4949-834D-B0C427F53199}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample_Interface", "GenericExample2\GenericExample_Interface.csproj", "{581B54C6-B66E-4949-834D-B0C427F53199}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample3", "GenericExample3\GenericExample3.csproj", "{BF70219E-CC30-4F80-9594-4295D4B2A35C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample_IList", "GenericExample3\GenericExample_IList.csproj", "{BF70219E-CC30-4F80-9594-4295D4B2A35C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample4", "GenericExample4\GenericExample4.csproj", "{D01C67A4-6C6C-412F-8B1A-1FF3D8796CB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample_IDictionary", "GenericExample4\GenericExample_IDictionary.csproj", "{D01C67A4-6C6C-412F-8B1A-1FF3D8796CB8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample5", "GerenicExample5\GenericExample5.csproj", "{7143F7F9-AF9C-4471-8721-6635A90FCBA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample_Algorithm_Zip", "GerenicExample5\GenericExample_Algorithm_Zip.csproj", "{7143F7F9-AF9C-4471-8721-6635A90FCBA4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample6", "GenericExample6\GenericExample6.csproj", "{93E8A4F9-2CBF-4353-9B0A-284012426DCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericExample_Generic_Delegate", "GenericExample6\GenericExample_Generic_Delegate.csproj", "{93E8A4F9-2CBF-4353-9B0A-284012426DCC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Partial", "Partial", "{FF3B5F39-98A6-453B-94ED-0F822E9BE13B}"
 EndProject
@@ -254,7 +254,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfHelloWorld_donet_core", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormHelloWorld_donet_framework", "WinFormHelloWorld_donet_framework\WinFormHelloWorld_donet_framework.csproj", "{EB9929CD-B8AA-4B05-848C-CB389A180139}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NameSpace", "NameSpace", "{E27ADDF9-20FC-4259-96D0-7B316E8298B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_NameSpace", "00_NameSpace", "{E27ADDF9-20FC-4259-96D0-7B316E8298B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSpaceDemo_nuget_WinForms", "NameSpaceDemo_nuget_WinForms\NameSpaceDemo_nuget_WinForms.csproj", "{B76FB4B7-0E01-4521-B836-3616F9255D37}"
 EndProject
@@ -394,13 +394,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneralExample_format_strin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneralExample_format_digital_string", "GeneralExample_format_digital_string\GeneralExample_format_digital_string.csproj", "{6A5A4872-4593-4900-8682-DF93F6D505BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassExample_Access_Level", "ClassExample_Access_Level\ClassExample_Access_Level.csproj", "{EA99C7DD-5D7E-4C87-A5B5-4DCC69DF732A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassExample_Access_Level", "ClassExample_Access_Level\ClassExample_Access_Level.csproj", "{EA99C7DD-5D7E-4C87-A5B5-4DCC69DF732A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassExample_Access_Level_Lib", "ClassExample_Access_Level_Lib\ClassExample_Access_Level_Lib.csproj", "{669943E0-444E-4BBA-B6C2-1FB1622E12A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassExample_Access_Level_Lib", "ClassExample_Access_Level_Lib\ClassExample_Access_Level_Lib.csproj", "{669943E0-444E-4BBA-B6C2-1FB1622E12A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassExample_Abract_Class", "ClassExample_Abract_Class\ClassExample_Abract_Class.csproj", "{16AC4986-B744-43E5-9422-15D623497C5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassExample_Abract_Class", "ClassExample_Abract_Class\ClassExample_Abract_Class.csproj", "{16AC4986-B744-43E5-9422-15D623497C5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassExample_Interface_from_Abstract", "ClassExample_Interface_from_Abstract\ClassExample_Interface_from_Abstract.csproj", "{9A6B4E61-D65D-494B-A0C5-4FA07BFAD2E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassExample_Interface_from_Abstract", "ClassExample_Interface_from_Abstract\ClassExample_Interface_from_Abstract.csproj", "{9A6B4E61-D65D-494B-A0C5-4FA07BFAD2E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
