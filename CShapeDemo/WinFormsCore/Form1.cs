@@ -1,4 +1,4 @@
-namespace WinFormHelloWorld_donet_core
+namespace donet_core_WinFormHelloWorld
 {
     public partial class Form1 : Form
     {

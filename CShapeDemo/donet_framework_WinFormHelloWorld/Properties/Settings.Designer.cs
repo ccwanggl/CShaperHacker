@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WinFormHelloWorld_donet_framework.Properties
+namespace donet_framework_WinFormHelloWorld.Properties
 {
 
 

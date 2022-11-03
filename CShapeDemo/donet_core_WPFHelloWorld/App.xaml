@@ -1,7 +1,7 @@
-﻿<Application x:Class="WpfHelloWorld_donet_core.App"
+﻿<Application x:Class="donet_core_WPFHelloWorld.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WpfHelloWorld_donet_core"
+             xmlns:local="clr-namespace:donet_core_WPFHelloWorld"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

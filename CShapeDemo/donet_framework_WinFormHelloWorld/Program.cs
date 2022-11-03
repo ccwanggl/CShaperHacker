@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinFormHelloWorld_donet_framework
+namespace donet_framework_WinFormHelloWorld
 {
     internal static class Program
     {

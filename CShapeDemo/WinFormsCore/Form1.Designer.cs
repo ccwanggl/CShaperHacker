@@ -1,4 +1,4 @@
-﻿namespace WinFormHelloWorld_donet_core
+﻿namespace donet_core_WinFormHelloWorld
 {
     partial class Form1
     {

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EB9929CD-B8AA-4B05-848C-CB389A180139}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WinFormHelloWorld_donet_framework</RootNamespace>
-    <AssemblyName>WinFormHelloWorld_donet_framework</AssemblyName>
+    <RootNamespace>donet_framework_WinFormHelloWorld</RootNamespace>
+    <AssemblyName>donet_framework_WinFormHelloWorld</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

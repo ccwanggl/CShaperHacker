@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfHelloWorld_donet_core
+namespace donet_core_WPFHelloWorld
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -27,7 +27,7 @@ namespace WpfHelloWorld_donet_core
 
         private void MsgBtn_Click(object sender, RoutedEventArgs e)
         {
-            ShowMsg.Text = "Hello world with wpf based on the .NET Core 6.0";
+            ShowMsg.Text = "Hello world with WPF based on the .NET Core 6.0";
         }
     }
 }

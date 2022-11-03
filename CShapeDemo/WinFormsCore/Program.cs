@@ -1,6 +1,4 @@
-using WinFormHelloWorld_donet_core;
-
-namespace WinFormsCore
+namespace donet_core_WinFormHelloWorld
 {
     internal static class Program
     {
