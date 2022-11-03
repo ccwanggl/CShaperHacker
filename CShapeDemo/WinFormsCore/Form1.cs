@@ -1,4 +1,4 @@
-namespace WinFormsCore
+namespace WinFormHelloWorld_donet_core
 {
     public partial class Form1 : Form
     {
@@ -9,7 +9,7 @@ namespace WinFormsCore
 
         private void btn_say_hello_Click(object sender, EventArgs e)
         {
-            text_show_hello.Text = "Hello World!";
+            text_show_hello.Text = @"Hello World with .NET Core6.0";
         }
     }
 }

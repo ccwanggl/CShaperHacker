@@ -244,13 +244,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListDemo_api_FindLastIndex"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListDemo_api_BinarySearch", "ListDemo_api_BinarySearch\ListDemo_api_BinarySearch.csproj", "{D1ABD3E0-0514-4898-876E-B49F0CF69AB4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloWorld_with_Ten_Tech", "HelloWorld_with_Ten_Tech", "{781C5AC7-B190-4826-8806-55E42BCEFC5A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_Intro", "00_Intro", "{781C5AC7-B190-4826-8806-55E42BCEFC5A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfHelloWorld_donet_core", "WpfHelloWorld_donet_core\WpfHelloWorld_donet_core.csproj", "{8D3E9EB0-CA6C-4DD5-81BE-B52CD3A5D114}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormHelloWorld_donet_framework", "WinFormHelloWorld_donet_framework\WinFormHelloWorld_donet_framework.csproj", "{EB9929CD-B8AA-4B05-848C-CB389A180139}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_NameSpace", "00_NameSpace", "{E27ADDF9-20FC-4259-96D0-7B316E8298B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_NameSpace", "02_NameSpace", "{E27ADDF9-20FC-4259-96D0-7B316E8298B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSpaceDemo_nuget_WinForms", "NameSpaceDemo_nuget_WinForms\NameSpaceDemo_nuget_WinForms.csproj", "{B76FB4B7-0E01-4521-B836-3616F9255D37}"
 EndProject
@@ -396,7 +396,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassExample_Abract_Class",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassExample_Interface_from_Abstract", "ClassExample_Interface_from_Abstract\ClassExample_Interface_from_Abstract.csproj", "{9A6B4E61-D65D-494B-A0C5-4FA07BFAD2E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox", "SandBox\SandBox.csproj", "{97BE72D2-3CA5-405D-AC8E-21933F444D57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandBox", "SandBox\SandBox.csproj", "{97BE72D2-3CA5-405D-AC8E-21933F444D57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
