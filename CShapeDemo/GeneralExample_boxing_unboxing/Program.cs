@@ -9,7 +9,7 @@
             object obj = x;
 
             // copy data from heap to stack
-            int y = (int)x;
+            int y = (int)obj;
             Console.WriteLine(y);
         }
     }
