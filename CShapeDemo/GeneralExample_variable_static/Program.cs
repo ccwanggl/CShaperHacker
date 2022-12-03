@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Student.Amount = 100;
+            Console.WriteLine(Student.Amount);
         }
+    }
+
+    class Student
+    {
+        public static int Amount;
     }
 }
