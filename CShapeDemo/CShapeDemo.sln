@@ -294,7 +294,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneralExample_variable_ins
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneralExample_boxing_unboxing", "GeneralExample_boxing_unboxing\GeneralExample_boxing_unboxing.csproj", "{06CAFD48-897A-49D2-8F7B-B3E7F3F2B07F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Method", "Method", "{9F408B0C-482F-4318-BB58-3C88929C69FA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_Method", "04_Method", "{9F408B0C-482F-4318-BB58-3C88929C69FA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneralExample_Method_parameters", "GeneralExample_Method_parameters\GeneralExample_Method_parameters.csproj", "{E582ABC7-C2F1-4AAD-A51E-63CC15B0AECC}"
 EndProject

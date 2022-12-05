@@ -16,14 +16,14 @@
 
         public Student()
         {
-            this.ID = -1;
-            this.Name = "No name";
+            ID = -1;
+            Name = "No name";
         }
 
         public Student(int id, string name )
         {
-            this.ID = id;
-            this.Name = name;
+            ID = id;
+            Name = name;
         }
     }
 }
