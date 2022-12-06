@@ -5,11 +5,13 @@
         static void Main(string[] args)
         {
             Dictionary<string, Student> stuDic = new Dictionary<string, Student>();
+
             for (int i = 0; i < 100; i++)
             {
-                Student stu = new Student();
-                stu.Name = "s_" + i.ToString();
-                stu.Score = 100 + i;
+                Student stu = new() {
+                    Name = "s_" + i.ToString(),
+                    Score = 100 + i
+                };
                 stuDic.Add(stu.Name, stu); 
             }
 
@@ -18,9 +20,9 @@
         }
     }
 
-    class Student
+    internal class Student
     {
-        public string Name;
+        public string Name = null!;
         public int Score;
     }
 }

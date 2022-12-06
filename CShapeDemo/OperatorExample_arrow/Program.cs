@@ -1,24 +1,18 @@
-﻿namespace OperatorExample_arrow
+﻿using OperatorExample_arrow;
+
+unsafe
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            unsafe
-            {
-                Student stu;
+    Student stu;
 
-                stu.ID = 1;
-                stu.Name = "mohan";
+    stu.ID = 1;
+    stu.Name = "mohan";
 
-                Student* pStu = &stu;
-                pStu->Name = "guoliang";
-                Console.WriteLine(stu.Name);
-            }
-        }
-    }
-
-
+    Student* pStu = &stu;
+    pStu->Name = "guoliang";
+    Console.WriteLine(stu.Name);
+}
+namespace OperatorExample_arrow
+{
     struct Student
     {
         public int ID;
