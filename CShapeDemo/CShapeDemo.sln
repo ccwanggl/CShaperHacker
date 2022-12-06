@@ -88,7 +88,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatorExample_checked_unc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConversionExample", "ConversionExample\ConversionExample.csproj", "{932E1FC1-DF21-42F2-92EF-ACD58EA62790}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Expression_and_Statement", "Expression_and_Statement", "{1EA65BF4-B67E-4DF2-8EB4-9526605C04EA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_Expression_and_Statement", "06_Expression_and_Statement", "{1EA65BF4-B67E-4DF2-8EB4-9526605C04EA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatementsExample", "StatementsExample\StatementsExample.csproj", "{5C41F946-9189-46A5-82DA-6F9D97A8B5DF}"
 EndProject

@@ -4,10 +4,10 @@
     {
         static void Main(string[] args)
         {
-            string input = Console.ReadLine();
+            var input = Console.ReadLine();
             try
             {
-                double score = double.Parse(input);
+                var score = double.Parse(input);
                 if(score >= 60)
                 {
                     Console.WriteLine("Pass!");
