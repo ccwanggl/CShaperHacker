@@ -24,11 +24,12 @@
 
         public static List<Person> operator +(Person p1, Person p2)
         {
-            List<Person> people = new List<Person>();
-            people.Add(p1);
-            people.Add(p2);
+            List<Person> people = new List<Person> {
+                p1,
+                p2
+            };
 
-            for(int i = 0; i < 11; i++)
+            for (int i = 0; i < 11; i++)
             {
                 Person child = new Person();
                 child.Name = p1.Name + "&" + p2.Name + "'s child";
