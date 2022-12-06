@@ -19,8 +19,8 @@
             Console.WriteLine($"{d,-10:F4} -- Fixed Point, 4 dec places");
             Console.WriteLine($"{d,-10:C} -- Currency");
             Console.WriteLine($"{d,-10:E3} -- Sci. Notation, 3 dec places");
-            Console.WriteLine($"{1194719,-10:x} -- Hexadecimal integr");
-            Console.WriteLine("{0,-10:x} -- Hexadecimal integr", 1194719);
+            Console.WriteLine($"{1194719,-10:x} -- Hexadecimal integer");
+            Console.WriteLine("{0,-10:x} -- Hexadecimal integer", 1194719);
 
         }
     }
