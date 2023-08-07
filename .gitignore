@@ -132,5 +132,14 @@ $RECYCLE.BIN/
 
 _NCrunch*
 
+**bin/
+**bin-int/
+!vendor/premake/bin
+
 .vs/
 .idea/
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+**.csproj*
+**.sln
