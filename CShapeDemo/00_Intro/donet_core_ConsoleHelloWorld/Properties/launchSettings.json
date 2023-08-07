@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "donet_core_ConsoleHelloWorld": {
+      "commandName": "Project"
+    }
+  }
+}
