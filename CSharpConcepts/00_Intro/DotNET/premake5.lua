@@ -1,15 +1,18 @@
-project "donet_core_ConsoleHelloWorld"
+project "DotNET"
 	kind "ConsoleApp"
 	language "C#"
-	clr "NetCore"
+	dotnetframework "net6.0"
 
 	targetdir ("../../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../../bin-int/" .. outputdir .. "/%{prj.name}")
 	
 	files 
 	{
-		"Source/**.cs",
-		"Properties/**.cs"
+		"**.cs",
+	}
+	links
+	{
+		"System"
 	}
 	
 	filter "configurations:Debug"

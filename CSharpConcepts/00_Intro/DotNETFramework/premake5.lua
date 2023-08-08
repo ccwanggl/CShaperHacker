@@ -1,4 +1,4 @@
-project "ConsoleFrameworkHelloWorld"
+project "DotNETFramework"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"

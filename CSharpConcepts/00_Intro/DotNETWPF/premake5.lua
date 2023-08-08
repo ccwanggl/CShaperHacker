@@ -1,13 +1,15 @@
-project "WPFHelloWorld"
+project "DotNETWPF"
 	kind "WindowedApp"
 	language "C#"
-	dotnetframework "4.8"
+	dotnetframework "net6.0"
 
 	targetdir ("../../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	flags {"WPF"}
-	
+	flags
+	{
+		"WPF"
+	}
 	files 
 	{
 		"**.cs",
