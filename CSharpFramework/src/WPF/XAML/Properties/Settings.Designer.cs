@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfDemo_framework.Properties
+namespace WPFHelloWorld.Properties
 {
 
 
