@@ -11,10 +11,5 @@ namespace DotNETFrameworkWPF
         {
             InitializeComponent();
         }
-
-        private void MsgBtn_Click(object sender, RoutedEventArgs e)
-        {
-            ShowMsg.Text = "Hello World";
-        }
     }
 }
