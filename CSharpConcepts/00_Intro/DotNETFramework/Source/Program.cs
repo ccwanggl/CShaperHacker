@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace ConsoleFrameworkHelloWorld
+namespace DotNETFramework.Source
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Console.WriteLine("Hello World From Framework 4.8");
         }
