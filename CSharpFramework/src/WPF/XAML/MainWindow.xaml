@@ -3,19 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPFHelloWorld"
-        xmlns:b="http://schemas.microsoft.com/xaml/behaviors" x:Class="DotNETFrameworkWPF.MainWindow"
+        xmlns:local="clr-namespace:XAML"
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors" x:Class="XAML.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="400">
-	<StackPanel>
-		<TextBox x:Name="TextBox1" Margin="5"/>
-		<TextBox x:Name="TextBox2" Margin="5"/>
-		<StackPanel Orientation="Horizontal">
-			<TextBox x:Name="TextBox3" Width="140" Margin="5"/>
-			<TextBox x:Name="TextBox4" Width="120" Margin="5"/>
-		</StackPanel>
-		<Button x:Name="Button1" Height ="20" Margin="5"/>
-		<CheckBox Content="CheckBox"/>
-		<Button Content="Button" Height="50" Width="195"/>
-	</StackPanel>
 </Window>
