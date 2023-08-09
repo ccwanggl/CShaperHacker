@@ -7,3 +7,6 @@
 [submodule "vendor/premake-core"]
 	path = vendor/premake-core
 	url = https://github.com/ccwanggl/premake-core.git
+[submodule "vendor/premake.github.io"]
+	path = vendor/premake.github.io
+	url = https://github.com/ccwanggl/premake.github.io.git
