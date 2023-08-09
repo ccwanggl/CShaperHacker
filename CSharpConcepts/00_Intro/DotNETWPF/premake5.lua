@@ -1,10 +1,13 @@
 project "DotNETWPF"
 	kind "WindowedApp"
 	language "C#"
-	dotnetframework "net6.0"
+	dotnetframework "net6.0-windows"
+	clr "NetCore"
 
 	targetdir ("../../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../../bin-int/" .. outputdir .. "/%{prj.name}")
+
+	buildaction ("Application")
 
 	flags
 	{

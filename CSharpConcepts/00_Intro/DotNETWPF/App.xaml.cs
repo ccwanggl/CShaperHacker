@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace donet_core_WPFHelloWorld
+namespace DotNETWPF
 {
     /// <summary>
     /// Interaction logic for App.xaml
