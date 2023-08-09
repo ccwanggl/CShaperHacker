@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace DotNETFrameworkWPF
+namespace XAML
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -10,11 +10,6 @@ namespace DotNETFrameworkWPF
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void MsgBtn_Click(object sender, RoutedEventArgs e)
-        {
-            ShowMsg.Text = "Hello World";
         }
     }
 }
