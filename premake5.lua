@@ -1,6 +1,6 @@
 include "./vendor/premake_customization/solution_items.lua"
 workspace "CSharpHacker"
-    architecture "x64"
+    architecture "x86_64"
 
     configurations
     {

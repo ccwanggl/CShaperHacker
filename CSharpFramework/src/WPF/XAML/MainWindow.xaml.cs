@@ -36,24 +36,26 @@ namespace XAML
 			MassText.Text = SupplierNameText.Text;
 		}
 
-		private void Button_Click(object sender, RoutedEventArgs e)
-		{
-			MessageBox.Show($"The description is: {DescriptionText.Text}");
-		}
-
-		private void ResultButton(object sender, RoutedEventArgs e)
-		{
-
-		}
+		
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
 			FinishDropdown_SelectionChanged(FinishDropdown, null);
 		}
 
-		private void ResetButton(object sender, RoutedEventArgs e)
+		private void Apply_Click(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show($"The description is: {DescriptionText.Text}");
+		}
+
+		private void Reset_Click(object sender, RoutedEventArgs e)
 		{
 			WeldCheckbox.IsChecked = AssemblyCheckbox.IsChecked = PlasmaCheckbox.IsChecked = LaserCheckbox.IsChecked = PurchaseCheckbox.IsChecked =
 				LatheCheckbox.IsChecked = DrillCheckbox.IsChecked = FoldCheckbox.IsChecked = RollCheckbox.IsChecked = SawCheckbox.IsChecked = false;
 		}
-	}
+
+		private void Refresh_Click(object sender, RoutedEventArgs e)
+		{
+			//throw new System.NotImplementedException();
+		}
+    }
 }
