@@ -1,4 +1,4 @@
-﻿namespace Tools
+﻿namespace libSuperCalculator
 {
     public class Calculator
     {
