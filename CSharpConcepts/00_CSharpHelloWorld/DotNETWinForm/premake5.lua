@@ -1,6 +1,7 @@
 project "DotNETWinForm"
 	kind "WindowedApp"
 	language "C#"
+	dotnetframework "net7.0"
 
 	targetdir ("../../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../../bin-int/" .. outputdir .. "/%{prj.name}")
