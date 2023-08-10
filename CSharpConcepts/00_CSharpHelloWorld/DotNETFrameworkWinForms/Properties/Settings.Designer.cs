@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace donet_framework_WinFormHelloWorld.Properties
+namespace DotNETFrameworkWinForms.Properties
 {
 
 

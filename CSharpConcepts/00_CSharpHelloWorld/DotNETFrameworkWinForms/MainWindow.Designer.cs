@@ -1,6 +1,6 @@
-﻿namespace donet_framework_WinFormHelloWorld
+﻿namespace DotNETFrameworkWinForms
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox_show_hello = new System.Windows.Forms.TextBox();
-            this.buttonSayHello = new System.Windows.Forms.Button();
+            this.BtnShowHello = new System.Windows.Forms.Button();
+            this.TextBox_ShowHello = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox_show_hello
+            // BtnShowHello
             // 
-            this.textBox_show_hello.Location = new System.Drawing.Point(12, 12);
-            this.textBox_show_hello.Name = "textBox_show_hello";
-            this.textBox_show_hello.Size = new System.Drawing.Size(776, 21);
-            this.textBox_show_hello.TabIndex = 0;
+            this.BtnShowHello.Location = new System.Drawing.Point(22, 59);
+            this.BtnShowHello.Name = "BtnShowHello";
+            this.BtnShowHello.Size = new System.Drawing.Size(754, 38);
+            this.BtnShowHello.TabIndex = 0;
+            this.BtnShowHello.Text = "Click Me";
+            this.BtnShowHello.UseVisualStyleBackColor = true;
+            this.BtnShowHello.Click += new System.EventHandler(this.BtnShowHello_Click);
             // 
-            // buttonSayHello
+            // TextBox_ShowHello
             // 
-            this.buttonSayHello.Location = new System.Drawing.Point(12, 39);
-            this.buttonSayHello.Name = "buttonSayHello";
-            this.buttonSayHello.Size = new System.Drawing.Size(776, 23);
-            this.buttonSayHello.TabIndex = 1;
-            this.buttonSayHello.Text = "buttonSayHello";
-            this.buttonSayHello.UseVisualStyleBackColor = true;
-            this.buttonSayHello.Click += new System.EventHandler(this.buttonSayHello_Click);
+            this.TextBox_ShowHello.Location = new System.Drawing.Point(22, 25);
+            this.TextBox_ShowHello.Name = "TextBox_ShowHello";
+            this.TextBox_ShowHello.Size = new System.Drawing.Size(754, 28);
+            this.TextBox_ShowHello.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonSayHello);
-            this.Controls.Add(this.textBox_show_hello);
+            this.Controls.Add(this.TextBox_ShowHello);
+            this.Controls.Add(this.BtnShowHello);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -65,8 +65,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox_show_hello;
-        private System.Windows.Forms.Button buttonSayHello;
+        private System.Windows.Forms.Button BtnShowHello;
+        private System.Windows.Forms.TextBox TextBox_ShowHello;
     }
 }
 

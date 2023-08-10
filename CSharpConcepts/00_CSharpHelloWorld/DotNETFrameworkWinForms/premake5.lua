@@ -1,15 +1,30 @@
-project "DotNETFrameworkWinForm"
-    architecture "x86_64"
+project "DotNETFrameworkWinForms"
 	kind "ConsoleApp"
 	language "C#"
+	dotnetframework "4.8"
 
 	targetdir ("../../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../../bin-int/" .. outputdir .. "/%{prj.name}")
 	
 	files 
 	{
-		"Source/**.cs",
+		"**.cs",
 		"Properties/**.cs"
+	}
+
+	links
+	{
+		"Microsoft.Csharp",
+		"System",
+		"System.Core",
+		"System.Data",
+		"System.Data.DataSetExtensions",
+		"System.Deployment",
+		"System.Drawing",
+		"System.Net.Http",
+		"System.Windows.Forms",
+		"System.Xml",
+		"System.Xml.Linq"
 	}
 	
 	filter "configurations:Debug"

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace donet_framework_WinFormHelloWorld.Properties
+namespace DotNETFrameworkWinForms.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace donet_framework_WinFormHelloWorld.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("donet_framework_WinFormHelloWorld.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DotNETFrameworkWinForms.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
