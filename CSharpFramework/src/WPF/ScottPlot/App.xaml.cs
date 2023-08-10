@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace WpfDemo_framework
+namespace WPFHelloWorld
 {
     /// <summary>
     /// Interaction logic for App.xaml

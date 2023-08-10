@@ -1,17 +1,16 @@
-project "DotNETWPF"
+project "ScottPlotTest"
 	kind "WindowedApp"
 	language "C#"
-	dotnetframework "net6.0-windows"
-	clr "NetCore"
+	dotnetframework "4.8"
 
-	targetdir ("../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	buildaction ("Application")
-
-	flags
+	flags {"WPF"}
+	
+	nuget 
 	{
-		"WPF"
+		"ScottPlot.WPF:4.1.66",
 	}
 	files 
 	{

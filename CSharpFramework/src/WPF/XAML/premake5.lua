@@ -1,18 +1,13 @@
-project "DotNETWPF"
+project "XAML"
 	kind "WindowedApp"
 	language "C#"
-	dotnetframework "net6.0-windows"
-	clr "NetCore"
+	dotnetframework "4.8"
 
-	targetdir ("../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	buildaction ("Application")
-
-	flags
-	{
-		"WPF"
-	}
+	flags {"WPF"}
+	
 	files 
 	{
 		"**.cs",
