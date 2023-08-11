@@ -39,3 +39,8 @@ group "CSharpConcepts/04_CSharpClass"
 	include "04_CSharpClass/OverrideInClass"
 	include "04_CSharpClass/CVClass"
 group ""
+
+-- NOTE: C# STD
+group "CSharpConcepts/CSharpSTD/List"
+	include "CSharpSTD/List/ListDemo"
+group ""
