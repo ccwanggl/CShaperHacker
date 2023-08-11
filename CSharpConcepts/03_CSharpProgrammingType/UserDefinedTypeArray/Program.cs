@@ -1,10 +1,12 @@
-﻿namespace GeneralExample_variable_array
+﻿using System;
+
+namespace UserDefinedTypeArray
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            int[] arr = new int[100];
+            var arr = new int[100];
             arr[0] = 100;
             Console.WriteLine(arr[0]); 
         }
