@@ -1,4 +1,4 @@
-namespace donet_core_WinFormHelloWorld
+namespace DotNETWinForm
 {
     internal static class Program
     {

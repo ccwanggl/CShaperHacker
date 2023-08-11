@@ -1,29 +1,28 @@
-project "DotNETWinForm"
-	kind "WindowedApp"
+project "DotNETFrameworkWinForms"
+	kind "ConsoleApp"
 	language "C#"
-	dotnetframework "net7.0"
+	dotnetframework "4.8"
 
 	targetdir ("../../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../../bin-int/" .. outputdir .. "/%{prj.name}")
-
+	
 	files 
 	{
 		"**.cs",
-		"**.xaml",
 		"Properties/**.cs"
 	}
 
 	links
 	{
 		"Microsoft.Csharp",
-		"PresentationCore",
-		"PresentationFramework",
-		"WindowsBase",
 		"System",
 		"System.Core",
 		"System.Data",
 		"System.Data.DataSetExtensions",
-		"System.Xaml",
+		"System.Deployment",
+		"System.Drawing",
+		"System.Net.Http",
+		"System.Windows.Forms",
 		"System.Xml",
 		"System.Xml.Linq"
 	}
