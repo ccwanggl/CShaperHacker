@@ -1,8 +1,10 @@
-﻿namespace AnonymousType
+﻿using System;
+
+namespace AnonymousType
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var person = new { Name = "Mr.Okey", age = 100 };
             Console.WriteLine(person.Name);
