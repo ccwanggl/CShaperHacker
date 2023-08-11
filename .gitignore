@@ -144,3 +144,5 @@ _NCrunch*
 **.csproj*
 **.sln
 vendor/premake-core
+vendor/Codist
+vendor/PDFPatcher

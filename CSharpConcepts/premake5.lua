@@ -41,6 +41,11 @@ group "CSharpConcepts/04_CSharpClass"
 group ""
 
 -- NOTE: C# STD
+<<<<<<< HEAD
 group "CSharpConcepts/CSharpSTD"
 	include "CSharpSTD/ListDemo"
+=======
+group "CSharpConcepts/CSharpSTD/List"
+	include "CSharpSTD/List/ListDemo"
+>>>>>>> feature/csharp-concepts-test
 group ""
