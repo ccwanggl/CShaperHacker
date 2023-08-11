@@ -22,4 +22,5 @@ group ""
 -- NOTE: C# type overview
 group "CSharpConcepts/03_CSharpProgrammingType"
 	include "03_CSharpProgrammingType/PredefinedType"
+	include "03_CSharpProgrammingType/UserDefinedTypeClass"
 group ""
