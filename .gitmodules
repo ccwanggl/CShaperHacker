@@ -10,3 +10,6 @@
 [submodule "vendor/premake.github.io"]
 	path = vendor/premake.github.io
 	url = https://github.com/ccwanggl/premake.github.io.git
+[submodule "vendor/Codist"]
+	path = vendor/Codist
+	url = https://github.com/ccwanggl/Codist.git
