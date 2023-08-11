@@ -34,4 +34,5 @@ group ""
 -- NOTE: C# Class
 group "CSharpConcepts/04_CSharpClass"
 	include "04_CSharpClass/ClassDefinition"
+	include "04_CSharpClass/AbstractClass"
 group ""

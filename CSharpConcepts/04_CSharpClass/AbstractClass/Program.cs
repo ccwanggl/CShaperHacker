@@ -1,15 +1,17 @@
-﻿namespace ClassExample_Abract_Class
+﻿using System;
+
+namespace AbstractClass
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Vehicle v = new RaceCar();
             v.Run();
         }
     }
 
-    abstract class Vehicle
+    internal abstract class Vehicle
     {
         public void Stop()
         {
@@ -21,7 +23,7 @@
         public abstract void Run();
     }
 
-    class Car : Vehicle
+    internal class Car : Vehicle
     {
         public override void Run()
         {
@@ -29,14 +31,15 @@
         }
     }
 
-    class Truck:Vehicle
+    internal class Truck:Vehicle
     {
         public override void Run()
         {
             Console.WriteLine("Truck is running ...");
         }
     }
-    class RaceCar:Vehicle
+
+    internal class RaceCar:Vehicle
     {
         public override void Run()
         {
