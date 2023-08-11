@@ -1,23 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ClassExample_Override
+namespace OverrideInClass
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Type t = typeof(Car);
             Type tb = t.BaseType;
-            Type tTop = tb.BaseType;
+            Type tTop = tb?.BaseType;
 
-            Console.WriteLine(tTop.FullName);
+            if (tTop != null)
+            {
+                Console.WriteLine(tTop.FullName);
+            }
 
-
-            var v = new Car();
+            Car v = new Car();
             v.Run();
         }
     }

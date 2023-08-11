@@ -30,3 +30,17 @@ group "CSharpConcepts/03_CSharpProgrammingType"
 	include "03_CSharpProgrammingType/DynamicType"
 	include "03_CSharpProgrammingType/TypeSample"
 group ""
+
+-- NOTE: C# Class
+group "CSharpConcepts/04_CSharpClass"
+	include "04_CSharpClass/ClassDefinition"
+	include "04_CSharpClass/AbstractClass"
+	include "04_CSharpClass/InterfaceAbstractClass"
+	include "04_CSharpClass/OverrideInClass"
+	include "04_CSharpClass/CVClass"
+group ""
+
+-- NOTE: C# STD
+group "CSharpConcepts/CSharpSTD"
+	include "CSharpSTD/ListDemo"
+group ""

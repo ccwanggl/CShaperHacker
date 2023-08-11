@@ -14,7 +14,11 @@ namespace ListDemo
 
         public override bool Equals(object? obj)
         {
-            if(obj == null) return false;
+            if(obj == null)
+            {
+                return false;
+            }
+
             Book other = obj as Book;
             return other.Id == Id
                    && other.Name == Name
