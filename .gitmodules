@@ -16,3 +16,6 @@
 [submodule "vendor/SharpMuPDF"]
 	path = vendor/SharpMuPDF
 	url = https://github.com/ccwanggl/SharpMuPDF.git
+[submodule "vendor/PDFPatcher"]
+	path = vendor/PDFPatcher
+	url = https://github.com/ccwanggl/PDFPatcher.git
