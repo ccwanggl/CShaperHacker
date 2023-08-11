@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-
-namespace writelineDemo
+namespace WriteLine
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            double myDouble = 12.3456789;
+            const double myDouble = 12.3456789;
 
             Console.WriteLine("{0,-10:G} -- General", myDouble);
             Console.WriteLine("{0,-10} -- Default, same as General", myDouble);
