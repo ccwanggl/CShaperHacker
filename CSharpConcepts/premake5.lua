@@ -18,3 +18,8 @@ group ""
 group "CSharpConcepts/02_CSharpProgrammingOverview"
 	include "02_CSharpProgrammingOverview/WriteLine"
 group ""
+
+-- NOTE: C# type overview
+group "CSharpConcepts/03_CSharpProgrammingType"
+	include "03_CSharpProgrammingType/PredefinedType"
+group ""
