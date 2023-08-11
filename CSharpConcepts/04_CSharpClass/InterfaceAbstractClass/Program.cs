@@ -1,22 +1,24 @@
-﻿namespace ClassExample_Interface_from_Abstract
+﻿using System;
+
+namespace InterfaceAbstractClass
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Vehicle v = new Car();
             v.Run();
         }
     }
 
-    interface IVehicle
+    internal interface IVehicle
     {
         void Stop();
         void Fill();
         void Run();
     }
 
-    abstract class Vehicle:IVehicle
+    internal abstract class Vehicle:IVehicle
     {
         public void Stop()
         {
@@ -30,7 +32,7 @@
         public abstract void Run();
     }
 
-    class Car:Vehicle
+    internal class Car:Vehicle
     {
         public override void Run()
         {
@@ -38,7 +40,7 @@
         }
     }
 
-    class Truck:Vehicle
+    internal class Truck:Vehicle
     {
         public override void Run()
         {
@@ -46,7 +48,7 @@
         }
     }
 
-    class RaceCar:Vehicle
+    internal class RaceCar:Vehicle
     {
         public override void Run()
         {
