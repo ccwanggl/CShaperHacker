@@ -30,3 +30,8 @@ group "CSharpConcepts/03_CSharpProgrammingType"
 	include "03_CSharpProgrammingType/DynamicType"
 	include "03_CSharpProgrammingType/TypeSample"
 group ""
+
+-- NOTE: C# Class
+group "CSharpConcepts/04_CSharpClass"
+	include "04_CSharpClass/ClassDefinition"
+group ""
