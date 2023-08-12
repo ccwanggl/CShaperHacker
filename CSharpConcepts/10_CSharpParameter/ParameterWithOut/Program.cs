@@ -1,11 +1,12 @@
-﻿namespace ParameterExample_valuePass_refType_outputPara
+﻿using System;
+
+namespace ParameterWithOut
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            Student stu = null;
-            bool b = StudentFactory.Create("guoliang", 34, out stu);
+            var b = StudentFactory.Create("guoliang", 34, out Student stu);
             if(b)
             {
                 Console.WriteLine("Student {0}, age is {1}.",stu.Name , stu.Age);
@@ -13,13 +14,13 @@
         }
     }
 
-    class Student
+    internal class Student
     {
         public string Name { get; set; }
         public int Age { get; set; }
     }
 
-    class StudentFactory
+    internal class StudentFactory
     {
         public static bool Create(string name, int age, out Student result)
         {

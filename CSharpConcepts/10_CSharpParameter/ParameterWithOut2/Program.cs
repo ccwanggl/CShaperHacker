@@ -1,14 +1,15 @@
-﻿namespace ParametersExample_OuPutParameter
+﻿using System;
+
+namespace ParameterWithOut2
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Console.WriteLine("Please input the first number:"); 
-            string arg1 = Console.ReadLine();
-            double x = 0;
+            var arg1 = Console.ReadLine();
 
-            if(double.TryParse(arg1 , out x))
+            if(double.TryParse(arg1 , out var x))
             {
                 Console.WriteLine("Input error!");
                 return;
@@ -20,10 +21,9 @@
 
 
             Console.WriteLine("Please input the second number:"); 
-            string arg2 = Console.ReadLine();
-            double y = 0;
+            var arg2 = Console.ReadLine();
 
-            if(double.TryParse(arg2 , out y))
+            if(double.TryParse(arg2 , out var y))
             {
                 Console.WriteLine("Input error!");
                 return;
@@ -35,7 +35,7 @@
         }
     }
 
-    class DoubleParser
+    internal class DoubleParser
     {
         public static bool TryParse(string input, out double result)
         {
