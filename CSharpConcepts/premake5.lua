@@ -49,10 +49,10 @@ group ""
 -- NOTE: C# Parameter
 group "CSharpConcepts/10_CSharpParameter"
 	include "10_CSharpParameter/ParameterArray"
+	include "10_CSharpParameter/ParameterDefault"
 group ""
 
 -- NOTE: C# STD
-<<<<<<< HEAD
 group "CSharpConcepts/000_CSharpSTD/List"
 	include "000_CSharpSTD/List/ListDemo"
 group ""
