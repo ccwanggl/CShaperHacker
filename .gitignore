@@ -146,3 +146,4 @@ _NCrunch*
 vendor/premake-core
 vendor/Codist
 vendor/PDFPatcher
+vendor/SharpMuPDF
