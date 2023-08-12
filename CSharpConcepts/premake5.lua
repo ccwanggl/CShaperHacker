@@ -20,15 +20,16 @@ group "CSharpConcepts/02_CSharpProgrammingOverview"
 group ""
 
 -- NOTE: C# type overview
-group "CSharpConcepts/03_CSharpProgrammingType"
-	include "03_CSharpProgrammingType/PredefinedType"
-	include "03_CSharpProgrammingType/UserDefinedTypeClass"
-	include "03_CSharpProgrammingType/UserDefinedTypeEnum"
-	include "03_CSharpProgrammingType/UserDefinedTypeStruct"
-	include "03_CSharpProgrammingType/UserDefinedTypeArray"
-	include "03_CSharpProgrammingType/AnonymousType"
-	include "03_CSharpProgrammingType/DynamicType"
-	include "03_CSharpProgrammingType/TypeSample"
+group "CSharpConcepts/03_CSharpType"
+	include "03_CSharpType/PredefinedType"
+	include "03_CSharpType/UserDefinedTypeClass"
+	include "03_CSharpType/UserDefinedTypeEnum"
+	include "03_CSharpType/UserDefinedTypeStruct"
+	include "03_CSharpType/UserDefinedTypeArray"
+	include "03_CSharpType/AnonymousType"
+	include "03_CSharpType/DynamicType"
+	include "03_CSharpType/TypeSample"
+	include "03_CSharpType/WeakType"
 group ""
 
 -- NOTE: C# Class
@@ -42,10 +43,10 @@ group ""
 
 -- NOTE: C# STD
 <<<<<<< HEAD
-group "CSharpConcepts/CSharpSTD"
-	include "CSharpSTD/ListDemo"
-=======
-group "CSharpConcepts/CSharpSTD/List"
-	include "CSharpSTD/List/ListDemo"
->>>>>>> feature/csharp-concepts-test
+group "CSharpConcepts/000_CSharpSTD/List"
+	include "000_CSharpSTD/List/ListDemo"
 group ""
+
+group "CSharpConcepts"
+	include "NugetExample"
+group""
