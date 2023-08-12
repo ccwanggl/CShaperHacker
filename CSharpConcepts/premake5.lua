@@ -53,8 +53,10 @@ group "CSharpConcepts/10_CSharpParameter"
 	include "10_CSharpParameter/ParameterLINQ"
 	include "10_CSharpParameter/ParameterNamedParam"
 	include "10_CSharpParameter/ParameterPassByValue"
+	include "10_CSharpParameter/ParameterPassByValue2"
 	include "10_CSharpParameter/ParameterPassWithRef"
 	include "10_CSharpParameter/ParameterPassWithRef2"
+	include "10_CSharpParameter/ParameterPassWithRef3"
 group ""
 
 -- NOTE: C# STD
