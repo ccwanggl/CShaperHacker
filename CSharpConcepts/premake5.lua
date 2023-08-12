@@ -50,6 +50,7 @@ group ""
 group "CSharpConcepts/10_CSharpParameter"
 	include "10_CSharpParameter/ParameterArray"
 	include "10_CSharpParameter/ParameterDefault"
+	include "10_CSharpParameter/ParameterLINQ"
 group ""
 
 -- NOTE: C# STD
