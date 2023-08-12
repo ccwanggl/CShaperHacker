@@ -41,6 +41,16 @@ group "CSharpConcepts/04_CSharpClass"
 	include "04_CSharpClass/CVClass"
 group ""
 
+-- NOTE: C# Class
+group "CSharpConcepts/05_CSharpMethod"
+	include "05_CSharpMethod/MethodExample"
+group ""
+
+-- NOTE: C# Parameter
+group "CSharpConcepts/10_CSharpParameter"
+	include "10_CSharpParameter/ParameterArray"
+group ""
+
 -- NOTE: C# STD
 <<<<<<< HEAD
 group "CSharpConcepts/000_CSharpSTD/List"
