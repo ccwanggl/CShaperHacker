@@ -45,3 +45,7 @@ group ""
 group "CSharpConcepts/000_CSharpSTD/List"
 	include "000_CSharpSTD/List/ListDemo"
 group ""
+
+group "CSharpConcepts"
+	include "NugetExample"
+group""
