@@ -59,6 +59,7 @@ group "CSharpConcepts/10_CSharpParameter"
 	include "10_CSharpParameter/ParameterPassWithRef"
 	include "10_CSharpParameter/ParameterPassWithRef2"
 	include "10_CSharpParameter/ParameterPassWithRef3"
+	include "10_CSharpParameter/ParameterScalAble"
 group ""
 
 -- NOTE: C# STD
