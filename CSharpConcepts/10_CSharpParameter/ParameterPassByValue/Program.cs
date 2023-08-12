@@ -1,24 +1,27 @@
-﻿namespace ParameterExample_valuePass_valueType_newObject
+﻿#nullable enable
+using System;
+
+namespace ParameterPassByValue
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Student stu = new Student() { Name = "Tim" };
             Console.WriteLine("HashCode={0},{1}",stu.GetHashCode(), stu.Name); 
             SomeMethod(stu);
-            Console.WriteLine("HashCode={0},{1}",stu.GetHashCode(), stu.Name); 
+            Console.WriteLine("HashCode={0},{1}",stu.GetHashCode(), stu.Name);
         }
 
-        static void SomeMethod(Student stu)
+        // NOTE: ref type pass by ref
+        private static void SomeMethod(Student stu)
         {
             stu = new Student() { Name = "Tim" };
             Console.WriteLine("HashCode={0},{1}",stu.GetHashCode(), stu.Name); 
         }
-
     }
 
-    class Student
+    internal class Student
     {
         public string? Name { get; set; } 
     }

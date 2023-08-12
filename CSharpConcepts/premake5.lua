@@ -52,6 +52,7 @@ group "CSharpConcepts/10_CSharpParameter"
 	include "10_CSharpParameter/ParameterDefault"
 	include "10_CSharpParameter/ParameterLINQ"
 	include "10_CSharpParameter/ParameterNamedParam"
+	include "10_CSharpParameter/ParameterPassByValue"
 group ""
 
 -- NOTE: C# STD
