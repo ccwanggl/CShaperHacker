@@ -1,26 +1,31 @@
-﻿namespace ParametersExample_RefValue_SideEffect
+﻿#nullable enable
+using System;
+
+namespace ParameterPassWithRef2
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Student outterStu = new Student() { Name = "Tim" };
+
             Console.WriteLine("HashCode={0}, Name={1}", outterStu.GetHashCode(), outterStu.Name);
+
             Console.WriteLine("--------------------------");
-            IWantSideEffect(ref outterStu);
+
+            WantSideEffect(ref outterStu);
             Console.WriteLine("HashCode={0}, Name={1}", outterStu.GetHashCode(), outterStu.Name);
         }
 
-        static void IWantSideEffect(ref Student stu)
+        private static void WantSideEffect(ref Student stu)
         {
-            stu = new Student() { Name = "Tom" };
+            stu.Name = "Tom";
             Console.WriteLine("HashCode={0}, Name={1}", stu.GetHashCode(), stu.Name);
         }
     }
 
-    class Student
+    internal class Student
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
-        
 }
