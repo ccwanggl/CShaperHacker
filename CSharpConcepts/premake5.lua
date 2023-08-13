@@ -39,6 +39,7 @@ group "CSharpConcepts/04_CSharpClass"
 	include "04_CSharpClass/InterfaceAbstractClass"
 	include "04_CSharpClass/OverrideInClass"
 	include "04_CSharpClass/CVClass"
+	include "04_CSharpClass/Indexer"
 group ""
 
 -- NOTE: C# Class

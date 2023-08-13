@@ -1,33 +1,38 @@
-﻿namespace IndexerExample_with_Dic
+﻿using System;
+using System.Collections.Generic;
+
+namespace Indexer
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Student student = new Student();
+
             student["Math"] = 100;
             var mathScore = student["Math"];
             Console.WriteLine(mathScore);
         }
     }
 
-    class Student
+    internal class Student
     {
-        private Dictionary<string, int> scoreDictionary = new Dictionary<string, int>();
+        private Dictionary<string, int> _scoreDictionary = new Dictionary<string, int>();
 
         public int? this[string subject] {
             get 
             { 
                 /* return the specified index here */ 
-                if(this.scoreDictionary.ContainsKey(subject))
+                if(_scoreDictionary.TryGetValue(subject, out var item))
                 {
-                    return this.scoreDictionary[subject];
+                    return item;
                 }
                 else
                 {
                     return null;
                 }
             }
+
             set 
             {
                 if(value.HasValue == false )
@@ -35,13 +40,13 @@
                     throw new Exception("null value");
                 }
                 /* set the specified index to value here */
-                if (this.scoreDictionary.ContainsKey(subject))
+                if (_scoreDictionary.ContainsKey(subject))
                 {
-                    this.scoreDictionary[subject] = value.Value;
+                    _scoreDictionary[subject] = value.Value;
                 }
                 else
                 {
-                    this.scoreDictionary.Add(subject, value.Value);
+                    _scoreDictionary.Add(subject, value.Value);
                 }
             }
         }
