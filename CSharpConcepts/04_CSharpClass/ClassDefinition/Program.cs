@@ -30,8 +30,8 @@ namespace ClassDefinition
         // NOTE: use to init the instance member
         public Student(int id, string name)
         {
-            this.Id = id;
-            this.Name = name;
+            Id = id;
+            Name = name;
             Amount++;
         }
 
