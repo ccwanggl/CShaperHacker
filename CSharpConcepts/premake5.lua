@@ -45,6 +45,7 @@ group "CSharpConcepts/04_CSharpClass"
 	include "04_CSharpClass/UseBaseReference"
 	include "04_CSharpClass/VirtualMethod"
 	include "04_CSharpClass/CtorExec"
+	include "04_CSharpClass/SealedClass"
 group ""
 
 -- NOTE: C# Class
