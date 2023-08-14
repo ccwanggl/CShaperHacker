@@ -46,6 +46,8 @@ group "CSharpConcepts/04_CSharpClass"
 	include "04_CSharpClass/VirtualMethod"
 	include "04_CSharpClass/CtorExec"
 	include "04_CSharpClass/SealedClass"
+	include "04_CSharpClass/StaticClass"
+	include "04_CSharpClass/ExtensionMethods"
 group ""
 
 -- NOTE: C# Class
