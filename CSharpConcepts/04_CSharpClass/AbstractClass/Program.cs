@@ -6,44 +6,28 @@ namespace AbstractClass
     {
         private static void Main()
         {
-            Vehicle v = new RaceCar();
-            v.Run();
+            DerivedClass b = new DerivedClass();
+            b.IdentifyBase();
+            b.IdentifyDerived();
         }
     }
 
-    internal abstract class Vehicle
+    internal abstract class AbClass
     {
-        public void Stop()
+        public void IdentifyBase()
         {
-            Console.WriteLine("Stopped");
+            Console.WriteLine("I am AbClass");
         }
 
-
-        //note(guoliang): Some function in base class will ever be called
-        public abstract void Run();
+        // NOTE: (guoliang) Some function in base class will ever be called
+        public abstract void IdentifyDerived();
     }
 
-    internal class Car : Vehicle
+    internal class DerivedClass : AbClass
     {
-        public override void Run()
+        public override void IdentifyDerived()
         {
-            Console.WriteLine("Car is running ...");
-        }
-    }
-
-    internal class Truck:Vehicle
-    {
-        public override void Run()
-        {
-            Console.WriteLine("Truck is running ...");
-        }
-    }
-
-    internal class RaceCar:Vehicle
-    {
-        public override void Run()
-        {
-            Console.WriteLine("RaceCar is running ...");
+            Console.WriteLine("I am DerivedClass");
         }
     }
 }

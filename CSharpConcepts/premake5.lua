@@ -40,6 +40,10 @@ group "CSharpConcepts/04_CSharpClass"
 	include "04_CSharpClass/OverrideInClass"
 	include "04_CSharpClass/CVClass"
 	include "04_CSharpClass/Indexer"
+	include "04_CSharpClass/BaseClassAccess"
+	include "04_CSharpClass/UseBaseReference"
+	include "04_CSharpClass/VirtualMethod"
+	include "04_CSharpClass/CtorExec"
 group ""
 
 -- NOTE: C# Class
