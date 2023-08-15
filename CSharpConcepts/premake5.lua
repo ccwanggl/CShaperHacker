@@ -62,6 +62,7 @@ group "CSharpConcepts/07_CSharpExpressionsAndOperator"
 	include "07_CSharpExpressionsAndOperator/Nullable"
 	include "07_CSharpExpressionsAndOperator/CreateOperator"
 	include "07_CSharpExpressionsAndOperator/ToString"
+	include "07_CSharpExpressionsAndOperator/OperatorExamples"
 group ""
 
 -- NOTE: C# Parameter

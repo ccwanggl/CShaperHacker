@@ -1,8 +1,10 @@
-﻿namespace OperatorExamples
+﻿using System;
+
+namespace OperatorExample
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Type t = typeof(int);
 
