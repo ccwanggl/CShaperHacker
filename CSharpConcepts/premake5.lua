@@ -55,6 +55,11 @@ group "CSharpConcepts/05_CSharpMethod"
 	include "05_CSharpMethod/MethodExample"
 group ""
 
+-- NOTE: C# Class
+group "CSharpConcepts/07_CSharpExpressionsAndOperator"
+	include "07_CSharpExpressionsAndOperator/CreateOperator"
+group ""
+
 -- NOTE: C# Parameter
 group "CSharpConcepts/10_CSharpParameter"
 	include "10_CSharpParameter/ParameterArray"

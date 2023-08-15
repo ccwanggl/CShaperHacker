@@ -1,8 +1,11 @@
-﻿namespace CreateOperator
+﻿using System;
+using System.Collections.Generic;
+
+namespace CreateOperator
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Person person1 = new Person();
             Person person2 = new Person();
@@ -18,7 +21,7 @@
         }
     }
 
-    class Person
+    internal class Person
     {
         public string Name;
 
@@ -29,10 +32,11 @@
                 p2
             };
 
-            for (int i = 0; i < 11; i++)
+            for (var i = 0; i < 11; i++)
             {
-                Person child = new Person();
-                child.Name = p1.Name + "&" + p2.Name + "'s child";
+                Person child = new Person {
+                    Name = p1.Name + "&" + p2.Name + "'s child"
+                };
                 people.Add(child);
             }
             return people;
