@@ -63,6 +63,7 @@ group "CSharpConcepts/07_CSharpExpressionsAndOperator"
 	include "07_CSharpExpressionsAndOperator/CreateOperator"
 	include "07_CSharpExpressionsAndOperator/ToString"
 	include "07_CSharpExpressionsAndOperator/OperatorExamples"
+	include "07_CSharpExpressionsAndOperator/ExplicitConvertClass"
 group ""
 
 -- NOTE: C# Parameter
