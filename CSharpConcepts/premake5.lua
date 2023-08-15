@@ -57,6 +57,7 @@ group ""
 
 -- NOTE: C# Class
 group "CSharpConcepts/07_CSharpExpressionsAndOperator"
+	include "07_CSharpExpressionsAndOperator/Arrow"
 	include "07_CSharpExpressionsAndOperator/CreateOperator"
 group ""
 
