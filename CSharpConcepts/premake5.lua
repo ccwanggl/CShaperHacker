@@ -61,6 +61,7 @@ group "CSharpConcepts/07_CSharpExpressionsAndOperator"
 	include "07_CSharpExpressionsAndOperator/Checked"
 	include "07_CSharpExpressionsAndOperator/Nullable"
 	include "07_CSharpExpressionsAndOperator/CreateOperator"
+	include "07_CSharpExpressionsAndOperator/ToString"
 group ""
 
 -- NOTE: C# Parameter
