@@ -1,8 +1,10 @@
-﻿namespace OperatorExample_explicit_convert_class
+﻿using System;
+
+namespace ExplicitConvertClass
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Stone stone = new Stone();
             stone.Age = 5000;
@@ -16,7 +18,7 @@
         }
     }
 
-    class Stone
+    internal class Stone
     {
         public int Age;
         public double Mass;
@@ -36,12 +38,12 @@
         }
     }
 
-    class Monkey
+    internal class Monkey
     {
         public int Age;
     }
 
-    class Gold
+    internal class Gold
     {
         public double Mass;
     }
