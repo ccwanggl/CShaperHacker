@@ -57,7 +57,12 @@ group ""
 
 -- NOTE: C# Class
 group "CSharpConcepts/07_CSharpExpressionsAndOperator"
+	include "07_CSharpExpressionsAndOperator/Arrow"
+	include "07_CSharpExpressionsAndOperator/Checked"
+	include "07_CSharpExpressionsAndOperator/Nullable"
 	include "07_CSharpExpressionsAndOperator/CreateOperator"
+	include "07_CSharpExpressionsAndOperator/ToString"
+	include "07_CSharpExpressionsAndOperator/OperatorExamples"
 group ""
 
 -- NOTE: C# Parameter

@@ -1,8 +1,10 @@
-﻿namespace ExpressionExample_nullable
+﻿using System;
+
+namespace Nullable
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             int? x = null;
 
