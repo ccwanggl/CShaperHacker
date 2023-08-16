@@ -10,3 +10,12 @@
 [submodule "vendor/premake.github.io"]
 	path = vendor/premake.github.io
 	url = https://github.com/ccwanggl/premake.github.io.git
+[submodule "vendor/Codist"]
+	path = vendor/Codist
+	url = https://github.com/ccwanggl/Codist.git
+[submodule "vendor/SharpMuPDF"]
+	path = vendor/SharpMuPDF
+	url = https://github.com/ccwanggl/SharpMuPDF.git
+[submodule "vendor/PDFPatcher"]
+	path = vendor/PDFPatcher
+	url = https://github.com/ccwanggl/PDFPatcher.git
