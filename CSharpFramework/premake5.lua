@@ -10,6 +10,7 @@ group "CSharpFramework/WPF/Layout"
 	include "src/WPF/LayoutStackpanel"
 	include "src/WPF/LayoutCanvas"
 	include "src/WPF/LayoutDockPanel"
+	include "src/WPF/LayoutWrapPanel"
 group ""
 
 group "CSharpFramework/WPF/XAML"
