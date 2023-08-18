@@ -8,6 +8,7 @@ group ""
 group "CSharpFramework/WPF/Layout"
 	include "src/WPF/LayoutGrid"
 	include "src/WPF/LayoutStackpanel"
+	include "src/WPF/LayoutCanvas"
 group ""
 
 group "CSharpFramework/WPF/XAML"
