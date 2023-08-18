@@ -2,6 +2,7 @@ group "CSharpFramework/WPF"
 	include "src/WPF/ScottPlot"
 	include "src/WPF/ContentControl"
 	include "src/WPF/LayoutContent"
+	include "src/WPF/TreeViews"
 group ""
 
 group "CSharpFramework/WPF/Layout"
