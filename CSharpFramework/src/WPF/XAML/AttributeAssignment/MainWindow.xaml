@@ -5,8 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AttributeAssignment"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
-        <Rectangle x:Name="rectangle" Width="200" Height="120" Fill="Blue"></Rectangle>
-    </Grid>
+        Title="MainWindow" Height="700" Width="700">
+    <Grid >
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="200"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+        <Rectangle Grid.Column="0" x:Name="rectangle1" Width="200" Height="120" Fill="Blue"></Rectangle>
+		<TextBlock Grid.Column="0" Text="标签的 Attribute 为对象属性赋值"></TextBlock>
+		<Rectangle Grid.Column="1" x:Name="rectangle2" Width="200" Height="120">
+			<Rectangle.Fill>
+				<SolidColorBrush Color="Yellow"/>
+			</Rectangle.Fill>
+		</Rectangle>
+		<TextBlock Grid.Column="1" Text="属性元素1"></TextBlock>
+		<Rectangle Grid.Column="2" x:Name="rectangle3" Width="200" Height="120">
+			<Rectangle.Fill>
+				<LinearGradientBrush>
+					<LinearGradientBrush.StartPoint>
+						<Point X="0" Y="0"/>
+					</LinearGradientBrush.StartPoint>
+					<LinearGradientBrush.EndPoint>
+						<Point X="1" Y="1"/>
+					</LinearGradientBrush.EndPoint>
+					<LinearGradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Offset="0.2" Color="LightBlue"/>
+							<GradientStop Offset="0.7" Color="Blue"/>
+							<GradientStop Offset="1.0" Color="DarkBlue"/>
+						</GradientStopCollection>
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+		</Rectangle>
+		<TextBlock Grid.Column="2" Text="属性元素2"></TextBlock>
+
+		<Ellipse Grid.Row="1" Grid.ColumnSpan="3" Width="450" Height="450">
+			<Ellipse.Fill>
+				<RadialGradientBrush GradientOrigin="0.25 0.25" RadiusX="0.75" RadiusY="0.75">
+				<RadialGradientBrush.GradientStops>
+						<GradientStop Color="White" Offset="0"/>
+						<GradientStop Color="Black" Offset="0.65"/>
+						<GradientStop Color="Gray" Offset="0.8"/>
+				</RadialGradientBrush.GradientStops>
+				</RadialGradientBrush>
+			</Ellipse.Fill>
+		</Ellipse>	
+	</Grid>
 </Window>

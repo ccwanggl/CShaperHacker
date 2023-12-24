@@ -4,6 +4,7 @@ group "CSharpFramework/WPF"
 	include "src/WPF/LayoutContent"
 	include "src/WPF/TreeViews"
 	include "src/WPF/WPFBasics"
+	include "src/WPF/HelloWPF"
 group ""
 
 group "CSharpFramework/WPF/Layout"
@@ -15,8 +16,9 @@ group "CSharpFramework/WPF/Layout"
 group ""
 
 group "CSharpFramework/WPF/XAML"
-	include "src/WPF/XAML/XAMLOverview"
+	include "src/WPF/XAML/HelloXAML"
 	include "src/WPF/XAML/AttributeAssignment"
+	include "src/WPF/XAML/XAMLOverview"
 group ""
 
 group "CSharpFramework/WinForm"

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,5 +15,10 @@ namespace HelloWindowsForms
         {
             InitializeComponent();
         }
-    }
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
