@@ -1,0 +1,108 @@
+﻿<Window
+    x:Class="LayoutGrid.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:LayoutGrid"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="留言板"
+    Width="400"
+    Height="800"
+    mc:Ignorable="d">
+
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock
+            Grid.Row="0"
+            Width="140"
+            Height="25"
+            Margin="10,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="请选择您的部门并留言：" />
+        <ComboBox
+            Grid.Row="0"
+            Width="210"
+            Height="25"
+            Margin="0,10,10,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top" />
+        <TextBox
+            Grid.Row="0"
+            Margin="10,40,10,40"
+            BorderBrush="Black" />
+        <Button
+            Grid.Row="0"
+            Width="80"
+            Height="25"
+            Margin="0,0,96,10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Content="提交" />
+        <Button
+            Grid.Row="0"
+            Width="80"
+            Height="25"
+            Margin="0,0,10,10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Content="清除" />
+
+        <Grid
+            Grid.Row="1"
+            Margin="10"
+            ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" MinWidth="120" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition Width="80" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25" />
+                <RowDefinition Height="4" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="25" />
+            </Grid.RowDefinitions>
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Text="请选择您的部门并留言： " />
+            <ComboBox
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="4" />
+            <TextBox
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                BorderBrush="Black" />
+            <Button
+                Grid.Row="4"
+                Grid.Column="2"
+                Content="提交" />
+            <Button
+                Grid.Row="4"
+                Grid.Column="4"
+                Content="清除" />
+        </Grid>
+
+        <Grid Grid.Row="2" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30px" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="0.5in" />
+                <RowDefinition Height="1cm" />
+                <RowDefinition Height="30pt" />
+            </Grid.RowDefinitions>
+        </Grid>
+
+    </Grid>
+</Window>
