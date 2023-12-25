@@ -1,25 +1,70 @@
-﻿<Window x:Class="LayoutWrapPanel.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LayoutWrapPanel"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="400">
-		<WrapPanel>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-			<Button Width="50" Height="50" Content="OK"/>
-		</WrapPanel>
+﻿<Window
+    x:Class="LayoutWrapPanel.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:LayoutWrapPanel"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="400"
+    Height="300"
+    mc:Ignorable="d">
+    <WrapPanel>
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+        <Button
+            Width="50"
+            Height="50"
+            Content="OK" />
+    </WrapPanel>
 </Window>
