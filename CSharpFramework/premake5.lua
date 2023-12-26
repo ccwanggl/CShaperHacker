@@ -23,6 +23,8 @@ group ""
 
 group "CSharpFramework/WPF/Binding"
 	include "src/WPF/Binding/HelloBinding"
+	include "src/WPF/Binding/ControlAsBindingSrc"
+	include "src/WPF/Binding/ControlBindingDirAndDataUpdate"
 group ""
 
 group "CSharpFramework/WinForm"
