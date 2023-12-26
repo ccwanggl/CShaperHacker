@@ -21,6 +21,10 @@ group "CSharpFramework/WPF/XAML"
 	include "src/WPF/XAML/LayoutContent"
 group ""
 
+group "CSharpFramework/WPF/Binding"
+	include "src/WPF/Binding/HelloBinding"
+group ""
+
 group "CSharpFramework/WinForm"
 	include "src/WinForm/HelloWindowsForms/"
 group ""
