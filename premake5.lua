@@ -9,9 +9,9 @@ workspace "CSharpHacker"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- projects
+include "CSharpConcepts"
+include "CSharpFramework"
 group "Dependencies"
     include "vendor"
-	include "CSharpConcepts"
-	include "CSharpFramework"
 group ""
 include "vendor/premake-core"
