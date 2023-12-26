@@ -11,6 +11,7 @@
     mc:Ignorable="d">
     <StackPanel>
         <!--  Binding 扩展语法  -->
+        <!--  set slider value property as the binding path  -->
         <TextBox
             x:Name="textBox1"
             Margin="5"
