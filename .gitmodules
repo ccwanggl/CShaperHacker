@@ -16,3 +16,6 @@
 [submodule "vendor/PDFPatcher"]
 	path = vendor/PDFPatcher
 	url = https://github.com/ccwanggl/PDFPatcher.git
+[submodule "vendor/premake-core"]
+	path = vendor/premake-core
+	url = https://github.com/ccwanggl/premake-core.git
