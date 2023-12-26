@@ -11,7 +11,5 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- projects
 include "CSharpConcepts"
 include "CSharpFramework"
-group "Dependencies"
-    include "vendor"
-group ""
+include "vendor"
 include "vendor/premake-core"
