@@ -26,6 +26,7 @@ group "CSharpFramework/WPF/Binding"
 	include "src/WPF/Binding/ControlAsBindingSrc"
 	include "src/WPF/Binding/ControlBindingDirAndDataUpdate"
 	include "src/WPF/Binding/BindingPath"
+	include "src/WPF/Binding/NoPathBinding"
 group ""
 
 group "CSharpFramework/WinForm"
