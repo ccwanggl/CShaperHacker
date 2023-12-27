@@ -1,6 +1,6 @@
 [submodule "Github/LibreHardwareMonitor"]
 	path = Github/LibreHardwareMonitor
-	url = https://github.com/LibreHardwareMonitor/LibreHardwareMonitor.git
+	url = https://github.com/ccwanggl/LibreHardwareMonitor.git
 [submodule "CSharpHacker/vendor/ScottPlot"]
 	path = CSharpHacker/vendor/ScottPlot
 	url = https://github.com/ccwanggl/ScottPlot.git

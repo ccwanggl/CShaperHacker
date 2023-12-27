@@ -9,6 +9,7 @@ namespace DynamicType
             dynamic myVar = 100;
             Console.WriteLine(myVar.GetType().Name);
             Console.WriteLine(myVar);
+            Console.WriteLine("==============");
             myVar = "Mr, Okay!";
             Console.WriteLine(myVar.GetType().Name);
             Console.WriteLine(myVar);

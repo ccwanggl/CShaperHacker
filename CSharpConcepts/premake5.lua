@@ -29,7 +29,6 @@ group "CSharpConcepts/03_CSharpType"
 	include "03_CSharpType/AnonymousType"
 	include "03_CSharpType/DynamicType"
 	include "03_CSharpType/TypeSample"
-	include "03_CSharpType/WeakType"
 group ""
 
 -- NOTE: C# Class
@@ -48,6 +47,7 @@ group "CSharpConcepts/04_CSharpClass"
 	include "04_CSharpClass/SealedClass"
 	include "04_CSharpClass/StaticClass"
 	include "04_CSharpClass/ExtensionMethods"
+	include "04_CSharpClass/RefTypeAsValueParamVsRefParam"
 group ""
 
 -- NOTE: C# Class

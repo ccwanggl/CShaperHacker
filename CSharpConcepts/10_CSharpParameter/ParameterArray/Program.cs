@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace ParameterArray
 {
+    // only one param array allowed
+    // must at the last position
+    // 
     internal class Program
     {
         private static void Main()
@@ -19,6 +22,8 @@ namespace ParameterArray
 
         private static int CalculateSum(params int[] intArray)
         {
+            if ((intArray == null) || (intArray.Length == 0))
+
             return intArray.Sum();
         }
     }
