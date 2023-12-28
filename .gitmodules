@@ -19,3 +19,6 @@
 [submodule "vendor/premake-core"]
 	path = vendor/premake-core
 	url = https://github.com/ccwanggl/premake-core.git
+[submodule "Github/SunnyUI"]
+	path = Github/SunnyUI
+	url = https://github.com/ccwanggl/SunnyUI.git
