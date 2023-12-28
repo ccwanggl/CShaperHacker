@@ -1,4 +1,4 @@
-project "CreateOperator"
+project "Literal"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
@@ -7,15 +7,30 @@ project "CreateOperator"
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
+	flags
+	{
+		"WPF"
+	}
+
 	files 
 	{
 		"**.cs",
+		"**.xaml"
 	}
 
 	links
 	{
+		"Microsoft.Csharp",
+		"PresentationCore",
+		"PresentationFramework",
+		"WindowsBase",
 		"System",
-		"System.Collections.Generic"
+		"System.Core",
+		"System.Data",
+		"System.Data.DataSetExtensions",
+		"System.Xaml",
+		"System.Xml",
+		"System.Xml.Linq"
 	}
 
 	filter "configurations:Debug"

@@ -27,14 +27,16 @@ namespace CreateOperator
 
         public static List<Person> operator +(Person p1, Person p2)
         {
-            List<Person> people = new List<Person> {
+            List<Person> people = new List<Person> 
+            {
                 p1,
                 p2
             };
 
             for (var i = 0; i < 11; i++)
             {
-                Person child = new Person {
+                Person child = new Person 
+                {
                     Name = p1.Name + "&" + p2.Name + "'s child"
                 };
                 people.Add(child);
