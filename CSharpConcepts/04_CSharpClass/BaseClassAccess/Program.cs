@@ -22,6 +22,7 @@ namespace BaseClassAccess
 
     internal class Derived : Base
     {
+        // new 关键字表达主观意愿的屏蔽
         public new string Field1 = "Field1 -- In the derived class";
 
         public void PrintField1()
