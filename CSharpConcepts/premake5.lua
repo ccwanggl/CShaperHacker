@@ -57,6 +57,10 @@ group "CSharpConcepts/05_CSharpMethod"
 	include "05_CSharpMethod/MethodExample"
 group ""
 
+group "CSharpConcepts/06_CSharpEvent"
+	include "06_CSharpEvent/EventExample"
+
+group ""
 -- NOTE: C# Class
 group "CSharpConcepts/07_CSharpExpressionsAndOperator"
 	include "07_CSharpExpressionsAndOperator/Arrow"
@@ -68,6 +72,16 @@ group "CSharpConcepts/07_CSharpExpressionsAndOperator"
 	include "07_CSharpExpressionsAndOperator/NameofOpr"
 	include "07_CSharpExpressionsAndOperator/OperatorExamples"
 	include "07_CSharpExpressionsAndOperator/ExplicitConvertClass"
+group ""
+
+group "CSharpConcepts/08_CSharpDelegate"
+	include "08_CSharpDelegate/DelegateExample"
+
+group ""
+
+group "CSharpConcepts/09_CSharpGeneric"
+	include "09_CSharpGeneric/GenericExample"
+
 group ""
 
 -- NOTE: C# Parameter
@@ -86,6 +100,20 @@ group "CSharpConcepts/10_CSharpParameter"
 	include "10_CSharpParameter/ParameterScalAble"
 group ""
 
+group "CSharpConcepts/11_CSharpInterface"
+	include "11_CSharpInterface/InterfaceExample"
+
+group ""
+
+group "CSharpConcepts/12_CSharpProperty"
+	include "12_CSharpProperty/PropertySamples"
+
+group ""
+
+group "CSharpConcepts/13_CSharpStruct"
+	include "13_CSharpStruct/HelloCSharpStruct"
+
+group ""
 -- NOTE: C# STD
 group "CSharpConcepts/000_CSharpSTD/List"
 	include "000_CSharpSTD/List/ListDemo"
