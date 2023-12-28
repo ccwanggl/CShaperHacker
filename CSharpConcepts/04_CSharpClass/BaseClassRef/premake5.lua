@@ -1,4 +1,4 @@
-project "BaseClassRef"
+project "ClassDefinition"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"

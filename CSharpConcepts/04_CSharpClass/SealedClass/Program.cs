@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SealedClass
 {
+    //! same as the c++ "final" keyword
     internal class Program
     {
         private static void Main(string[] args)
@@ -22,4 +23,5 @@ namespace SealedClass
             Console.WriteLine("Hello sealed class.");
         }
     }
+
 }

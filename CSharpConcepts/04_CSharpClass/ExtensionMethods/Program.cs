@@ -22,7 +22,16 @@ namespace ExtensionMethods
         }
     }
 
-    internal static class ExtendMyData
+    internal static class ExtendMyDataMethod1
+    {
+        public static double Average(MyData md)
+        {
+            return md.Sum()/3;
+        }
+    }
+
+
+    internal static class ExtendMyDataMethod2
     {
         public static double Average(this MyData md)
         {
@@ -36,6 +45,9 @@ namespace ExtensionMethods
             MyData md = new MyData(3, 4, 5);
             Console.WriteLine($"Sum:  {md.Sum()}");
             Console.WriteLine("Average: {0}", md.Average());
+
+            Console.WriteLine($"Sum:  {md.Sum()}");
+            Console.WriteLine("Average: {0}", ExtendMyDataMethod1.Average(md));
         }
     }
 }

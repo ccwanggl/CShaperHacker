@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CtorExec
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -14,7 +15,7 @@ namespace CtorExec
         }
     }
 
-    internal class MyClass
+    class MyClass
     {
         private readonly int firstVar;
         private readonly double secondVar;
@@ -28,6 +29,7 @@ namespace CtorExec
             secondVar = 30.5;
         }
 
+        //! Use this keyword specify the construct function
         public MyClass(string firstName) : this()
         {
             UserName = firstName;
@@ -39,6 +41,14 @@ namespace CtorExec
             UserName = "Anonymous";
             UserIdNumber = idNumber;
         }
+    }
 
+    class MyDerivedClass : MyClass
+    {
+        public int test;
+        //! use base keyword to specify the base construct function
+        MyDerivedClass() : base(12)
+        {
+        }
     }
 }
