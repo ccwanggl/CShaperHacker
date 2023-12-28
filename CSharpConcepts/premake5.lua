@@ -112,6 +112,8 @@ group ""
 
 group "CSharpConcepts/13_CSharpStruct"
 	include "13_CSharpStruct/HelloCSharpStruct"
+	include "13_CSharpStruct/ValueType"
+	include "13_CSharpStruct/Ctor"
 
 group ""
 -- NOTE: C# STD
