@@ -150,6 +150,10 @@ group "CSharpConcepts/15_CSharpLINQ"
 	include "15_CSharpLINQ/HelloLINQ"
 group ""
 
+group "CSharpConcepts/15_CSharpLINQ"
+	include "16_CSharpAsync/HelloCSharpAsync"
+group ""
+
 -- NOTE: C# STD
 group "CSharpConcepts/000_CSharpSTD/List"
 	include "000_CSharpSTD/List/ListDemo"
