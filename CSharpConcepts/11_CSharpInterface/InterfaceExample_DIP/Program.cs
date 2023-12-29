@@ -1,4 +1,6 @@
-﻿namespace InterfaceExample_DIP
+﻿using System;
+
+namespace InterfaceExample_DIP
 {
     internal class Program
     {

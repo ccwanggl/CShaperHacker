@@ -116,7 +116,14 @@ group "CSharpConcepts/10_CSharpParameter"
 group ""
 
 group "CSharpConcepts/11_CSharpInterface"
+	include "11_CSharpInterface/HelloCSharpInterface"
 	include "11_CSharpInterface/InterfaceExample"
+	include "11_CSharpInterface/InterfaceExample_Depend"
+	include "11_CSharpInterface/InterfaceExample_DI"
+	include "11_CSharpInterface/InterfaceExample_DIP"
+	include "11_CSharpInterface/InterfaceExample_DIP.Tests"
+	include "11_CSharpInterface/InterfaceExample_Interface"
+	include "11_CSharpInterface/InterfaceExample_Reflection"
 
 group ""
 

@@ -1,4 +1,6 @@
-﻿namespace InterfaceExample_Depend
+﻿using System;
+
+namespace InterfaceExample_Depend
 {
     internal class Program
     {
