@@ -59,7 +59,14 @@ group ""
 
 group "CSharpConcepts/06_CSharpEvent"
 	include "06_CSharpEvent/EventExample"
-
+	include "06_CSharpEvent/EventExample_Click"
+	include "06_CSharpEvent/EventExample_Clicked"
+	include "06_CSharpEvent/EventExample_Custom"
+	include "06_CSharpEvent/EventExample_Custom_Lite"
+	include "06_CSharpEvent/EventExample_fourth"
+	include "06_CSharpEvent/EventExample_Owner_Responer_Same"
+	include "06_CSharpEvent/EventExample_MultiButton_One_Resp"
+	include "06_CSharpEvent/EventSample"
 group ""
 -- NOTE: C# Class
 group "CSharpConcepts/07_CSharpExpressionsAndOperator"
