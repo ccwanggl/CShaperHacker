@@ -145,6 +145,11 @@ group ""
 group "CSharpConcepts/14_CSharpEnum"
 	include "14_CSharpEnum/HelloCSharpEnum"
 group ""
+
+group "CSharpConcepts/15_CSharpLINQ"
+	include "15_CSharpLINQ/HelloLINQ"
+group ""
+
 -- NOTE: C# STD
 group "CSharpConcepts/000_CSharpSTD/List"
 	include "000_CSharpSTD/List/ListDemo"
