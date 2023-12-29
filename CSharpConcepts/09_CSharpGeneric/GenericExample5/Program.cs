@@ -1,4 +1,6 @@
-﻿namespace GerenicExample5
+﻿using System;
+
+namespace GerenicExample5
 {
     internal class Program
     {

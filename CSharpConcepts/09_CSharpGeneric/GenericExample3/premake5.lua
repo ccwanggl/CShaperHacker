@@ -1,4 +1,4 @@
-project "GenericExample"
+project "GenericExample3"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
