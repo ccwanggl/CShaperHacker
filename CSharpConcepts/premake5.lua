@@ -96,7 +96,11 @@ group ""
 
 group "CSharpConcepts/09_CSharpGeneric"
 	include "09_CSharpGeneric/GenericExample"
-
+	include "09_CSharpGeneric/GenericExample2"
+	include "09_CSharpGeneric/GenericExample3"
+	include "09_CSharpGeneric/GenericExample4"
+	include "09_CSharpGeneric/GenericExample5"
+	include "09_CSharpGeneric/GenericExample6"
 group ""
 
 -- NOTE: C# Parameter
