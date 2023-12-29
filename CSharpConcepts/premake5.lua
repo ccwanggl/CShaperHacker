@@ -76,6 +76,14 @@ group ""
 
 group "CSharpConcepts/08_CSharpDelegate"
 	include "08_CSharpDelegate/DelegateExample"
+	include "08_CSharpDelegate/DelegateExample_callback"
+	include "08_CSharpDelegate/DelegateExample_interface"
+	include "08_CSharpDelegate/DelegateExample_Pattern"
+	include "08_CSharpDelegate/MulticastDelegateExample"
+	include "08_CSharpDelegate/MulticastDelegateExample_asyn"
+	include "08_CSharpDelegate/MulticastDelegateExample_task"
+	include "08_CSharpDelegate/MulticastDelegateExample_thread"
+	include "08_CSharpDelegate/AdvancedExample_Type_delegate"
 
 group ""
 
@@ -114,7 +122,10 @@ group "CSharpConcepts/13_CSharpStruct"
 	include "13_CSharpStruct/HelloCSharpStruct"
 	include "13_CSharpStruct/ValueType"
 	include "13_CSharpStruct/Ctor"
+group ""
 
+group "CSharpConcepts/14_CSharpEnum"
+	include "14_CSharpEnum/HelloCSharpEnum"
 group ""
 -- NOTE: C# STD
 group "CSharpConcepts/000_CSharpSTD/List"

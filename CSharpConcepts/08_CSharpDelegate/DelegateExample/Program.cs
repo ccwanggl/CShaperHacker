@@ -1,4 +1,6 @@
-﻿namespace DelegateExample
+﻿using System;
+
+namespace DelegateExample
 {
     public delegate double Calc(double x, double y);
     internal class Program
