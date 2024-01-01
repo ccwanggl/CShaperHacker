@@ -22,3 +22,6 @@
 [submodule "Github/SunnyUI"]
 	path = Github/SunnyUI
 	url = https://github.com/ccwanggl/SunnyUI.git
+[submodule "CSharpFramework/vendor/HanumanInstitute.MvvmDialogs"]
+	path = CSharpFramework/vendor/HanumanInstitute.MvvmDialogs
+	url = https://github.com/ccwanggl/HanumanInstitute.MvvmDialogs.git
