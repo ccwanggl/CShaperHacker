@@ -25,3 +25,6 @@
 [submodule "CSharpFramework/vendor/HanumanInstitute.MvvmDialogs"]
 	path = CSharpFramework/vendor/HanumanInstitute.MvvmDialogs
 	url = https://github.com/ccwanggl/HanumanInstitute.MvvmDialogs.git
+[submodule "CSharpFramework/vendor/AvaloniaProgressRing"]
+	path = CSharpFramework/vendor/AvaloniaProgressRing
+	url = https://github.com/ccwanggl/AvaloniaProgressRing.git
