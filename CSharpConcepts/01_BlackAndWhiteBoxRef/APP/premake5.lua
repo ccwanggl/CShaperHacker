@@ -7,16 +7,16 @@ project "APP"
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}
 
 	links
 	{
-		"libSuperCalculator",
 		"System",
 		"System.Windows.Forms",
+		"libSuperCalculator",
 	}
 
 	filter "configurations:Debug"
