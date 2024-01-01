@@ -9,7 +9,9 @@ workspace "CSharpHacker"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- projects
-include "CSharpHacker/vendor/EmployedSchedulerSystemSource"
+group "PracticePrjs"
+	include "CSharpHacker/vendor/EmployedSchedulerSystemSource/EmployedSchedulerSystem"
+group ""
 include "CSharpConcepts"
 include "CSharpFramework"
 include "vendor"

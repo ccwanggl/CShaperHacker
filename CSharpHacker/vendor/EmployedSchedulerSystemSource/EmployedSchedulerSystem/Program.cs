@@ -4,6 +4,7 @@ using EmployeeSchedulerSystem;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
+using System;
 /* 全局变量 */
 
 Team team = new("fightingTeam");
@@ -163,11 +164,11 @@ void displaTeamMenbers()
                 "姓名".PadLeft(5, ' ') +
                 "年龄".PadLeft(5, ' ') +
                 "工资".PadLeft(11, ' ') +
-                 "职位".PadLeft(11, ' ') +
+                "职位".PadLeft(11, ' ') +
                 "状态".PadLeft(11, ' ') +
-                 "奖金".PadLeft(11, ' ') +
+                "奖金".PadLeft(11, ' ') +
                 "股票".PadLeft(11, ' ') +
-                 "领用设备".PadLeft(11, ' ')
+                "领用设备".PadLeft(11, ' ')
                 );
 
 
@@ -208,8 +209,8 @@ void displaTeamMenbers()
                     $"{designer.Name}".PadLeft(5, ' ') +
                     $"{designer.Age,5}" +
                      $"{designer.Salary,11:c}" +
-                    $"{designer.Job,11}" +
-                    $"{Enum.GetName(designer.StatusT),11}" +
+					$"{designer.Job,11}" +
+					$"{Enum.GetName(designer.StatusT),11}" +
                      $"{designer.Bonus,16:C}" +
                        " ".PadLeft(11, ' ') +
                      $"{designer.Equipments.GetDisplay(),21}"

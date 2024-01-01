@@ -1,7 +1,0 @@
-group "PracticePrj"
-	externalproject "EmployeeSchedulerSystem"
-		location "EmployedSchedulerSystem"
-		uuid="D1C4408F-AB3F-4ED4-A1C2-7001C8074797"
-		kind "WindowedApp"
-		language "C#"
-group ""

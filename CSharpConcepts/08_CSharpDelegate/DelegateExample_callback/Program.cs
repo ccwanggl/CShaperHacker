@@ -1,4 +1,6 @@
-﻿namespace DelegateExample_callback
+﻿using System;
+
+namespace DelegateExample_callback
 {
     internal class Program
     {

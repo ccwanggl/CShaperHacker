@@ -1,4 +1,6 @@
-﻿namespace GenericExample
+﻿using System;
+
+namespace GenericExample
 {
     internal class Program
     {

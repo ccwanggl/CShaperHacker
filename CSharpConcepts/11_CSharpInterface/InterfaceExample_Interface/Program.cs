@@ -1,4 +1,6 @@
-﻿namespace InterfaceExample_Interface
+﻿using System;
+
+namespace InterfaceExample_Interface
 {
     internal class Program
     {

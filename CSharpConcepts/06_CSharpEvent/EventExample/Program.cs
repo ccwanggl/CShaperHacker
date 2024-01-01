@@ -7,7 +7,7 @@ namespace EventExample
     {
         static void Main(string[] args)
         {
-            System.Timers.Timer timer = new System.Timers.Timer();
+            Timer timer = new Timer();
             timer.Interval = 1000;
 
             Boy boy = new Boy();

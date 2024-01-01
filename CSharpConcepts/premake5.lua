@@ -59,7 +59,14 @@ group ""
 
 group "CSharpConcepts/06_CSharpEvent"
 	include "06_CSharpEvent/EventExample"
-
+	include "06_CSharpEvent/EventExample_Click"
+	include "06_CSharpEvent/EventExample_Clicked"
+	include "06_CSharpEvent/EventExample_Custom"
+	include "06_CSharpEvent/EventExample_Custom_Lite"
+	include "06_CSharpEvent/EventExample_fourth"
+	include "06_CSharpEvent/EventExample_Owner_Responer_Same"
+	include "06_CSharpEvent/EventExample_MultiButton_One_Resp"
+	include "06_CSharpEvent/EventSample"
 group ""
 -- NOTE: C# Class
 group "CSharpConcepts/07_CSharpExpressionsAndOperator"
@@ -76,12 +83,24 @@ group ""
 
 group "CSharpConcepts/08_CSharpDelegate"
 	include "08_CSharpDelegate/DelegateExample"
+	include "08_CSharpDelegate/DelegateExample_callback"
+	include "08_CSharpDelegate/DelegateExample_interface"
+	include "08_CSharpDelegate/DelegateExample_Pattern"
+	include "08_CSharpDelegate/MulticastDelegateExample"
+	include "08_CSharpDelegate/MulticastDelegateExample_asyn"
+	include "08_CSharpDelegate/MulticastDelegateExample_task"
+	include "08_CSharpDelegate/MulticastDelegateExample_thread"
+	include "08_CSharpDelegate/AdvancedExample_Type_delegate"
 
 group ""
 
 group "CSharpConcepts/09_CSharpGeneric"
 	include "09_CSharpGeneric/GenericExample"
-
+	include "09_CSharpGeneric/GenericExample2"
+	include "09_CSharpGeneric/GenericExample3"
+	include "09_CSharpGeneric/GenericExample4"
+	include "09_CSharpGeneric/GenericExample5"
+	include "09_CSharpGeneric/GenericExample6"
 group ""
 
 -- NOTE: C# Parameter
@@ -101,7 +120,14 @@ group "CSharpConcepts/10_CSharpParameter"
 group ""
 
 group "CSharpConcepts/11_CSharpInterface"
+	include "11_CSharpInterface/HelloCSharpInterface"
 	include "11_CSharpInterface/InterfaceExample"
+	include "11_CSharpInterface/InterfaceExample_Depend"
+	include "11_CSharpInterface/InterfaceExample_DI"
+	include "11_CSharpInterface/InterfaceExample_DIP"
+	include "11_CSharpInterface/InterfaceExample_DIP.Tests"
+	include "11_CSharpInterface/InterfaceExample_Interface"
+	include "11_CSharpInterface/InterfaceExample_Reflection"
 
 group ""
 
@@ -114,8 +140,20 @@ group "CSharpConcepts/13_CSharpStruct"
 	include "13_CSharpStruct/HelloCSharpStruct"
 	include "13_CSharpStruct/ValueType"
 	include "13_CSharpStruct/Ctor"
-
 group ""
+
+group "CSharpConcepts/14_CSharpEnum"
+	include "14_CSharpEnum/HelloCSharpEnum"
+group ""
+
+group "CSharpConcepts/15_CSharpLINQ"
+	include "15_CSharpLINQ/HelloLINQ"
+group ""
+
+group "CSharpConcepts/15_CSharpLINQ"
+	include "16_CSharpAsync/HelloCSharpAsync"
+group ""
+
 -- NOTE: C# STD
 group "CSharpConcepts/000_CSharpSTD/List"
 	include "000_CSharpSTD/List/ListDemo"
