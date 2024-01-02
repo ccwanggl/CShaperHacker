@@ -17,6 +17,11 @@ project "PropertySamples"
 		"System",
 	}
 
+	nuget
+	{
+		"EntityFramework"	
+	}
+
 	filter "configurations:Debug"
 		optimize "Off"
 		symbols "Default"
