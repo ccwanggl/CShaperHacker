@@ -19,7 +19,7 @@ project "PropertySamples"
 
 	nuget
 	{
-		"EntityFramework"	
+		"EntityFramework:6.4.4"
 	}
 
 	filter "configurations:Debug"
