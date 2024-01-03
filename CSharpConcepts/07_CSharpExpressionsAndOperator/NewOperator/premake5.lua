@@ -1,14 +1,14 @@
-project "ArrowOpr"
+project "NewOperator"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
 	csversion "7.0"
-	clr "Unsafe"
+	clr "unsafe"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}
@@ -16,7 +16,7 @@ project "ArrowOpr"
 	links
 	{
 		"System",
-		"System.Collections.Generic"
+		"System.Windows.Forms",
 	}
 
 	filter "configurations:Debug"

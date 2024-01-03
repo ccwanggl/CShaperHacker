@@ -2,6 +2,7 @@
 
 namespace DelegateExample
 {
+    // NOTE: 可以理解为 c++ 中的函数指针
     public delegate double Calc(double x, double y);
     internal class Program
     {

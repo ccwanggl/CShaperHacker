@@ -1,4 +1,4 @@
-project "ArrowOpr"
+project "SizeofOpr"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
@@ -16,8 +16,8 @@ project "ArrowOpr"
 	links
 	{
 		"System",
-		"System.Collections.Generic"
 	}
+
 
 	filter "configurations:Debug"
 		optimize "Off"

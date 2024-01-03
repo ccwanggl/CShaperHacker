@@ -20,7 +20,7 @@ namespace Checked
                 }
                 catch (OverflowException ex)
                 {
-                    Console.WriteLine("There are overflow!");
+                    Console.WriteLine("Method 1: There are overflow!");
                     throw;
                 }
             }
@@ -36,7 +36,7 @@ namespace Checked
                     }
                     catch (OverflowException ex)
                     {
-                        Console.WriteLine("There are overflow!");
+                        Console.WriteLine("Method 1: There are overflow!");
                         throw;
                     }
 
