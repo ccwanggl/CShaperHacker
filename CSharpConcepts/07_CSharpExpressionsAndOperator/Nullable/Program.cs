@@ -6,9 +6,13 @@ namespace Nullable
     {
         private static void Main()
         {
-            int? x = null;
+            // NOTE: 没交作业 Since C#3.0
+            // NOTE: Old school
+            Nullable<int> xx = null;
+            Console.WriteLine(xx.HasValue);
 
-            var y = x ?? 100;
+            int? x = null;
+            var y = x ?? 1;
             Console.WriteLine(y.GetType().FullName);
         }
     }
