@@ -1,4 +1,4 @@
-project "NameofOpr"
+project "IsOperator"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
@@ -15,6 +15,7 @@ project "NameofOpr"
 	links
 	{
 		"System",
+		"System.Collections.Generic"
 	}
 
 	filter "configurations:Debug"
