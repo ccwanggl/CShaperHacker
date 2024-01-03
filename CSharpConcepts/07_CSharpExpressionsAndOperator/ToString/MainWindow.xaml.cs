@@ -13,12 +13,20 @@ namespace ToString
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            double.TryParse(tb1.Text, out var x);
-            var y = double.Parse(tb2.Text);
 
-            tb3.Text = (x + y).ToString(CultureInfo.InvariantCulture);
+            double x = System.Convert.ToDouble(tb1.Text);
+            double y = System.Convert.ToDouble(tb2.Text);
+            double result = x + y;
+            this.tb3.Text = result.ToString();
+        }
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            double.TryParse(tb4.Text, out var a);
+            var b = double.Parse(tb5.Text);
+
+            tb6.Text = (a + b).ToString(CultureInfo.InvariantCulture);
         }
     }
 }
