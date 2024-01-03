@@ -2,22 +2,6 @@
 
 namespace ExplicitConvertClass
 {
-    internal class Program
-    {
-        private static void Main()
-        {
-            Stone stone = new Stone();
-            stone.Age = 5000;
-            stone.Mass = 30;
-
-            Monkey wukongSun = (Monkey)stone;
-            Console.WriteLine(wukongSun.Age);
-
-            Gold gold = stone;
-            Console.WriteLine(gold.Mass);
-        }
-    }
-
     internal class Stone
     {
         public int Age;
@@ -46,5 +30,21 @@ namespace ExplicitConvertClass
     internal class Gold
     {
         public double Mass;
+    }
+    internal class Program
+    {
+        // NOTE: How to convert two diff class eachother
+        private static void Main()
+        {
+            Stone stone = new Stone();
+            stone.Age = 5000;
+            stone.Mass = 30;
+
+            Monkey wukongSun = (Monkey)stone;
+            Console.WriteLine(wukongSun.Age);
+
+            Gold gold = stone;
+            Console.WriteLine(gold.Mass);
+        }
     }
 }
