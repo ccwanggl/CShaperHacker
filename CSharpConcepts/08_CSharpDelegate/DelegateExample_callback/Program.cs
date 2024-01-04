@@ -41,6 +41,7 @@ namespace DelegateExample_callback
             Box box = new Box();
             Product product = getProduct.Invoke();
 
+            // NOTE: check if call delegate method
             if(product.Price >= 50)
             {
                 logCallBack(product);
