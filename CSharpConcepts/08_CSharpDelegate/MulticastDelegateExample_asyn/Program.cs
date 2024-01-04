@@ -1,4 +1,7 @@
-﻿namespace MulticastDelegateExample_asyn
+﻿using System;
+using System.Threading;
+
+namespace MulticastDelegateExample_asyn
 {
     internal class Program
     {

@@ -1,4 +1,6 @@
-﻿namespace DelegateExample_Interface
+﻿using System;
+
+namespace DelegateExample_Interface
 {
     internal class Program
     {

@@ -1,4 +1,6 @@
-﻿namespace DelegateExample_Template
+﻿using System;
+
+namespace DelegateExample_Template
 {
     internal class Program
     {
