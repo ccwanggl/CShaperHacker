@@ -11,7 +11,10 @@ namespace EventExample_Clicked
     {
         static void Main(string[] args)
         {
+            // NOTE: event source
             Form form = new Form();
+
+            // NOTE: event response
             Controller controller = new Controller(form);
             form.ShowDialog();
         }
@@ -26,10 +29,14 @@ namespace EventExample_Clicked
             if (form != null)
             {
                 this.form = form;
+
+                // NOTE: event
+                // NOTE: subscribe
                 this.form.Click += this.FormClicked;
             }
         }
 
+        // NOTE: event handler
         private void FormClicked(object sender, EventArgs e)
         {
             this.form.Text = DateTime.Now.ToString();

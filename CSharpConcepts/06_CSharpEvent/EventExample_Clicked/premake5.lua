@@ -7,7 +7,7 @@ project "EventExample_Clicked"
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}
@@ -15,6 +15,7 @@ project "EventExample_Clicked"
 	links
 	{
 		"System",
+		"System.Windows.Forms"
 	}
 
 	filter "configurations:Debug"
