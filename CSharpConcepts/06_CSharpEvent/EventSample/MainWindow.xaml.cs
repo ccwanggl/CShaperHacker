@@ -34,5 +34,10 @@ namespace EventSample
         {
             this.timeTextBox.Text = DateTime.Now.ToString();
         }
+
+        private void ButtonClicked(object sender, RoutedEventArgs e)
+        {
+            textbox.Text = "Hello, WASPEC!";
+        }
     }
 }

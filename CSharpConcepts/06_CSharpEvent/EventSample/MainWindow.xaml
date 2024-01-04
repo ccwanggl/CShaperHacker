@@ -9,13 +9,18 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Grid>
+    <StackPanel>
         <TextBox
             x:Name="timeTextBox"
             Margin="5,10,5,0"
             VerticalAlignment="Top"
             FontSize="48"
             TextWrapping="Wrap" />
+        <TextBox x:Name="textbox" />
+        <Button
+            x:Name="button"
+            Click="ButtonClicked"
+            Content="Click Me" />
 
-    </Grid>
+    </StackPanel>
 </Window>
