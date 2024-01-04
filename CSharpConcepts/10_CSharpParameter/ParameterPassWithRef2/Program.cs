@@ -8,11 +8,8 @@ namespace ParameterPassWithRef2
         private static void Main(string[] args)
         {
             Student outterStu = new Student() { Name = "Tim" };
-
             Console.WriteLine("HashCode={0}, Name={1}", outterStu.GetHashCode(), outterStu.Name);
-
             Console.WriteLine("--------------------------");
-
             WantSideEffect(ref outterStu);
             Console.WriteLine("HashCode={0}, Name={1}", outterStu.GetHashCode(), outterStu.Name);
         }

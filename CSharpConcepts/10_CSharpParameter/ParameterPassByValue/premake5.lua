@@ -2,7 +2,7 @@ project "ParameterPassByValue"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
-	csversion "7.0"
+	csversion "8.0"
 	clr "unsafe"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")

@@ -1,9 +1,8 @@
-project "ParameterPassWithRef2"
+project "ExpressionReturn"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
-	csversion "8.0"
-	clr "unsafe"
+	csversion "7.0"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
@@ -16,7 +15,7 @@ project "ParameterPassWithRef2"
 	links
 	{
 		"System",
-		"Microsoft.CSharp",
+		"System.Windows.Forms"
 	}
 
 	filter "configurations:Debug"
