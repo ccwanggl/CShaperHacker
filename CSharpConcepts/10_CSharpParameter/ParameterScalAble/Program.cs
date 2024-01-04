@@ -13,7 +13,7 @@ namespace ParameterScalAble
         }
     }
 
-    // NOTE: (guoliang): static 
+    // NOTE:  must public and static static class and static method, please notice the first param
     internal static class DoubleExtension
     {
         public static double Round(this double input, int digits)

@@ -9,6 +9,7 @@ namespace ParameterWithOut2
             Console.WriteLine("Please input the first number:"); 
             var arg1 = Console.ReadLine();
 
+            // NOTE: TypeParse not throw exception, just return
             if(double.TryParse(arg1 , out var x))
             {
                 Console.WriteLine("Input error!");
@@ -46,7 +47,6 @@ namespace ParameterWithOut2
             }
             catch 
             {
-
                 result = 0; 
                 return false;
             }

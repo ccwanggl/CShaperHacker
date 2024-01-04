@@ -4,6 +4,7 @@ namespace ParameterNamedParam
 {
     internal class Program
     {
+        // NOTE: arguments with the parameters name
         private static void Main()
         {
             PrintInfo("guoliang", 34);
