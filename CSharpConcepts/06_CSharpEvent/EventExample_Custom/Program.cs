@@ -1,4 +1,8 @@
-﻿namespace EventExample_Custom_Full
+﻿using System;
+using System.Threading;
+
+
+namespace EventExample_Custom_Full
 {
     internal class Program
     {
@@ -23,7 +27,6 @@
     }
 
     //note(guoliang): 
-    public delegate void OrderEventHandler(Customer customer, OrderEventArgs s);
     public delegate void OrderEventHandler(Customer customer, OrderEventArgs s);
 
     //note(guoliang): Event owner

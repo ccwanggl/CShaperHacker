@@ -1,4 +1,4 @@
-project "EventExample_Click"
+project "EventExample_AllInOne"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
@@ -7,7 +7,7 @@ project "EventExample_Click"
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}
@@ -15,6 +15,7 @@ project "EventExample_Click"
 	links
 	{
 		"System",
+		"System.Windows.Forms"
 	}
 
 	filter "configurations:Debug"

@@ -16,9 +16,12 @@ namespace EventExample_fourth
         }
     }
 
+    //NOTE: Subscriber
     class MyForm:Form
     {
         private TextBox textBox;
+
+        //NOTE: Source
         private Button button;
 
         public MyForm()
@@ -31,10 +34,13 @@ namespace EventExample_fourth
             this.Controls.Add(this.button);
             this.Controls.Add(this.textBox);
 
+            // NOTE: Event
+            // NOTE: subscribe
             this.button.Click += this.ButtonClicked;
 
         }
 
+            //NOTE: Event handler
         private void ButtonClicked(object sender, EventArgs e)
         {
             this.textBox.Text = "Hello World!";

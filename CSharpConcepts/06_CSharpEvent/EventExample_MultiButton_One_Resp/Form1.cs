@@ -16,22 +16,13 @@ namespace EventExample_MultiButton_One_Resp
         {
             InitializeComponent();
 
+            this.button1.Click += new System.EventHandler(this.ButtonClicked);
+            this.button2.Click += new System.EventHandler(this.ButtonClicked);
             this.button3.Click += this.ButtonClicked;
-
             this.button4.Click += new EventHandler(this.ButtonClicked);
-
-            // OldSchool
-            this.button5.Click += delegate (object sender, EventArgs e) {
-                this.textBox1.Text = "delegate";
-            };
-
-            this.button6.Click += (object sender, EventArgs e) => {
-                this.textBox1.Text = "lambda method";
-            };
-
-            this.button7.Click += (sender, e) => {
-                this.textBox1.Text = "lambda method ignore parameter type";
-            };
+            this.button5.Click += delegate (object sender, EventArgs e) { this.textBox1.Text = "delegate"; };
+            this.button6.Click += (object sender, EventArgs e) => { this.textBox1.Text = "lambda method"; };
+            this.button7.Click += (sender, e) => { this.textBox1.Text = "lambda method ignore parameter type"; };
         }
 
         private void ButtonClicked(object sender, EventArgs e)

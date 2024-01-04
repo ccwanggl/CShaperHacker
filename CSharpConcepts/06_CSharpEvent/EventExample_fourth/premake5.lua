@@ -1,4 +1,4 @@
-project "EventExample_AllInOne"
+project "EventExample_SrcAsChild"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"

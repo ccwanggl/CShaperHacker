@@ -1,5 +1,5 @@
 project "EventExample_MultiButton_One_Resp"
-	kind "ConsoleApp"
+	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
 	csversion "7.0"
@@ -7,7 +7,7 @@ project "EventExample_MultiButton_One_Resp"
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}
@@ -15,6 +15,9 @@ project "EventExample_MultiButton_One_Resp"
 	links
 	{
 		"System",
+		"System.Data",
+		"System.Drawing",
+		"System.Windows.Forms"
 	}
 
 	filter "configurations:Debug"
