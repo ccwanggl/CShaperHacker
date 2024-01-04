@@ -17,6 +17,7 @@ namespace MulticastDelegateExample_thread
             Thread thread2 = new Thread(new ThreadStart(student2.DoHomeWork));
             Thread thread3 = new Thread(new ThreadStart(student3.DoHomeWork));
 
+            // NOTE: oldschool asyn call use thread
             thread1.Start();
             thread2.Start();
             thread3.Start();

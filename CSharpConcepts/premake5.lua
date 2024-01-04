@@ -95,8 +95,6 @@ group "CSharpConcepts/08_CSharpDelegate"
 	include "08_CSharpDelegate/MulticastDelegateExample_asyn"
 	include "08_CSharpDelegate/MulticastDelegateExample_task"
 	include "08_CSharpDelegate/MulticastDelegateExample_thread"
-	include "08_CSharpDelegate/AdvancedExample_Type_delegate"
-
 group ""
 
 group "CSharpConcepts/09_CSharpGeneric"

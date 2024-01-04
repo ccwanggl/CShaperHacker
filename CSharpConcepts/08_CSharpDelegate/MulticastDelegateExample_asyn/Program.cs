@@ -16,6 +16,7 @@ namespace MulticastDelegateExample_asyn
             Action action3 = new Action(student3.DoHomeWork);
 
 
+            // NOTE: 隐式异步调用
             action1.BeginInvoke(null, null);
             action2.BeginInvoke(null, null);
             action3.BeginInvoke(null, null);

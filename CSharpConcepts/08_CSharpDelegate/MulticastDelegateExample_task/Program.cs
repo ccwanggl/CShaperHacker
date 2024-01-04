@@ -18,6 +18,7 @@ namespace MulticastDelegateExample_thread
             Task task2 = new Task(new Action(student2.DoHomeWork));
             Task task3 = new Task(new Action(student3.DoHomeWork));
 
+            // NOTE: modern asyn call use task
             task1.Start();
             task2.Start();
             task3.Start();

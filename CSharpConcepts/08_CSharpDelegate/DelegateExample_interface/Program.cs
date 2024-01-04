@@ -2,23 +2,6 @@
 
 namespace DelegateExample_Interface
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            IProductFactory pizzaFactory = new PizzaProductFactory();
-            IProductFactory toycarFactory = new ToyCarProductFactory();
-            WrapFactory wrapFactory = new WrapFactory();
-
-
-            Box box1 = wrapFactory.WrapProduct(pizzaFactory);
-            Box box2 = wrapFactory.WrapProduct(toycarFactory);
-
-            Console.WriteLine(box1.Product.Name);
-            Console.WriteLine(box2.Product.Name);
-        }
-    }
-
     class Product
     {
         public string Name { get; set; }
@@ -64,4 +47,21 @@ namespace DelegateExample_Interface
             return product;
         }
     }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            IProductFactory pizzaFactory = new PizzaProductFactory();
+            IProductFactory toycarFactory = new ToyCarProductFactory();
+            WrapFactory wrapFactory = new WrapFactory();
+
+
+            Box box1 = wrapFactory.WrapProduct(pizzaFactory);
+            Box box2 = wrapFactory.WrapProduct(toycarFactory);
+
+            Console.WriteLine(box1.Product.Name);
+            Console.WriteLine(box2.Product.Name);
+        }
+    }
+
 }
