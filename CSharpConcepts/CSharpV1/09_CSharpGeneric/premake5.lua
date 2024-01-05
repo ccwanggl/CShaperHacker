@@ -1,0 +1,8 @@
+group "CSharpConcepts/CSharpV1/09_CSharpGeneric"
+	include "GenericExample"
+	include "GenericExample2"
+	include "GenericExample3"
+	include "GenericExample4"
+	include "GenericExample5"
+	include "GenericExample6"
+group ""
