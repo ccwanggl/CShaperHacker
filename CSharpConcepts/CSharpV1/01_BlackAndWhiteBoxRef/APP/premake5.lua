@@ -4,8 +4,8 @@ project "APP"
 	dotnetframework "4.8"
 	csversion "9.0"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{

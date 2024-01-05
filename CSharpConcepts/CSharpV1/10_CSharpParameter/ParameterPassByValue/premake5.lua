@@ -5,8 +5,8 @@ project "ParameterPassByValue"
 	csversion "8.0"
 	clr "unsafe"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files 
 	{

@@ -5,8 +5,8 @@ project "AbstractClass"
 	csversion "7.0"
 	clr "Unsafe"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{
