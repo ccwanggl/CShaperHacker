@@ -4,6 +4,7 @@ namespace OverrideInClass
 {
     internal class Vehicle
     {
+        // NOTE: base
         public virtual void Run()
         {
             Console.WriteLine("I'm running!"); 
@@ -12,6 +13,7 @@ namespace OverrideInClass
 
     internal class Car : Vehicle
     {
+        // NOTE: extend
         public override void Run()
         {
             Console.WriteLine("Car is Running!");
@@ -20,7 +22,7 @@ namespace OverrideInClass
 
     internal class RaseCar : Car
     {
-        // override stopped at the new keyword
+        // NOTE: hide
         public new void Run()
         {
             Console.WriteLine("Rase car is running");
