@@ -1,0 +1,11 @@
+group "CSharpConcepts/CSharpV1/11_CSharpInterface"
+	include "HelloCSharpInterface"
+	include "InterfaceExample"
+	include "InterfaceExample_Depend"
+	include "InterfaceExample_DI"
+	include "InterfaceExample_DIP"
+	include "InterfaceExample_DIP.Tests"
+	include "InterfaceExample_Interface"
+	include "InterfaceExample_Reflection"
+
+group ""

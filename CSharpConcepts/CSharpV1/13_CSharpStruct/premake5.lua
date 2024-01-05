@@ -1,0 +1,5 @@
+group "CSharpConcepts/CSharpV1/13_CSharpStruct"
+	include "HelloCSharpStruct"
+	include "ValueType"
+	include "Ctor"
+group ""
