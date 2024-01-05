@@ -1,9 +1,8 @@
-project "CVClass"
-	kind "ConsoleApp"
+project "LibForCVClass"
+	kind "SharedLib"
 	language "C#"
 	dotnetframework "4.8"
 	csversion "7.0"
-	clr "unsafe"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
@@ -17,7 +16,6 @@ project "CVClass"
 	{
 		"System",
 		"Microsoft.CSharp",
-		"LibForCVClass"
 	}
 
 	filter "configurations:Debug"

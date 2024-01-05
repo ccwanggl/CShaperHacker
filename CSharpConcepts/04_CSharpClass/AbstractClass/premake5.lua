@@ -3,12 +3,12 @@ project "AbstractClass"
 	language "C#"
 	dotnetframework "4.8"
 	csversion "7.0"
-	clr "unsafe"
+	clr "Unsafe"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}
