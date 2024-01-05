@@ -1,8 +1,5 @@
 -- NOTE: What C# can do
 group "CSharpConcepts/00_CSharpHelloWorld"
-	-- include "00_CSharpHelloWorld/DotNET"
-	-- include "00_CSharpHelloWorld/DotNETWinForm"
-	-- include "00_CSharpHelloWorld/DotNETWPF"
 	include "00_CSharpHelloWorld/DotNETFramework"
 	include "00_CSharpHelloWorld/DotNETFrameworkWPF"
 	include "00_CSharpHelloWorld/DotNETFrameworkWinForms"
@@ -29,6 +26,7 @@ group "CSharpConcepts/03_CSharpType"
 	include "03_CSharpType/AnonymousType"
 	include "03_CSharpType/DynamicType"
 	include "03_CSharpType/TypeSample"
+	include "03_CSharpType/ConversionExample"
 group ""
 
 -- NOTE: C# Class
@@ -96,6 +94,7 @@ group "CSharpConcepts/08_CSharpDelegate"
 	include "08_CSharpDelegate/MulticastDelegateExample_asyn"
 	include "08_CSharpDelegate/MulticastDelegateExample_task"
 	include "08_CSharpDelegate/MulticastDelegateExample_thread"
+	include "08_CSharpDelegate/FunctionPointerExample"
 group ""
 
 group "CSharpConcepts/09_CSharpGeneric"
