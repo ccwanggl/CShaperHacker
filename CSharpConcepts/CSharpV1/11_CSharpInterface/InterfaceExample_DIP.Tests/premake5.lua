@@ -1,13 +1,14 @@
 project "InterfaceExample_DIP.Tests"
-	kind "ConsoleApp"
+	kind "SharedLib"
 	language "C#"
-	dotnetframework "4.8"
-	csversion "7.0"
+	dotnetframework "net6.0"
+	csversion "10.0"
+	clr "NetCore"
 
 	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}

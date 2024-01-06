@@ -1,7 +1,6 @@
 using Moq;
 using InterfaceExample_DIP;
-
-namespace InterfaceExample_DIP.Tests
+namespace InterfaceExample_DIP.TestWithxUint
 {
     public class DeskFanTests
     {
@@ -36,3 +35,4 @@ namespace InterfaceExample_DIP.Tests
         }
     }
 }
+
