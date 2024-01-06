@@ -1,14 +1,13 @@
-project "ListDemo"
+project "ListAPI_Add"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
 	csversion "latest"
-	clr "Unsafe"
 
 	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}
@@ -16,8 +15,7 @@ project "ListDemo"
 	links
 	{
 		"System",
-		"Microsoft.CSharp",
-		"System.Text.Json",
+		"System.Collections.Generic",
 	}
 
 	filter "configurations:Debug"
