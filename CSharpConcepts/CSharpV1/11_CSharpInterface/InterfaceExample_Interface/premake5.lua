@@ -1,4 +1,4 @@
-project "InterfaceExample_Interface"
+project "InterfaceExample_Depend_Fix"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
@@ -7,7 +7,7 @@ project "InterfaceExample_Interface"
 	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}
