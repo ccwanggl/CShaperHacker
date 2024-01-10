@@ -1,23 +1,18 @@
-project "DotNETWPF"
+project "WPFUI"
 	kind "WindowedApp"
 	language "C#"
-	dotnetframework "net6.0"
-	clr "NetCore"
+	dotnetframework "NET8.0"
+	clr "NETCore"
 
-	 targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
-	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	buildaction ("Application")
-
-	flags
-	{
-		"WPF"
-	}
+	flags {"WPF"}
+	
 	files 
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
 	}
 
 	links

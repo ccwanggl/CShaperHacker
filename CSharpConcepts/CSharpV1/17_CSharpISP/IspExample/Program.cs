@@ -1,4 +1,6 @@
-﻿namespace IspExample
+﻿using System;
+
+namespace IspExample
 {
     internal class Program
     {

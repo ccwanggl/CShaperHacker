@@ -1,4 +1,6 @@
-﻿namespace DotNETCoreConsoleAPP
+﻿using System;
+
+namespace DotNETCoreConsoleAPP
 {
     internal class Program
     {

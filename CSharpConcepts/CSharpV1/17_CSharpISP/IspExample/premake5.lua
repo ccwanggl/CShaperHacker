@@ -1,23 +1,24 @@
-project "DotNET"
+project "IspExample"
 	kind "ConsoleApp"
 	language "C#"
-	flags "WPF"
-	dotnetframework "net6.0"
-	clr "NETCore"
+	dotnetframework "4.8"
+	csversion "7.0"
 
 	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	
-	files 
+	files
 	{
 		"**.cs",
 	}
+
 	links
 	{
-		"System"
+		"System",
+		"System.Net",
+		"System.Diagnostics"
 	}
-	
+
 	filter "configurations:Debug"
 		optimize "Off"
 		symbols "Default"

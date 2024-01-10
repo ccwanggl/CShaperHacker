@@ -2,6 +2,7 @@ project "DotNETWinForm"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "net7.0"
+	clr "NETCore"
 
 	 targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
