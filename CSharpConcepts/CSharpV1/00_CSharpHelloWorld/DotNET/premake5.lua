@@ -1,15 +1,14 @@
 project "DotNET"
 	kind "ConsoleApp"
 	language "C#"
-	flags "WPF"
-	dotnetframework "net6.0"
-	clr "NETCore"
+	dotnetframework "net8.0"
+	clr "NetCore"
 
 	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
 	
-	files 
+	files
 	{
 		"**.cs",
 	}
