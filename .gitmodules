@@ -1,5 +1,5 @@
 [submodule "Github/LibreHardwareMonitor"]
-	path = Github/LibreHardwareMonitor
+	path = CSharpReposTest/vendor/LibreHardwareMonitor
 	url = https://github.com/ccwanggl/LibreHardwareMonitor.git
 [submodule "CSharpHacker/vendor/ScottPlot"]
 	path = CSharpHacker/vendor/ScottPlot
@@ -10,9 +10,6 @@
 [submodule "vendor/Codist"]
 	path = vendor/Codist
 	url = https://github.com/ccwanggl/Codist.git
-[submodule "vendor/SharpMuPDF"]
-	path = vendor/SharpMuPDF
-	url = https://github.com/ccwanggl/SharpMuPDF.git
 [submodule "vendor/PDFPatcher"]
 	path = vendor/PDFPatcher
 	url = https://github.com/ccwanggl/PDFPatcher.git
@@ -20,7 +17,7 @@
 	path = vendor/premake-core
 	url = https://github.com/ccwanggl/premake-core.git
 [submodule "Github/SunnyUI"]
-	path = Github/SunnyUI
+	path = CSharpReposTest/vendor/SunnyUI
 	url = https://github.com/ccwanggl/SunnyUI.git
 [submodule "CSharpFramework/vendor/HanumanInstitute.MvvmDialogs"]
 	path = CSharpFramework/vendor/HanumanInstitute.MvvmDialogs
@@ -28,3 +25,15 @@
 [submodule "CSharpFramework/vendor/AvaloniaProgressRing"]
 	path = CSharpFramework/vendor/AvaloniaProgressRing
 	url = https://github.com/ccwanggl/AvaloniaProgressRing.git
+[submodule "CSharpFramework/vendor/HandyControl"]
+	path = CSharpFramework/vendor/HandyControl
+	url = https://github.com/HandyOrg/HandyControl.git
+[submodule "CSharpFramework/vendor/MahApps.Metro"]
+	path = CSharpFramework/vendor/MahApps.Metro
+	url = https://github.com/MahApps/MahApps.Metro.git
+[submodule "CSharpFramework/vendor/Live-Charts"]
+	path = CSharpFramework/vendor/Live-Charts
+	url = https://github.com/Live-Charts/Live-Charts.git
+[submodule "CSharpFramework/vendor/oxyplot"]
+	path = CSharpFramework/vendor/oxyplot
+	url = https://github.com/oxyplot/oxyplot.git
