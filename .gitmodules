@@ -1,5 +1,5 @@
 [submodule "Github/LibreHardwareMonitor"]
-	path = CSharpReposTest/LibreHardwareMonitor
+	path = CSharpReposTest/vendor/LibreHardwareMonitor
 	url = https://github.com/ccwanggl/LibreHardwareMonitor.git
 [submodule "CSharpHacker/vendor/ScottPlot"]
 	path = CSharpHacker/vendor/ScottPlot
@@ -17,7 +17,7 @@
 	path = vendor/premake-core
 	url = https://github.com/ccwanggl/premake-core.git
 [submodule "Github/SunnyUI"]
-	path = CSharpReposTest/SunnyUI
+	path = CSharpReposTest/vendor/SunnyUI
 	url = https://github.com/ccwanggl/SunnyUI.git
 [submodule "CSharpFramework/vendor/HanumanInstitute.MvvmDialogs"]
 	path = CSharpFramework/vendor/HanumanInstitute.MvvmDialogs
