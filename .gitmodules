@@ -28,3 +28,6 @@
 [submodule "CSharpFramework/vendor/HandyControl"]
 	path = CSharpFramework/vendor/HandyControl
 	url = https://github.com/HandyOrg/HandyControl.git
+[submodule "CSharpFramework/vendor/MahApps.Metro"]
+	path = CSharpFramework/vendor/MahApps.Metro
+	url = https://github.com/MahApps/MahApps.Metro.git
