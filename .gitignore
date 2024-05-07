@@ -143,7 +143,5 @@ _NCrunch*
 **.vcxproj.user
 **.csproj*
 **.sln
-vendor/premake-core
-vendor/Codist
-vendor/PDFPatcher
-vendor/SharpMuPDF
+
+**__pycache__/
