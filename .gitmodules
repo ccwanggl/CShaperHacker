@@ -10,9 +10,6 @@
 [submodule "vendor/Codist"]
 	path = vendor/Codist
 	url = https://github.com/ccwanggl/Codist.git
-[submodule "vendor/SharpMuPDF"]
-	path = vendor/SharpMuPDF
-	url = https://github.com/ccwanggl/SharpMuPDF.git
 [submodule "vendor/PDFPatcher"]
 	path = vendor/PDFPatcher
 	url = https://github.com/ccwanggl/PDFPatcher.git
@@ -28,3 +25,6 @@
 [submodule "CSharpFramework/vendor/AvaloniaProgressRing"]
 	path = CSharpFramework/vendor/AvaloniaProgressRing
 	url = https://github.com/ccwanggl/AvaloniaProgressRing.git
+[submodule "CSharpFramework/vendor/HandyControl"]
+	path = CSharpFramework/vendor/HandyControl
+	url = https://github.com/HandyOrg/HandyControl.git
