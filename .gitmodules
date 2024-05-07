@@ -4,18 +4,12 @@
 [submodule "CSharpHacker/vendor/ScottPlot"]
 	path = CSharpHacker/vendor/ScottPlot
 	url = https://github.com/ccwanggl/ScottPlot.git
-[submodule "vendor/premake.github.io"]
-	path = vendor/premake.github.io
-	url = https://github.com/ccwanggl/premake.github.io.git
 [submodule "vendor/Codist"]
 	path = vendor/Codist
 	url = https://github.com/ccwanggl/Codist.git
 [submodule "vendor/PDFPatcher"]
 	path = vendor/PDFPatcher
 	url = https://github.com/ccwanggl/PDFPatcher.git
-[submodule "vendor/premake-core"]
-	path = vendor/premake-core
-	url = https://github.com/ccwanggl/premake-core.git
 [submodule "Github/SunnyUI"]
 	path = CSharpReposTest/vendor/SunnyUI
 	url = https://github.com/ccwanggl/SunnyUI.git
