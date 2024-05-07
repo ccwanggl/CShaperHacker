@@ -1,3 +1,3 @@
 group "GithubRepos/LibreHardwareMonitor"
-	include "LibreHardwareMonitor"
+	include "vendor/LibreHardwareMonitor"
 group ""
