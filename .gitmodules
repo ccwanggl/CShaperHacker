@@ -34,3 +34,6 @@
 [submodule "CSharpFramework/vendor/ModernWpf"]
 	path = CSharpFramework/vendor/ModernWpf
 	url = https://github.com/Kinnara/ModernWpf.git
+[submodule "CSharpFramework/vendor/wpfui"]
+	path = CSharpFramework/vendor/wpfui
+	url = https://github.com/lepoco/wpfui.git
