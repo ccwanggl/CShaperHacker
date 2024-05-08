@@ -1,4 +1,4 @@
-project "AttributeAssignment"
+project "01_PropertyAssignment"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"

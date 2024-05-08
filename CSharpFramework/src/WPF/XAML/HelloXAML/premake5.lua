@@ -1,4 +1,4 @@
-project "HelloXAML"
+project "00_HelloXAML"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
@@ -7,7 +7,6 @@ project "HelloXAML"
 	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
-	
 	files 
 	{
 		"**.cs",

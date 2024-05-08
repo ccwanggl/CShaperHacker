@@ -11,6 +11,6 @@
     Width="400"
     Height="450"
     mc:Ignorable="d">
-    <ScottPlot:WpfPlot x:Name="WpfPlot1" />
+    <ScottPlot:WpfPlot x:Name="WpfPlot1" Background="#FF8E1A1A" />
 
 </Window>

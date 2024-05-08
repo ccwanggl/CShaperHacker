@@ -21,11 +21,6 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- projects
 
-group "PracticePrjs"
-	include "CSharpHacker/vendor/EmployedSchedulerSystemSource/EmployedSchedulerSystem"
-group ""
-
 include "CSharpConcepts"
 include "CSharpFramework"
-include "CSharpReposTest"
 include "vendor"

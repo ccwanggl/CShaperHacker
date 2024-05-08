@@ -23,6 +23,10 @@ namespace AttributeAssignment
         public MainWindow()
         {
             InitializeComponent();
+
+			SolidColorBrush sBrush = new SolidColorBrush();
+			sBrush.Color = Colors.Aqua;
+			this.rectangle3.Fill = sBrush;
         }
     }
 }
