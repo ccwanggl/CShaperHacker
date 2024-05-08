@@ -28,3 +28,6 @@
 [submodule "CSharpHacker/vendor/Excel-IO"]
 	path = CSharpHacker/vendor/Excel-IO
 	url = https://github.com/OfficeDev/Excel-IO.git
+[submodule "CSharpHacker/vendor/DotNetGuide"]
+	path = CSharpHacker/vendor/DotNetGuide
+	url = https://github.com/YSGStudyHards/DotNetGuide.git
