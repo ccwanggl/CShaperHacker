@@ -43,3 +43,6 @@
 [submodule "CSharpFramework/vendor/adonis-ui"]
 	path = CSharpFramework/vendor/adonis-ui
 	url = https://github.com/benruehl/adonis-ui.git
+[submodule "CSharpFramework/vendor/Layui-WPF"]
+	path = CSharpFramework/vendor/Layui-WPF
+	url = https://github.com/Layui-WPF-Team/Layui-WPF.git
