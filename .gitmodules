@@ -22,3 +22,9 @@
 [submodule "CSharpFramework/vendor/LiveCharts2"]
 	path = CSharpFramework/vendor/LiveCharts2
 	url = https://github.com/beto-rodriguez/LiveCharts2.git
+[submodule "CSharpHacker/vendor/oxyplot"]
+	path = CSharpHacker/vendor/oxyplot
+	url = https://github.com/oxyplot/oxyplot.git
+[submodule "CSharpHacker/vendor/Excel-IO"]
+	path = CSharpHacker/vendor/Excel-IO
+	url = https://github.com/OfficeDev/Excel-IO.git
