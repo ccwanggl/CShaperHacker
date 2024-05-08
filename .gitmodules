@@ -19,9 +19,6 @@
 [submodule "CSharpFramework/vendor/Live-Charts"]
 	path = CSharpFramework/vendor/Live-Charts
 	url = https://github.com/Live-Charts/Live-Charts.git
-[submodule "CSharpFramework/vendor/oxyplot"]
-	path = CSharpFramework/vendor/oxyplot
-	url = https://github.com/oxyplot/oxyplot.git
 [submodule "CSharpFramework/vendor/LiveCharts2"]
 	path = CSharpFramework/vendor/LiveCharts2
 	url = https://github.com/beto-rodriguez/LiveCharts2.git
