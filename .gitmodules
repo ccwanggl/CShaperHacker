@@ -37,3 +37,6 @@
 [submodule "CSharpFramework/vendor/wpfui"]
 	path = CSharpFramework/vendor/wpfui
 	url = https://github.com/lepoco/wpfui.git
+[submodule "CSharpFramework/vendor/FluentWPF"]
+	path = CSharpFramework/vendor/FluentWPF
+	url = https://github.com/sourcechord/FluentWPF.git
