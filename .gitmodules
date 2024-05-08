@@ -40,3 +40,6 @@
 [submodule "CSharpFramework/vendor/FluentWPF"]
 	path = CSharpFramework/vendor/FluentWPF
 	url = https://github.com/sourcechord/FluentWPF.git
+[submodule "CSharpFramework/vendor/adonis-ui"]
+	path = CSharpFramework/vendor/adonis-ui
+	url = https://github.com/benruehl/adonis-ui.git
