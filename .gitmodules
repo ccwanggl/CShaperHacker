@@ -4,9 +4,6 @@
 [submodule "vendor/Codist"]
 	path = vendor/Codist
 	url = https://github.com/ccwanggl/Codist.git
-[submodule "Github/SunnyUI"]
-	path = CSharpReposTest/vendor/SunnyUI
-	url = https://github.com/ccwanggl/SunnyUI.git
 [submodule "CSharpFramework/vendor/HanumanInstitute.MvvmDialogs"]
 	path = CSharpFramework/vendor/HanumanInstitute.MvvmDialogs
 	url = https://github.com/ccwanggl/HanumanInstitute.MvvmDialogs.git
