@@ -55,3 +55,12 @@
 [submodule "CSharpFramework/vendor/AduSkin"]
 	path = CSharpFramework/vendor/AduSkin
 	url = https://github.com/aduskin/AduSkin.git
+[submodule "CSharpFramework/vendor/log/NLog"]
+	path = CSharpFramework/vendor/log/NLog
+	url = https://github.com/NLog/NLog.git
+[submodule "CSharpFramework/vendor/log/serilog"]
+	path = CSharpFramework/vendor/log/serilog
+	url = https://github.com/serilog/serilog.git
+[submodule "CSharpFramework/vendor/log/logging-log4net"]
+	path = CSharpFramework/vendor/log/logging-log4net
+	url = https://github.com/apache/logging-log4net.git
