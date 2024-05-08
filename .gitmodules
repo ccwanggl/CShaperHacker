@@ -46,3 +46,6 @@
 [submodule "CSharpFramework/vendor/Layui-WPF"]
 	path = CSharpFramework/vendor/Layui-WPF
 	url = https://github.com/Layui-WPF-Team/Layui-WPF.git
+[submodule "CSharpFramework/vendor/MaterialDesignInXamlToolkit"]
+	path = CSharpFramework/vendor/MaterialDesignInXamlToolkit
+	url = https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit.git
