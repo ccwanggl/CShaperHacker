@@ -32,5 +32,3 @@ group ""
 group "CSharpFramework/WinForm"
 	include "src/WinForm/HelloWindowsForms/"
 group ""
-
-include "src/WPF/Soscsrpg"

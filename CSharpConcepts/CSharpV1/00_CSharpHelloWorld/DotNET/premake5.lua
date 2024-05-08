@@ -1,7 +1,7 @@
 project "DotNET"
 	kind "ConsoleApp"
 	language "C#"
-	dotnetframework "net8.0"
+	dotnetframework "net8.0-windows"
 	clr "NetCore"
 
 	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")

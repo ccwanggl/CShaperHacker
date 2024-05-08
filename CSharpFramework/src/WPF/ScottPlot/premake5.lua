@@ -10,7 +10,7 @@ project "ScottPlotTest"
 	
 	nuget 
 	{
-		"ScottPlot.WPF:4.1.66",
+		"ScottPlot.WPF:5.0.34",
 	}
 	files 
 	{
