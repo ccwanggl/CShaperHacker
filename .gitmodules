@@ -52,3 +52,6 @@
 [submodule "CSharpFramework/vendor/Panuon.WPF.UI"]
 	path = CSharpFramework/vendor/Panuon.WPF.UI
 	url = https://github.com/Panuon/Panuon.WPF.UI.git
+[submodule "CSharpFramework/vendor/AduSkin"]
+	path = CSharpFramework/vendor/AduSkin
+	url = https://github.com/aduskin/AduSkin.git
