@@ -1,6 +1,3 @@
-[submodule "Github/LibreHardwareMonitor"]
-	path = CSharpReposTest/vendor/LibreHardwareMonitor
-	url = https://github.com/ccwanggl/LibreHardwareMonitor.git
 [submodule "CSharpHacker/vendor/ScottPlot"]
 	path = CSharpHacker/vendor/ScottPlot
 	url = https://github.com/ccwanggl/ScottPlot.git
