@@ -49,3 +49,6 @@
 [submodule "CSharpFramework/vendor/MaterialDesignInXamlToolkit"]
 	path = CSharpFramework/vendor/MaterialDesignInXamlToolkit
 	url = https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit.git
+[submodule "CSharpFramework/vendor/Panuon.WPF.UI"]
+	path = CSharpFramework/vendor/Panuon.WPF.UI
+	url = https://github.com/Panuon/Panuon.WPF.UI.git
