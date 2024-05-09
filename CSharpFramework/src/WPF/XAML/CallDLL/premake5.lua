@@ -1,7 +1,8 @@
-project "CallDll"
+project "05_CallDll"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	namespace "CallDll"
 
 	targetdir ("../../../../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")

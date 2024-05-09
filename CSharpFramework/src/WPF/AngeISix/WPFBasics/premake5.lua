@@ -1,10 +1,11 @@
-project "WPFBasics"
+project "00_WPFBasics"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	namespace "WPFBasics"
 
-	targetdir ("../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	

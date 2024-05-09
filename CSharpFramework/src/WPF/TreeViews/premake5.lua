@@ -2,9 +2,10 @@ project "WPFTreeView"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	namespace "WPFTreeView"
 
-	targetdir ("../../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	

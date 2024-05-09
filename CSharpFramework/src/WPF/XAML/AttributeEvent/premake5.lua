@@ -1,4 +1,4 @@
-project "03_MarkupExtension"
+project "04_AttributeEvent"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"

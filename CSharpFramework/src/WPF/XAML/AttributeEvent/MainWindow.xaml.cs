@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CallDLL
+namespace AttributeEvent
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,9 +25,8 @@ namespace CallDLL
             InitializeComponent();
         }
 
-		private void SalaryCalculator_Loaded(object sender, RoutedEventArgs e)
+		private void btn_Click(object sender, RoutedEventArgs e)
 		{
-
         }
     }
 }

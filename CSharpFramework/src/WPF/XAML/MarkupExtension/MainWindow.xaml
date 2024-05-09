@@ -17,7 +17,7 @@
 
         <StackPanel Grid.Row="0" Background="LightSlateGray">
             <TextBox Margin="5" Text="{Binding ElementName=slider1, Path=Value, Mode=OneWay}" />
-            <Slider x:Name="slider1" Margin="5" />
+            <Slider x:Name="slider1" />
         </StackPanel>
 
         <StackPanel Grid.Row="1" Background="LightGray">
@@ -29,7 +29,7 @@
                         Path="Value" />
                 </TextBox.Text>
             </TextBox>
-            <Slider x:Name="slider2" Margin="5" />
+            <Slider x:Name="slider2" />
         </StackPanel>
     </Grid>
 </Window>

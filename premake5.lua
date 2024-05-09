@@ -23,4 +23,5 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 include "CSharpConcepts"
 include "CSharpFramework"
+include "CSharpReposTest"
 include "vendor"

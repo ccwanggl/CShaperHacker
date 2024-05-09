@@ -1,4 +1,4 @@
-project "03_MarkupExtension"
+project "02_TypeConvert"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
