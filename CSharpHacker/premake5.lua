@@ -1,0 +1,6 @@
+group "CSharpHacker"
+	group "CSharpHacker/PACS"
+		include "src/PACS/pacs.lua"
+		include "src/NMROS/nmros.lua"
+	group ""
+group ""
