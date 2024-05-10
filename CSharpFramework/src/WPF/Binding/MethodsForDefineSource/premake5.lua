@@ -1,8 +1,8 @@
-project "09_LayoutStackpanel"
+project "MethodsForDefineSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
-	namespace "LayoutStackpanel"
+	namespace "MethodsForDefineSource"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
@@ -28,7 +28,8 @@ project "09_LayoutStackpanel"
 		"System.Data.DataSetExtensions",
 		"System.Xaml",
 		"System.Xml",
-		"System.Xml.Linq"
+		"System.Xml.Linq",
+		"ControlLibrary"
 	}
 	
 	filter "configurations:Debug"

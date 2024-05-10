@@ -1,10 +1,11 @@
-project "LayoutWrapPanel"
+project "12_LayoutWrapPanel"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	namespace "LayoutWrapPanel"
 
-	targetdir ("../../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	

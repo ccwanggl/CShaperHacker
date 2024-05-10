@@ -1,10 +1,11 @@
-project "LayoutDockPanel"
+project "11_LayoutDockPanel"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	namespace "LayoutDockPanel"
 
-	targetdir ("../../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	
