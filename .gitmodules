@@ -64,3 +64,6 @@
 [submodule "CSharpFramework/vendor/log/logging-log4net"]
 	path = CSharpFramework/vendor/log/logging-log4net
 	url = https://github.com/apache/logging-log4net.git
+[submodule "CSharpFramework/vendor/WPF-Samples"]
+	path = CSharpFramework/vendor/WPF-Samples
+	url = https://github.com/microsoft/WPF-Samples.git
