@@ -10,14 +10,8 @@
     Height="450"
     x:ClassModifier="internal"
     mc:Ignorable="d">
-    <Window.Resources />
-
     <StackPanel>
-        <TextBox x:Name="tb1" Margin="5" />
-        <TextBox
-            x:Name="tb2"
-            Margin="5"
-            x:FieldModifier="public" />
+        <TextBox x:Name="tb" Margin="5" />
         <Button
             Margin="5"
             Click="Button_Click"

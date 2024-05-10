@@ -25,7 +25,7 @@
         <!--  ContentControl  -->
         <Grid Grid.Row="0" Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
+                <RowDefinition Height="4*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -37,7 +37,19 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Button Grid.Row="0" Content="Button" />
+            <Button
+                Grid.Row="0"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <StackPanel>
+                    <Image
+                        Width="64"
+                        Height="64"
+                        Source=".\Hipo.png" />
+                    <Label HorizontalAlignment="Center" Content="Settings" />
+                </StackPanel>
+            </Button>
             <ContentControl Grid.Row="1" Content="ContentControl" />
             <Label Grid.Row="2" Content="Label" />
             <RadioButton Grid.Row="3" Content="RadioButton" />

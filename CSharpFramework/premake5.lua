@@ -9,7 +9,6 @@ group ""
 
 group "CSharpFramework/WPF/XAML"
 	include "src/WPF/XAML/AttributeEvent"
-	include "src/WPF/XAML/ContentControl"
 	include "src/WPF/XAML/HelloXAML"
 	include "src/WPF/XAML/PropertyAssignment"
 	include "src/WPF/XAML/TypeConvert"
@@ -18,12 +17,19 @@ group "CSharpFramework/WPF/XAML"
 	include "src/WPF/XAML/ControlLibrary"
 	include "src/WPF/XAML/Xnamespace"
 	include "src/WPF/XAML/CallDll"
-	include "src/WPF/XAML/LayoutGrid"
-	include "src/WPF/XAML/LayoutStackpanel"
-	include "src/WPF/XAML/LayoutCanvas"
-	include "src/WPF/XAML/LayoutDockPanel"
-	include "src/WPF/XAML/LayoutWrapPanel"
-	include "src/WPF/XAML/LayoutContent"
+
+	group "CSharpFramework/WPF/XAML/Control"
+		-- layout control
+		include "src/WPF/XAML/LayoutGrid"
+		include "src/WPF/XAML/LayoutStackpanel"
+		include "src/WPF/XAML/LayoutCanvas"
+		include "src/WPF/XAML/LayoutDockPanel"
+		include "src/WPF/XAML/LayoutWrapPanel"
+		include "src/WPF/XAML/LayoutContent"
+
+		-- content control
+		include "src/WPF/XAML/ContentControl"
+	group ""
 group ""
 
 group "CSharpFramework/WPF/Binding"

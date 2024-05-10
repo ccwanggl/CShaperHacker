@@ -63,7 +63,7 @@
                 <Image
                     Width="23"
                     Height="23"
-                    Source="btn1.png" />
+                    Source=".\btn1.png" />
             </Button>
         </Grid>
         <StackPanel Grid.Row="1" Background="LightBlue">
