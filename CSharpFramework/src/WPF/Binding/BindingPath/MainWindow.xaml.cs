@@ -25,9 +25,11 @@ namespace BindingPath
         {
             InitializeComponent();
 
-			Binding binding = new Binding() { Path = new PropertyPath("Value"), Source = this.slider2 };
+			// NOTE: Bind Binding to the source property
+			Binding binding = new Binding() { Path = new PropertyPath("Value"), Source = this.slider2, Mode = BindingMode.TwoWay, UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged };
 			this.textBox2.SetBinding(TextBox.TextProperty, binding);
 
+			// NOTE: Use the Binding ctor
 			Binding binding2 = new Binding("Value") {Source = this.slider3 };
 			this.textBox3.SetBinding(TextBox.TextProperty, binding2);
 

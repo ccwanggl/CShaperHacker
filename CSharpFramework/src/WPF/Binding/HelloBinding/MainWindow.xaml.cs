@@ -26,13 +26,22 @@ namespace HelloBinding
         public MainWindow()
         {
             InitializeComponent();
+
+			// Create Data source
 			stu = new Student();
 
+			// Ready to bind
 			Binding binding = new Binding();
 			binding.Source = stu;
 			binding.Path = new PropertyPath("Name");
 
+			// Use binding to connect the source and the target
 			BindingOperations.SetBinding(this.textBoxName, TextBox.TextProperty, binding);
+
+			// NOTE
+			/*
+			this.textBoxName.SetBinding(TextBox.TextProperty, new Binding("Name") { Source = stu = new Student() });
+			*/
 
         }
 
