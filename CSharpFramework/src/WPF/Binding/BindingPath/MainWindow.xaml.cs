@@ -47,6 +47,7 @@ namespace BindingPath
 			this.textBox11.SetBinding(TextBox.TextProperty, new Binding("/Name") { Source = countryList });
 			this.textBox22.SetBinding(TextBox.TextProperty, new Binding("/ProvinceList/Name") { Source = countryList });
 			this.textBox33.SetBinding(TextBox.TextProperty, new Binding("/ProvinceList/CityList/Name") { Source = countryList });
+
         }
     }
 
