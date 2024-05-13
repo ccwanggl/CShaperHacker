@@ -26,12 +26,51 @@ namespace ADO.NETAsBindingSource
 			InitializeComponent();
 		}
 
-		private void Button_Click(object sender, RoutedEventArgs e)
+		private void Button_Click1(object sender, RoutedEventArgs e)
 		{
-			DataTable dt = this.Load();
+			DataTable dt = new DataTable ("myTable");
+			dt.Columns.Add ("Id",  typeof (int));	
+			dt.Columns.Add ("Name",  typeof (string));	
+			dt.Columns.Add ("Age",  typeof (int));
+			dt.Rows.Add(1, "Tim", 29);
+			dt.Rows.Add (6, "Tim", 29);
+			dt.Rows.Add (2, "Tom" ,28);
+			dt.Rows.Add (3, "Tony",27);
+			dt.Rows.Add (4, "Emily", 25);
 
 			this.listBoxStudents.DisplayMemberPath = "Name";
 			this.listBoxStudents.ItemsSource = dt.DefaultView;
+		}
+
+		private void Button_Click2(object sender, RoutedEventArgs e)
+		{
+			DataTable dt = new DataTable ("myTable");
+			dt.Columns.Add ("Id",  typeof (int));	
+			dt.Columns.Add ("Name",  typeof (string));	
+			dt.Columns.Add ("Age",  typeof (int));
+			dt.Rows.Add(1, "Tim", 29);
+			dt.Rows.Add (6, "Tim", 29);
+			dt.Rows.Add (2, "Tom" ,28);
+			dt.Rows.Add (3, "Tony",27);
+			dt.Rows.Add (4, "Emily", 25);
+
+			this.listViewStudents.ItemsSource = dt.DefaultView;
+		}
+
+		private void Button_Click3(object sender, RoutedEventArgs e)
+		{
+			DataTable dt = new DataTable ("myTable");
+			dt.Columns.Add ("Id",  typeof (int));	
+			dt.Columns.Add ("Name",  typeof (string));	
+			dt.Columns.Add ("Age",  typeof (int));
+			dt.Rows.Add(1, "Tim", 29);
+			dt.Rows.Add (6, "Tim", 29);
+			dt.Rows.Add (2, "Tom" ,28);
+			dt.Rows.Add (3, "Tony",27);
+			dt.Rows.Add (4, "Emily", 25);
+
+			this.listViewStudents2.DataContext = dt;
+			this.listViewStudents2.SetBinding(ListView.ItemsSourceProperty, new Binding());
 		}
     }
 

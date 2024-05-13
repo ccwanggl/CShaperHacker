@@ -24,5 +24,15 @@ namespace XMLAsSource
         {
             InitializeComponent();
         }
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			XmlDataProvider xdp = new XmlDataProvider();
+			xdp.Source = new Uri(@"RawData.xml");
+			xdp.XPath = @"/StudentList/Student";
+
+			this.listViewStudents.DataContext = xdp;
+			this.listViewStudents.SetBinding(ListView.ItemsSourceProperty, new Binding());
+        }
     }
 }

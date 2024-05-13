@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,5 +25,28 @@ namespace LINQAsSource
         {
             InitializeComponent();
         }
-    }
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			
+			List<Student> stuList = new List<Student>()
+			{
+				new Student(){Id=0, Name = "Tim", Age=29},
+				new Student(){Id=1, Name = "Tom", Age=28},
+				new Student(){Id=2, Name = "Kyle", Age=27},
+				new Student(){Id=3, Name = "Tony", Age=26},
+				new Student(){Id=4, Name = "Vina", Age=25},
+				new Student(){Id=5, Name = "Mike", Age=24},
+			};
+
+			listViewStudents.ItemsSource = from stu in stuList where stu.Name.StartsWith("T") select stu;
+		}
+	}
+
+	public class Student
+	{
+		public int Id { get; set; }
+		public string Name { get; set; }
+		public int Age { get; set; }
+	}
 }
