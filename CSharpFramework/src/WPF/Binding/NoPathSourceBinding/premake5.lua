@@ -1,8 +1,8 @@
-project "NoPathSourceBinding"
+project "NoPathSourceBindingDatacontext"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
-	namespace "NoPathSourceBinding"
+	namespace "NoPathSourceBindingDatacontext"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")

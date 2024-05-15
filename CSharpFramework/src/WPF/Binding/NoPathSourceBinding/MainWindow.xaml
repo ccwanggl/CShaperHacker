@@ -10,18 +10,21 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <StackPanel>
-        <StackPanel.DataContext>
-            <sys:String>
-                Hello DataContext!
-            </sys:String>
-        </StackPanel.DataContext>
-        <Grid>
-            <StackPanel>
-                <TextBlock Margin="5" Text="{Binding}" />
-                <TextBlock Margin="5" Text="{Binding}" />
-                <TextBlock Margin="5" Text="{Binding}" />
-            </StackPanel>
-        </Grid>
-    </StackPanel>
+    <Grid>    
+        <StackPanel>
+            <StackPanel.DataContext>
+                <sys:String>
+                    Hello DataContext!
+                </sys:String>
+            </StackPanel.DataContext>
+            <Grid>
+                <StackPanel>
+                    <TextBlock Margin="5" Text="{Binding}" />
+                    <TextBlock Margin="5" Text="{Binding}" />
+                    <TextBlock Margin="5" Text="{Binding}" />
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+
 </Window>

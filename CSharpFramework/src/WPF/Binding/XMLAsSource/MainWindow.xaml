@@ -9,24 +9,51 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <StackPanel>
-        <ListView
-            x:Name="listViewStudents"
-            Height="130"
-            Margin="5">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn
-                        Width="80"
-                        DisplayMemberBinding="{Binding XPath=@Id}"
-                        Header="Id" />
-                    <GridViewColumn
-                        Width="120"
-                        DisplayMemberBinding="{Binding XPath=Name}"
-                        Header="Name" />
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Button Click="Button_Click" Content="Load" />
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <ListView
+                x:Name="listViewStudents1"
+                Height="130"
+                Margin="5">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn
+                            Width="80"
+                            DisplayMemberBinding="{Binding XPath=@Id}"
+                            Header="Id" />
+                        <GridViewColumn
+                            Width="120"
+                            DisplayMemberBinding="{Binding XPath=Name}"
+                            Header="Name" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Click="Button_Click1" Content="Load" />
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <ListView
+                x:Name="listViewStudents2"
+                Height="130"
+                Margin="5">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn
+                            Width="80"
+                            DisplayMemberBinding="{Binding XPath=@Id}"
+                            Header="Id" />
+                        <GridViewColumn
+                            Width="120"
+                            DisplayMemberBinding="{Binding XPath=Name}"
+                            Header="Name" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Click="Button_Click2" Content="Load" />
+        </StackPanel>
+    </Grid>
 </Window>
