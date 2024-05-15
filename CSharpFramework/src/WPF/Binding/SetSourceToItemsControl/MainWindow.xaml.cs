@@ -35,11 +35,17 @@ namespace SetSourceToItemsControl
 				new Student(){Id=5, Name = "Mike", Age=24},
 			};
 
-			this.listBoxStudents.ItemsSource = stuList;
+			this.listBoxStudents1.ItemsSource = stuList;
+			this.listBoxStudents1.DisplayMemberPath = "Name";
+
+			Binding binding1 = new Binding("SelectedItem.Id") { Source = this.listBoxStudents1 };
+			this.textBoxId1.SetBinding(TextBox.TextProperty, binding1);
+
+			this.listBoxStudents2.ItemsSource = stuList;
 	//		this.listBoxStudents.DisplayMemberPath = "Name";
 
-			Binding binding = new Binding("SelectedItem.Id") { Source = this.listBoxStudents };
-			this.textBoxId.SetBinding(TextBox.TextProperty, binding);
+			Binding binding2 = new Binding("SelectedItem.Id") { Source = this.listBoxStudents2 };
+			this.textBoxId2.SetBinding(TextBox.TextProperty, binding2);
         }
     }
 

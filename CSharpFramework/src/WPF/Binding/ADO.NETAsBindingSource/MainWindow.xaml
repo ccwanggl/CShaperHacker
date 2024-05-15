@@ -5,19 +5,84 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:ADO.NETAsBindingSource"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="MainWindow"
+    Title="DataTable Source"
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <StackPanel Background="LightBlue">
-        <ListBox
-            x:Name="listBoxStudents"
-            Height="130"
-            Margin="5" />
-        <Button
-            Height="25"
-            Margin="5,0"
-            Click="Button_Click"
-            Content="Load" />
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="LightBlue">
+            <ListBox
+                x:Name="listBoxStudents"
+                Height="80"
+                Margin="5" />
+            <Button
+                Height="25"
+                Margin="5,0"
+                Click="Button_Click1"
+                Content="Load" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Background="LightBlue">
+            <ListView
+                x:Name="listViewStudents"
+                Height="80"
+                Margin="5">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn
+                            Width="60"
+                            DisplayMemberBinding="{Binding Id}"
+                            Header="Id" />
+                        <GridViewColumn
+                            Width="60"
+                            DisplayMemberBinding="{Binding Name}"
+                            Header="Name" />
+                        <GridViewColumn
+                            Width="60"
+                            DisplayMemberBinding="{Binding Age}"
+                            Header="Age" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <Button
+                Height="25"
+                Margin="5,0"
+                Click="Button_Click2"
+                Content="Load" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Background="LightBlue">
+            <ListView
+                x:Name="listViewStudents2"
+                Height="80"
+                Margin="5">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn
+                            Width="60"
+                            DisplayMemberBinding="{Binding Id}"
+                            Header="Id" />
+                        <GridViewColumn
+                            Width="60"
+                            DisplayMemberBinding="{Binding Name}"
+                            Header="Name" />
+                        <GridViewColumn
+                            Width="60"
+                            DisplayMemberBinding="{Binding Age}"
+                            Header="Age" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <Button
+                Height="25"
+                Margin="5,0"
+                Click="Button_Click3"
+                Content="Load" />
+        </StackPanel>
+    </Grid>
 </Window>
