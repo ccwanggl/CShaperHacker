@@ -36,6 +36,10 @@ namespace HelloBinding
 			binding.Path = new PropertyPath("Name");
 
 			// Use binding to connect the source and the target
+			// NOTE: 
+			// arg1: target
+			// arg2: target property that recive data
+			// arg3: Binding instance
 			BindingOperations.SetBinding(this.textBoxName, TextBox.TextProperty, binding);
 
 			// NOTE
@@ -47,6 +51,7 @@ namespace HelloBinding
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
+			// 属性值的变化源
 			stu.Name += "Name";
 		}
 	}
@@ -62,6 +67,7 @@ namespace HelloBinding
 			set { 
 				name = value; 
 
+				// 属性值变化触发的事件
 				if(this.PropertyChanged != null)
 				{
 					this.PropertyChanged.Invoke(this, new PropertyChangedEventArgs("Name"));

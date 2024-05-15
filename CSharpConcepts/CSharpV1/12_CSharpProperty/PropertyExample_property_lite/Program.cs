@@ -1,4 +1,6 @@
-﻿namespace PropertyExample_property_lite
+﻿using System;
+
+namespace PropertyExample_property_lite
 {
     internal class Program
     {
@@ -12,8 +14,7 @@
             }
             catch (Exception ex)
             {
-
-                throw;
+                throw new OverflowException("Age overflow");
             }
         }
     }
@@ -21,6 +22,14 @@
     class Student
     {
         private int age;
-        public int Age { get => age; set => age = value; }
+        public int Age 
+		{ 
+			get => age;
+			set
+			{
+				if(value >0 && value <= 100) 
+					age = value;
+			} 
+		}
     }
 }

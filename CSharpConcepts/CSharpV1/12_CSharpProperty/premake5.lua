@@ -1,3 +1,8 @@
 group "CSharpConcepts/CSharpV1/12_CSharpProperty"
 	include "PropertySamples"
+	include "AdvancedExample_Type_interface"
+	include "PropertyExample_pro_full"
+	include "PropertyExample_property_lite"
+	include "PropertyExample_readonly_property"
+	include "PropertyExample_readonly_property_2"
 group ""

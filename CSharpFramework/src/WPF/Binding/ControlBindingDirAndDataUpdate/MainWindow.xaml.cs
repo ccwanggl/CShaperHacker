@@ -23,6 +23,18 @@ namespace ControlBindingDirAndDataUpdate
         public MainWindow()
         {
             InitializeComponent();
+
+
+			Binding binding = new Binding();
+			binding.Source = slider2; 
+			binding.Path = new PropertyPath("Value");
+
+			binding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
+			binding.Mode = BindingMode.TwoWay;
+
+			//BindingOperations.SetBinding(this.textBox2, TextBox.TextProperty, binding);
+			textBox2.SetBinding(TextBox.TextProperty, binding);
+
         }
     }
 }

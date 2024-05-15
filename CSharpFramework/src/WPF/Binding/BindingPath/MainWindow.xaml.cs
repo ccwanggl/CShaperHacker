@@ -26,12 +26,23 @@ namespace BindingPath
             InitializeComponent();
 
 			// NOTE: Bind Binding to the source property
-			Binding binding = new Binding() { Path = new PropertyPath("Value"), Source = this.slider2, Mode = BindingMode.TwoWay, UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged };
+			Binding binding = new Binding();
+			binding.Path = new PropertyPath("Value"); 
+			binding.Source = this.slider2;
+			binding.Mode = BindingMode.TwoWay;
+			binding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
+
 			this.textBox2.SetBinding(TextBox.TextProperty, binding);
 
 			// NOTE: Use the Binding ctor
 			Binding binding2 = new Binding("Value") {Source = this.slider3 };
 			this.textBox3.SetBinding(TextBox.TextProperty, binding2);
+
+
+			List<string> stringList = new List<string>() { "Tim", "Tom", "Blog" };
+			textBox111.SetBinding(TextBox.TextProperty, new Binding("/") { Source = stringList });
+			textBox222.SetBinding(TextBox.TextProperty, new Binding("/Length") { Source = stringList, Mode = BindingMode.OneWay});
+			textBox333.SetBinding(TextBox.TextProperty, new Binding("/[2]") { Source = stringList, Mode = BindingMode.OneWay});
 
 
 			City city = new City();

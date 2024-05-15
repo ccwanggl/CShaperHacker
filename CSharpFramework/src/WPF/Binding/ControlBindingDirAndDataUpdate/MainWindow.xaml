@@ -9,18 +9,38 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <StackPanel>
-        <!--  Binding 扩展语法  -->
-        <!--  set slider value property as the binding path  -->
-        <TextBox
-            x:Name="textBox1"
-            Margin="5"
-            BorderBrush="Black"
-            Text="{Binding Path=Value, Mode=Default, UpdateSourceTrigger=PropertyChanged, ElementName=slider1}" />
-        <Slider
-            x:Name="slider1"
-            Margin="5"
-            Maximum="100"
-            Minimum="0" />
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <!--  Binding 扩展语法  -->
+            <!--  set slider value property as the binding path  -->
+            <TextBox
+                x:Name="textBox1"
+                Margin="5"
+                BorderBrush="Black"
+                Text="{Binding Path=Value, Mode=Default, UpdateSourceTrigger=PropertyChanged, ElementName=slider1}" />
+            <Slider
+                x:Name="slider1"
+                Margin="5"
+                Maximum="100"
+                Minimum="0" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <!--  Binding 扩展语法  -->
+            <!--  set slider value property as the binding path  -->
+            <TextBox
+                x:Name="textBox2"
+                Margin="5"
+                BorderBrush="Black" />
+            <Slider
+                x:Name="slider2"
+                Margin="5"
+                Maximum="100"
+                Minimum="0" />
+        </StackPanel>
+    </Grid>
 </Window>

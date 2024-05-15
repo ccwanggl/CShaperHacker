@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NoPathBinding
+namespace BindingSource
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,9 +23,6 @@ namespace NoPathBinding
         public MainWindow()
         {
             InitializeComponent();
-
-			string str = "this is a string";
-			textBlock4.SetBinding(TextBlock.TextProperty, new Binding(".") { Source = str});
         }
     }
 }
