@@ -4,8 +4,8 @@ project "MethodsForDefineSource"
 	dotnetframework "4.8"
 	namespace "MethodsForDefineSource"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	

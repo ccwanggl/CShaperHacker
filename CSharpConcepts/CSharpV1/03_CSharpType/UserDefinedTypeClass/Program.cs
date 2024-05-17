@@ -3,8 +3,34 @@ namespace UserDefinedTypeClass
 {
     internal class Student
     {
-        public string Name { get; }
-        public uint Age { get; }
+
+		// NOTE: 字段
+		private string name;
+		private uint age;
+		
+		// NOTE: 属性
+        public string Name 
+		{ 
+			get 
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+			}
+			
+		}
+        public uint Age 
+		{ 
+			get{
+				return age;
+			}
+			set
+			{
+				age = value;
+			}
+		}
 
         public Student(string name, uint age)
        {

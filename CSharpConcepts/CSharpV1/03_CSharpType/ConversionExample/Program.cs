@@ -1,5 +1,31 @@
-﻿namespace ConversionExample
+﻿using System;
+
+namespace ConversionExample
 {
+    internal class Animal
+    {
+        public void Eat()
+        {
+            Console.WriteLine("Eating...");
+        }
+    }
+
+    internal class Human:Animal
+    {
+        public void Think()
+        {
+            Console.WriteLine("Who I am?");
+        }
+    }
+
+    internal class Teacher:Human
+    {
+        public void Teach()
+        {
+            Console.WriteLine("I am teaching programming.");
+        }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -16,27 +42,4 @@
         }
     }
 
-    class Animal
-    {
-        public void Eat()
-        {
-            Console.WriteLine("Eating...");
-        }
-    }
-
-    class Human:Animal
-    {
-        public void Think()
-        {
-            Console.WriteLine("Who I am?");
-        }
-    }
-
-    class Teacher:Human
-    {
-        public void Teach()
-        {
-            Console.WriteLine("I am teaching programming.");
-        }
-    }
 }

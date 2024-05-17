@@ -4,8 +4,8 @@ project "ControlAsBindingSrc"
 	dotnetframework "4.8"
 	namespace "ControlAsBindingSrc"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	

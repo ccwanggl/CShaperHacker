@@ -4,8 +4,8 @@ project "XMLAsSource"
 	dotnetframework "4.8"
 	namespace "XMLAsSource"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	

@@ -9,6 +9,15 @@ namespace TypeSample
         // NOTE: 反射时应用
         private static void Main()
         {
+			// NOTE: value type
+				// NOTE: predefined type
+
+				// NOTE: userdefined type
+				// ITEM:
+			// NOTE: ref type
+				// NOTE: predefined type
+				// NOTE: userdefined type
+
             Type myType = typeof(Form);
 
             PropertyInfo[] pInfo = myType.GetProperties();

@@ -4,13 +4,16 @@ namespace UserDefinedTypeStruct
 {
     internal struct Student
     {
-        public int ID;
-        public string Name;
+        private int id;
+        private string name;
+
+        public int ID {  get { return id; } }
+		public string Name { get { return name; } }
 
         public Student(int id, string name)
         {
-            ID = id;
-            Name = name;
+            this.id = id;
+            this.name = name;
         }
     }
     

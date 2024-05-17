@@ -4,8 +4,8 @@ project "NoPathSourceBindingDatacontext"
 	dotnetframework "4.8"
 	namespace "NoPathSourceBindingDatacontext"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	
