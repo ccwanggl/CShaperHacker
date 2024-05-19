@@ -17,7 +17,8 @@ project "PACS"
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**.cs",
+		"component/**.png",
 	}
 
 	links
