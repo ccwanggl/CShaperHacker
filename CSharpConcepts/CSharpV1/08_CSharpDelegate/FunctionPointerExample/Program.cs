@@ -1,4 +1,6 @@
-﻿namespace FunctionPointerExample
+﻿using System;
+
+namespace FunctionPointerExample
 {
     internal class Program
     {
@@ -12,7 +14,7 @@
             action();
 
             var funcAdd = new Func<int, int, int>(calculator.Add);
-            Func<int, int, int> funcSub = new(calculator.Sub);
+			Func<int, int, int> funcSub = new(calculator.Sub);
             Console.WriteLine("{0}", funcAdd(1, 2));
             Console.WriteLine("{0}", funcAdd.Invoke(1, 2));
 
