@@ -1,4 +1,7 @@
-﻿namespace EventExample_Custom_Lite
+﻿using System;
+using System.Threading;
+
+namespace EventExample_Custom_Lite
 {
     internal class Program
     {
@@ -28,14 +31,19 @@
     //note(guoliang): Event owner
     public class Customer
     {
-        //note(guoliang): field-like
+        //note(guoliang): 事件声明 
+		/// <summary>
+		/// 1. "event" key word
+		/// 2. delegate type
+		/// 3. event name
+		/// </summary>
         public event OrderEventHandler Order;
 
         public double Bill { get; set; }
 
         public void PayTheBill()
         {
-            Console.WriteLine("I will pay ${0}.", this.Bill);
+            Console.WriteLine("Customer: I will pay ${0}.", this.Bill);
         }
 
         public void WalkIn()
@@ -82,7 +90,7 @@
         //note(guoliang): event deal function
         public void Action(Customer customer, OrderEventArgs s)
         {
-            Console.WriteLine("I will serve you the dish - {0}.", s.DishName);
+            Console.WriteLine("Waiter: I will serve you the dish - {0}.", s.DishName);
             double price = 10;
             switch (s.Size)
             {

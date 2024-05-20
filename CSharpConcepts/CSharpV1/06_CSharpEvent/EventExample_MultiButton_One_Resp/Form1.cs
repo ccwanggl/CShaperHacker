@@ -39,5 +39,5 @@ namespace EventExample_MultiButton_One_Resp
             if (sender == this.button4)
                 this.textBox1.Text = "EventHandler delegate";
         }
-    }
+	}
 }

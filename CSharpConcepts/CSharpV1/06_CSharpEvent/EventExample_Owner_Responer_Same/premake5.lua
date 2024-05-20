@@ -15,6 +15,7 @@ project "EventExample_Owner_Responer_Same"
 	links
 	{
 		"System",
+		"System.Windows.Forms",
 	}
 
 	filter "configurations:Debug"
