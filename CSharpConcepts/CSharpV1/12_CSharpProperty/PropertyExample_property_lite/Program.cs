@@ -21,8 +21,8 @@ namespace PropertyExample_property_lite
 
     class Student
     {
-        private int age;
-        public int Age 
+        private int age;		// NOTE: Camel   eg: firstField 
+        public int Age         // NOTE: Pascal  eg: FirstField
 		{ 
 			get => age;
 			set

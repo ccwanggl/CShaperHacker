@@ -9,12 +9,12 @@ namespace OverrideMethod
     class MyBaseClass
     {
         private int _myInt = 5;
-        virtual public int MyProperty
+        public int MyProperty
         {
             get { return _myInt; }
         }
 
-        public virtual void Print()
+        public void Print()
         {
             Console.WriteLine("This is the base class");
         }
@@ -22,14 +22,13 @@ namespace OverrideMethod
 
     class MyDerivedClass : MyBaseClass
     {
-        public int var1;
         private int _myInt = 20;
-        public override int MyProperty 
+        new public int MyProperty 
         {
             get { return _myInt; }
         }
 
-        override public void Print()
+        new public void Print()
         { 
             Console.WriteLine("This is the derived class.");
         }
@@ -39,7 +38,7 @@ namespace OverrideMethod
         static void Main(string[] args)
         {
             MyDerivedClass derivedClass = new MyDerivedClass();
-            MyBaseClass mybc =(MyBaseClass)derivedClass;
+            MyBaseClass mybc = (MyBaseClass)derivedClass;
 
             derivedClass.Print();
             mybc.Print();

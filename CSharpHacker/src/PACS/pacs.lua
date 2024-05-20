@@ -35,6 +35,9 @@ project "PACS"
 		"System.Xml",
 		"System.Xml.Linq"
 	}
+
+	filter "files:component/**.png"
+		buildaction "Resource"
 	
 	filter "configurations:Debug"
 		optimize "Off"

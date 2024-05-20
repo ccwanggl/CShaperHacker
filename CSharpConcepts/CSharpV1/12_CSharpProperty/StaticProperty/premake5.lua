@@ -1,4 +1,4 @@
-project "PropertyExample_property_lite"
+project "StaticProperty"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
@@ -15,11 +15,6 @@ project "PropertyExample_property_lite"
 	links
 	{
 		"System",
-	}
-
-	nuget
-	{
-		"EntityFramework:6.4.4"
 	}
 
 	filter "configurations:Debug"

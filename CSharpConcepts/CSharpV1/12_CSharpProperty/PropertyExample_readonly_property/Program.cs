@@ -1,4 +1,6 @@
-﻿namespace PropertyExample_readonly_property
+﻿using System;
+
+namespace PropertyExample_readonly_property
 {
     internal class Program
     {

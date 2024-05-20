@@ -1,4 +1,4 @@
-project "OverrideMethod"
+project "MaskInClass"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"

@@ -28,6 +28,7 @@ namespace OverrideInClass
             Console.WriteLine("Rase car is running");
         }
     }
+
     internal class Program
     {
         private static void Main()
@@ -43,7 +44,7 @@ namespace OverrideInClass
 
             RaseCar v = new RaseCar();
             v.Run();
-            Vehicle vehicle = (Vehicle)v;
+            Vehicle vehicle = v;
             vehicle.Run();
         }
     }

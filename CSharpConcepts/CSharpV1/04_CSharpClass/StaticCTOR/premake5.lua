@@ -1,8 +1,9 @@
-project "PropertyExample_property_lite"
+project "StaticCTOR"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
 	csversion "7.0"
+	clr "unsafe"
 
 	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
@@ -15,11 +16,7 @@ project "PropertyExample_property_lite"
 	links
 	{
 		"System",
-	}
-
-	nuget
-	{
-		"EntityFramework:6.4.4"
+		"Microsoft.CSharp",
 	}
 
 	filter "configurations:Debug"

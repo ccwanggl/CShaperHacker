@@ -1,5 +1,6 @@
 group "CSharpConcepts/CSharpV1/08_CSharpDelegate"
 	include "DelegateExample"
+	include "CombiningDelegate"
 	include "DelegateExample_callback"
 	include "DelegateExample_interface"
 	include "DelegateExample_Pattern"

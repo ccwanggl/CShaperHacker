@@ -1,4 +1,6 @@
-﻿namespace PropertyExample_readonly_property_2
+﻿using System;
+
+namespace PropertyExample_readonly_property_2
 {
     internal class Program
     {
@@ -11,7 +13,13 @@
     }
 
 
-    //note(guoliang): If use set not often
+    //note (guoliang): If use set not often
+	//? Question
+	//# Notice
+	//!? Exclaimation
+	//x Removed
+	//todo this does not need work
+
     class Student
     {
         private int age;

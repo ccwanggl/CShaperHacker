@@ -18,7 +18,6 @@ namespace AbstractMember
             Console.WriteLine("Stopped");
         }
 
-
         // NOTE: (guoliang) Some function in base class will ever be called
         public abstract void Run();
     }

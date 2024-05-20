@@ -1,4 +1,4 @@
-project "CtorExec"
+project "CTOR"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"
@@ -8,7 +8,7 @@ project "CtorExec"
 	targetdir (finaldir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (finaldir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files 
+	files
 	{
 		"**.cs",
 	}

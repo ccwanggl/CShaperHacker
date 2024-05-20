@@ -28,7 +28,7 @@ namespace BaseClassRef
         static void Main(string[] args)
         {
             MyDerivedClass derivedClass = new MyDerivedClass();
-            MyBaseClass mybc = (MyBaseClass)derivedClass;
+            MyBaseClass mybc = derivedClass;
 
             derivedClass.Print();
             mybc.Print();
