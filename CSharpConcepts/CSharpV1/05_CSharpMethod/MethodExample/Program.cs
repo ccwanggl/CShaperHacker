@@ -4,12 +4,12 @@
 
 namespace MethodExample
 {
-    internal class Program
-    {
-        private static void Main()
-        {
-            Console.WriteLine(Math.Sin(Math.PI));
-            Console.WriteLine(Math.Sqrt(4)); 
-        }
-    }
+	internal class Program
+	{
+		private static void Main()
+		{
+			Console.WriteLine(Math.Sin(Math.PI));
+			Console.WriteLine(Math.Sqrt(4));
+		}
+	}
 }
