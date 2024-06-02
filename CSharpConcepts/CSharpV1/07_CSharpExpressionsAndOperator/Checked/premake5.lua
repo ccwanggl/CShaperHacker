@@ -15,7 +15,6 @@ project "Checked"
 	links
 	{
 		"System",
-		"System.Collections.Generic"
 	}
 
 	filter "configurations:Debug"

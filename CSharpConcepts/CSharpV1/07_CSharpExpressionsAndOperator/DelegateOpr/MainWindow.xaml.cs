@@ -31,6 +31,11 @@ namespace HelloWPF
             {
                 this.textBox2.Text = "Hello, lambda";
             };
+
+            this.button3.Click += (ender, e) =>
+            {
+                this.textBox3.Text = "Hello, lambda 2";
+            };
         }
     }
 }

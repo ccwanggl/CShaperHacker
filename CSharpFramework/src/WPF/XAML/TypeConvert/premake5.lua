@@ -3,10 +3,12 @@ project "02_TypeConvert"
 	language "C#"
 	dotnetframework "4.8"
 
+
 	targetdir ("../../../../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
+	namespace "TypeConvert"
 	
 	files 
 	{

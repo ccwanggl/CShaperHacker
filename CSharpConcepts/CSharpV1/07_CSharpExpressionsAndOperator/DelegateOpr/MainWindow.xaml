@@ -20,5 +20,10 @@
             x:Name="button2"
             Margin="5"
             Content="Click Me" />
+        <TextBox x:Name="textBox3" Margin="5" />
+        <Button
+            x:Name="button3"
+            Margin="5"
+            Content="Click Me" />
     </StackPanel>
 </Window>
