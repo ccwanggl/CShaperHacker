@@ -7,6 +7,7 @@ project "03_MarkupExtension"
 	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
+	namespace "MarkupExtension"
 	
 	files 
 	{

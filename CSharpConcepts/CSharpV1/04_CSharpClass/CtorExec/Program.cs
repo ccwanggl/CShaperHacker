@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace CtorExec
 {
-    class Program
+	internal static class Program
     {
-        static void Main(string[] args)
+	    private static void Main(string[] args)
         {
             MyClass myc = new MyClass(10);
         }
     }
 
-    class MyClass
+	internal class MyClass
     {
         private readonly int firstVar;
         private readonly double secondVar;
@@ -43,11 +43,11 @@ namespace CtorExec
         }
     }
 
-    class MyDerivedClass : MyClass
+	internal class MyDerivedClass : MyClass
     {
-        public int test;
+	    private int _test = 10;
         //! use base keyword to specify the base construct function
-        MyDerivedClass() : base(12)
+        private MyDerivedClass() : base(12)
         {
         }
     }

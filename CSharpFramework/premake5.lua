@@ -1,9 +1,9 @@
 group "CSharpFramework/WPF"
 	include "src/WPF/HelloWPF"
-	include "src/WPF/TreeViews"
 
 	group "CSharpFramework/WPF/AngeISix"
 		include "src/WPF/AngeISix/WPFBasics"
+		include "src/WPF/AngeISix/TreeViews"
 	group ""
 group ""
 

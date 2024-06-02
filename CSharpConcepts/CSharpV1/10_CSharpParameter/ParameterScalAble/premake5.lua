@@ -1,4 +1,4 @@
-project "ParameterScalAble"
+project "ParameterExtension"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"

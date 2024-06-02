@@ -1,4 +1,4 @@
-project "FunctionPointer"
+project "StandardDelegate"
 	kind "ConsoleApp"
 	language "C#"
 	dotnetframework "4.8"

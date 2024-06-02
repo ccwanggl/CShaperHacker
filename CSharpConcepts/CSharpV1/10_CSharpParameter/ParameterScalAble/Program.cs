@@ -13,7 +13,8 @@ namespace ParameterScalAble
         }
     }
 
-    // NOTE:  must public and static static class and static method, please notice the first param
+    // NOTE:  must public and static class and static method, please notice the first param
+	// note: 方法必须是公有，静态的 "public static"
     internal static class DoubleExtension
     {
         public static double Round(this double input, int digits)

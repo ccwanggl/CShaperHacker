@@ -7,6 +7,7 @@ project "01_PropertyAssignment"
 	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
+  namespace "PropertyAssignment"
 	
 	files 
 	{

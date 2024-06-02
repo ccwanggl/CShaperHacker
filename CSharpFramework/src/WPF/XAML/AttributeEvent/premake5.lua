@@ -7,6 +7,7 @@ project "04_AttributeEvent"
 	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
+	namespace "AttributeEvent"
 	
 	files 
 	{

@@ -17,6 +17,7 @@ namespace Indexer
 
     internal class Student
     {
+		// NOTE: 索引器一般用于集合类型中
         private Dictionary<string, int> _scoreDictionary = new Dictionary<string, int>();
 
         public int? this[string subject] {

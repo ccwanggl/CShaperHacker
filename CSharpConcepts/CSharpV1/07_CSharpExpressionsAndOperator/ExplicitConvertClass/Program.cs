@@ -7,6 +7,7 @@ namespace ExplicitConvertClass
         public int Age;
         public double Mass;
 
+		// NOTE： 类似目标类型的构造函数
         public static explicit operator Monkey(Stone stone)
         {
             Monkey monkey = new Monkey();

@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace PropertySamples
 {
-	internal class Program
-	{
-		static void Main(string[] args)
-		{
-			AdventureWorks2022Entites proxy = new AdventureWorks2022Entities();
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            AdventureWorks2022Entites proxy = new AdventureWorks2022Entities();
 
 			foreach (Product p in proxy.Product)
 			{
@@ -22,7 +22,7 @@ namespace PropertySamples
 			Console.WriteLine("==========================");
 			Console.WriteLine(proxy.Product.Count());
 
-		}
-	}
+        }
+    }
 
 }

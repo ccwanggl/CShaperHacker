@@ -15,7 +15,6 @@ project "IsOperator"
 	links
 	{
 		"System",
-		"System.Collections.Generic"
 	}
 
 	filter "configurations:Debug"

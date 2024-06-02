@@ -3,6 +3,7 @@ project "HelloWPF"
 	language "C#"
 	dotnetframework "4.8"
 
+
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 

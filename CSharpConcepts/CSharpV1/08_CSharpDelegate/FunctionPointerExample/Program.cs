@@ -9,10 +9,12 @@ namespace FunctionPointerExample
             Calculator calculator = new Calculator();
             calculator.Report();
 
+			// NOTE: 1
             Action action = new(calculator.Report);
             action.Invoke();
             action();
 
+			// NOTE: 2
             var funcAdd = new Func<int, int, int>(calculator.Add);
 			Func<int, int, int> funcSub = new(calculator.Sub);
             Console.WriteLine("{0}", funcAdd(1, 2));

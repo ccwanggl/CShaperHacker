@@ -9,10 +9,9 @@ namespace ParameterPassWithRef
             Student outterStu = new Student() { Name = "Tim" };
 
             Console.WriteLine("HashCode={0}, Name={1}", outterStu.GetHashCode(), outterStu.Name);
-
             Console.WriteLine("--------------------------");
-
             WantSideEffect(ref outterStu);
+            Console.WriteLine("--------------------------");
             Console.WriteLine("HashCode={0}, Name={1}", outterStu.GetHashCode(), outterStu.Name);
         }
 
