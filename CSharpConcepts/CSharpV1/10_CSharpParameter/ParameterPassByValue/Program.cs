@@ -13,11 +13,11 @@ namespace ParameterPassByValue
             Console.WriteLine("HashCode={0},{1}",stu.GetHashCode(), stu.Name);
         }
 
-        // NOTE: ref type pass by ref
+        // NOTE: ref type pass by value
         private static void SomeMethod(Student stu)
         {
             // NOTE: Create object and call the type ctor
-            stu = new Student() { Name = "Tim" };
+            stu = new Student() { Name = "Tom" };
             Console.WriteLine("HashCode={0},{1}",stu.GetHashCode(), stu.Name); 
         }
     }

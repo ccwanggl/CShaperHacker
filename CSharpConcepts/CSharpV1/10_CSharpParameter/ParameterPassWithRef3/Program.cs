@@ -7,6 +7,7 @@ namespace ParameterPassWithRef3
         private static void Main()
         {
             var y = 1;
+            Console.WriteLine(y); 
             WantSideEffect(ref y);
             Console.WriteLine(y); 
         }
