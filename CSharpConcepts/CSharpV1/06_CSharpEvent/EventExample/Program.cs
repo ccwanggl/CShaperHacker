@@ -3,6 +3,8 @@ using System.Timers;
 
 namespace EventExample
 {
+	//+ 事件是对象或类的成员（使对象或类具有**通知能力**）
+
     internal class Program
     {
         static void Main(string[] args)

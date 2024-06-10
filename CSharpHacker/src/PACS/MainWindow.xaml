@@ -10,129 +10,129 @@
     Height="450"
     WindowStyle="None"
     mc:Ignorable="d">
-    <Window.Resources>
-        <BitmapImage x:Key="Rotate" UriSource="component/Resources/旋转.png" />
-        <BitmapImage x:Key="VFlip" UriSource="component/Resources/垂直翻转.png" />
-        <BitmapImage x:Key="HFlip" UriSource="component/Resources/水平翻转.png" />
-        <BitmapImage x:Key="FRotate" UriSource="component/Resources/自由旋转.png" />
-        <BitmapImage x:Key="LRotate90" UriSource="component/Resources/左旋转90.png" />
-        <BitmapImage x:Key="RRotate90" UriSource="component/Resources/右旋转90.png" />
-        <BitmapImage x:Key="ReturnTo0" UriSource="component/Resources/角度归零.png" />
-    </Window.Resources>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height=".05*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+	<Window.Resources>
+		<BitmapImage x:Key="Rotate" UriSource="component/Resources/旋转.png" />
+		<BitmapImage x:Key="VFlip" UriSource="component/Resources/垂直翻转.png" />
+		<BitmapImage x:Key="HFlip" UriSource="component/Resources/水平翻转.png" />
+		<BitmapImage x:Key="FRotate" UriSource="component/Resources/自由旋转.png" />
+		<BitmapImage x:Key="LRotate90" UriSource="component/Resources/左旋转90.png" />
+		<BitmapImage x:Key="RRotate90" UriSource="component/Resources/右旋转90.png" />
+		<BitmapImage x:Key="ReturnTo0" UriSource="component/Resources/角度归零.png" />
+	</Window.Resources>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height=".05*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Grid.Column="0">
-            <StackPanel Orientation="Horizontal">
-                <Image
+		<Grid Grid.Row="0" Grid.Column="0">
+			<StackPanel Orientation="Horizontal">
+				<Image
                     Width="20"
                     Height="20"
                     Margin="0,0,5,0" />
-                <TextBlock Margin="0,0,5,0" Text="ET-PACS" />
-                <Menu Margin="0,0,5,0" Background="Transparent">文件</Menu>
-                <Menu Background="Transparent">帮助</Menu>
+				<TextBlock Margin="0,0,5,0" Text="ET-PACS" />
+				<Menu Margin="0,0,5,0" Background="Transparent">文件</Menu>
+				<Menu Background="Transparent">帮助</Menu>
 
-            </StackPanel>
-        </Grid>
-        <Grid Grid.Row="0" Grid.Column="3">
-            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                <Button Background="Black">
-                    <StackPanel>
-                        <Image />
-                    </StackPanel>
-                </Button>
-                <Button>
-                    <StackPanel>
-                        <Image />
-                    </StackPanel>
-                </Button>
-                <Separator Width="5" Background="Black" />
-                <Button>
-                    <StackPanel>
-                        <Image />
-                    </StackPanel>
-                </Button>
-                <Button>
-                    <StackPanel>
-                        <Image />
-                    </StackPanel>
-                </Button>
-                <Button>
-                    <StackPanel>
-                        <Image />
-                    </StackPanel>
-                </Button>
-                <Button>
-                    <StackPanel>
-                        <Image />
-                    </StackPanel>
-                </Button>
-            </StackPanel>
-        </Grid>
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="4">
-            <Button
+			</StackPanel>
+		</Grid>
+		<Grid Grid.Row="0" Grid.Column="3">
+			<StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+				<Button Background="Black">
+					<StackPanel>
+						<Image />
+					</StackPanel>
+				</Button>
+				<Button>
+					<StackPanel>
+						<Image />
+					</StackPanel>
+				</Button>
+				<Separator Width="5" Background="Black" />
+				<Button>
+					<StackPanel>
+						<Image />
+					</StackPanel>
+				</Button>
+				<Button>
+					<StackPanel>
+						<Image />
+					</StackPanel>
+				</Button>
+				<Button>
+					<StackPanel>
+						<Image />
+					</StackPanel>
+				</Button>
+				<Button>
+					<StackPanel>
+						<Image />
+					</StackPanel>
+				</Button>
+			</StackPanel>
+		</Grid>
+		<StackPanel Grid.Row="1" Grid.ColumnSpan="4">
+			<Button
                 x:Name="BtnRotate"
                 Height="59"
                 Margin="5,0,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="BtnRotate_Click">
-                <Button.Content>
-                    <StackPanel>
-                        <Image
+				<Button.Content>
+					<StackPanel>
+						<Image
                             Width="32"
                             Height="32"
                             Source="{StaticResource Rotate}" />
-                        <TextBlock Text="旋转" HorizontalAlignment="Center"/>
-                    </StackPanel>
-                </Button.Content>
-                <Button.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Click="MyRotate_Click" Header="自由旋转 (Ctrl X)">
-                            <MenuItem.Icon>
-                                <Image Source="{StaticResource FRotate}" />
-                            </MenuItem.Icon>
-                        </MenuItem>
-                        <MenuItem Click="RotateClear_Click" Header="角度回零">
-                            <MenuItem.Icon>
-                                <Image Source="{StaticResource ReturnTo0}" />
-                            </MenuItem.Icon>
-                        </MenuItem>
-                        <MenuItem Click="RotateRight90_Click" Header="右旋转90°">
-                            <MenuItem.Icon>
-                                <Image Source="{StaticResource RRotate90}" />
-                            </MenuItem.Icon>
-                        </MenuItem>
-                        <MenuItem Click="RotateLeft90_Click" Header="左旋转90°">
-                            <MenuItem.Icon>
-                                <Image Source="{StaticResource LRotate90}" />
-                            </MenuItem.Icon>
-                        </MenuItem>
-                        <MenuItem Click="RotateHor_Click" Header="水平翻转">
-                            <MenuItem.Icon>
-                                <Image Source="{StaticResource HFlip}" />
-                            </MenuItem.Icon>
-                        </MenuItem>
-                        <MenuItem Click="RotateVer_Click" Header="垂直翻转">
-                            <MenuItem.Icon>
-                                <Image Source="{StaticResource VFlip}" />
-                            </MenuItem.Icon>
-                        </MenuItem>
-                    </ContextMenu>
-                </Button.ContextMenu>
-            </Button>
+						<TextBlock Text="旋转" HorizontalAlignment="Center"/>
+					</StackPanel>
+				</Button.Content>
+				<Button.ContextMenu>
+					<ContextMenu>
+						<MenuItem Click="MyRotate_Click" Header="自由旋转 (Ctrl X)">
+							<MenuItem.Icon>
+								<Image Source="{StaticResource FRotate}" />
+							</MenuItem.Icon>
+						</MenuItem>
+						<MenuItem Click="RotateClear_Click" Header="角度回零">
+							<MenuItem.Icon>
+								<Image Source="{StaticResource ReturnTo0}" />
+							</MenuItem.Icon>
+						</MenuItem>
+						<MenuItem Click="RotateRight90_Click" Header="右旋转90°">
+							<MenuItem.Icon>
+								<Image Source="{StaticResource RRotate90}" />
+							</MenuItem.Icon>
+						</MenuItem>
+						<MenuItem Click="RotateLeft90_Click" Header="左旋转90°">
+							<MenuItem.Icon>
+								<Image Source="{StaticResource LRotate90}" />
+							</MenuItem.Icon>
+						</MenuItem>
+						<MenuItem Click="RotateHor_Click" Header="水平翻转">
+							<MenuItem.Icon>
+								<Image Source="{StaticResource HFlip}" />
+							</MenuItem.Icon>
+						</MenuItem>
+						<MenuItem Click="RotateVer_Click" Header="垂直翻转">
+							<MenuItem.Icon>
+								<Image Source="{StaticResource VFlip}" />
+							</MenuItem.Icon>
+						</MenuItem>
+					</ContextMenu>
+				</Button.ContextMenu>
+			</Button>
 
-        </StackPanel>
+		</StackPanel>
 
 
-    </Grid>
+	</Grid>
 </Window>
