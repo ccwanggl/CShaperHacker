@@ -4,8 +4,8 @@ project "00_HelloXAML"
 	dotnetframework "4.8"
 
 
-	targetdir ("../../../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	namespace "HelloXAML"
@@ -14,7 +14,8 @@ project "00_HelloXAML"
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**.cs",
+		"*.png"
 	}
 
 	links
@@ -32,6 +33,9 @@ project "00_HelloXAML"
 		"System.Xml.Linq"
 	}
 	
+	filter "files:**.png"
+		buildaction "Resource"
+
 	filter "configurations:Debug"
 		optimize "Off"
 		symbols "Default"
