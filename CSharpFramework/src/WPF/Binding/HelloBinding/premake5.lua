@@ -1,4 +1,4 @@
-project "HelloBinding"
+project "00_HelloBinding"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"

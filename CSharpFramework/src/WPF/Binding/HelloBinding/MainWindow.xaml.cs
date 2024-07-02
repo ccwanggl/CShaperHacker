@@ -17,15 +17,15 @@ using System.Windows.Shapes;
 
 namespace HelloBinding
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	public partial class MainWindow : Window
+	{
 		Student stu;
-        public MainWindow()
-        {
-            InitializeComponent();
+		public MainWindow()
+		{
+			InitializeComponent();
 
 			// Create Data source
 			stu = new Student();
@@ -47,7 +47,7 @@ namespace HelloBinding
 			this.textBoxName.SetBinding(TextBox.TextProperty, new Binding("Name") { Source = stu = new Student() });
 			*/
 
-        }
+		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
@@ -64,13 +64,12 @@ namespace HelloBinding
 		public string Name
 		{
 			get { return name; }
-			set { 
-				name = value; 
-
-				// 属性值变化触发的事件
-				if(this.PropertyChanged != null)
+			set
+			{
+				name = value;
+				if (PropertyChanged != null)
 				{
-					this.PropertyChanged.Invoke(this, new PropertyChangedEventArgs("Name"));
+					PropertyChanged.Invoke(this, new PropertyChangedEventArgs("Name"));
 				}
 			}
 		}

@@ -1,10 +1,11 @@
-project "BindingPath"
+project "03_BindingPath"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	namespace "BindingPath"	
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	
@@ -28,7 +29,6 @@ project "BindingPath"
 		"System.Xaml",
 		"System.Xml",
 		"System.Xml.Linq",
-		"ControlLibrary"
 	}
 	
 	filter "configurations:Debug"
