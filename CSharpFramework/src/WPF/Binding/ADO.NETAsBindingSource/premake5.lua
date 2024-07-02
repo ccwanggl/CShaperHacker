@@ -1,11 +1,11 @@
-project "ADO.NETAsBindingSource"
+project "07_ADO.NETAsBindingSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
 	namespace "ADO.NETAsBindingSource"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	
@@ -29,7 +29,6 @@ project "ADO.NETAsBindingSource"
 		"System.Xaml",
 		"System.Xml",
 		"System.Xml.Linq",
-		"ControlLibrary"
 	}
 	
 	filter "configurations:Debug"

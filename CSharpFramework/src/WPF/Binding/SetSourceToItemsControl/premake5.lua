@@ -1,11 +1,11 @@
-project "SetSourceToItemsControl"
+project "06_SetSourceToItemsControl"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
 	namespace "SetSourceToItemsControl"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	
@@ -29,7 +29,6 @@ project "SetSourceToItemsControl"
 		"System.Xaml",
 		"System.Xml",
 		"System.Xml.Linq",
-		"ControlLibrary"
 	}
 	
 	filter "configurations:Debug"

@@ -1,11 +1,11 @@
-project "NoPathBinding"
+project "04_NoPathBinding"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
 	namespace "NoPathBinding"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	
@@ -29,7 +29,6 @@ project "NoPathBinding"
 		"System.Xaml",
 		"System.Xml",
 		"System.Xml.Linq",
-		"ControlLibrary"
 	}
 	
 	filter "configurations:Debug"

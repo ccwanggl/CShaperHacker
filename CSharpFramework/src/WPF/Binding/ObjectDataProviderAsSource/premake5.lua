@@ -1,11 +1,11 @@
-project "ObjectDataProviderAsSource"
+project "10_ObjectDataProviderAsSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
 	namespace "ObjectDataProviderAsSource"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
 	
@@ -29,7 +29,6 @@ project "ObjectDataProviderAsSource"
 		"System.Xaml",
 		"System.Xml",
 		"System.Xml.Linq",
-		"ControlLibrary"
 	}
 	
 	filter "configurations:Debug"
