@@ -17,14 +17,14 @@ using System.Windows.Shapes;
 
 namespace SetSourceToItemsControl
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
 			List<Student> stuList = new List<Student>()
 			{
 				new Student(){Id=0, Name = "Tim", Age=29},
@@ -42,12 +42,12 @@ namespace SetSourceToItemsControl
 			this.textBoxId1.SetBinding(TextBox.TextProperty, binding1);
 
 			this.listBoxStudents2.ItemsSource = stuList;
-	//		this.listBoxStudents.DisplayMemberPath = "Name";
+			//		this.listBoxStudents.DisplayMemberPath = "Name";
 
-			Binding binding2 = new Binding("SelectedItem.Id") { Source = this.listBoxStudents2 };
+			Binding binding2 = new Binding("SelectedItem.Id") { Source = this.listBoxStudents2 }
 			this.textBoxId2.SetBinding(TextBox.TextProperty, binding2);
-        }
-    }
+		}
+	}
 
 	public class Student
 	{

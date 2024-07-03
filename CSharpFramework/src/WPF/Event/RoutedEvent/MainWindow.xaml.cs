@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NoSourceBinding
+namespace RoutedEvent
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
@@ -23,13 +23,12 @@ namespace NoSourceBinding
 		public MainWindow()
 		{
 			InitializeComponent();
+			this.gridRoot.AddHandler(Button.ClickEvent, new RoutedEventHandler(this.ButtonClicked));
 		}
-	}
 
-	public class Student
-	{
-		public int Id { get; set; }
-		public string Name { get; set; }
-		public int Age { get; set; }
+		private void ButtonClicked(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show((e.OriginalSource as FrameworkElement).Name);
+		}
 	}
 }

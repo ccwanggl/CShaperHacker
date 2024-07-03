@@ -47,6 +47,26 @@ group "CSharpFramework/WPF/Binding"
 	include "src/WPF/Binding/RelativeSource"
 group ""
 
+group "CSharpFramework/WPF/Property"
+	include "src/WPF/Property/HelloProperty"
+	include "src/WPF/Property/AttachedProperties"
+group ""
+
+group "CSharpFramework/WPF/Event"
+	include "src/WPF/Event/DirectAccessEvent"
+	include "src/WPF/Event/RoutedEvent"
+group ""
+
+group "CSharpFramework/WPF/Command"
+	include "src/WPF/Command/HelloCommand"
+group ""
+
+group "CSharpFramework/WPF/Template"
+group ""
+
+group "CSharpFramework/WPF/Resource"
+group ""
+
 group "CSharpFramework/WinForm"
 	include "src/WinForm/HelloWindowsForms/"
 group ""

@@ -15,19 +15,19 @@ using System.Windows.Shapes;
 
 namespace BindingPath
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	public partial class MainWindow : Window
+	{
 
 		public MainWindow()
-        {
-            InitializeComponent();
+		{
+			InitializeComponent();
 
 			// NOTE: Bind Binding to the source property
 			Binding binding = new Binding();
-			binding.Path = new PropertyPath("Value"); 
+			binding.Path = new PropertyPath("Value");
 			binding.Source = this.slider2;
 			binding.Mode = BindingMode.TwoWay;
 			binding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
@@ -35,14 +35,14 @@ namespace BindingPath
 			this.textBox2.SetBinding(TextBox.TextProperty, binding);
 
 			// NOTE: Use the Binding ctor
-			Binding binding2 = new Binding("Value") {Source = this.slider3 };
+			Binding binding2 = new Binding("Value") { Source = this.slider3 };
 			this.textBox3.SetBinding(TextBox.TextProperty, binding2);
 
 
 			List<string> stringList = new List<string>() { "Tim", "Tom", "Blog" };
 			textBox111.SetBinding(TextBox.TextProperty, new Binding("/") { Source = stringList });
-			textBox222.SetBinding(TextBox.TextProperty, new Binding("/Length") { Source = stringList, Mode = BindingMode.OneWay});
-			textBox333.SetBinding(TextBox.TextProperty, new Binding("/[2]") { Source = stringList, Mode = BindingMode.OneWay});
+			textBox222.SetBinding(TextBox.TextProperty, new Binding("/Length") { Source = stringList, Mode = BindingMode.OneWay });
+			textBox333.SetBinding(TextBox.TextProperty, new Binding("/[2]") { Source = stringList, Mode = BindingMode.OneWay });
 
 
 			City city = new City();
@@ -59,8 +59,8 @@ namespace BindingPath
 			this.textBox22.SetBinding(TextBox.TextProperty, new Binding("/ProvinceList/Name") { Source = countryList });
 			this.textBox33.SetBinding(TextBox.TextProperty, new Binding("/ProvinceList/CityList/Name") { Source = countryList });
 
-        }
-    }
+		}
+	}
 
 	class City
 	{
@@ -73,8 +73,8 @@ namespace BindingPath
 	}
 
 	class Country
-    {
-        public string Name { get; set; }
-		public List<Province> ProvinceList { get; set;}
-    }
+	{
+		public string Name { get; set; }
+		public List<Province> ProvinceList { get; set; }
+	}
 }
