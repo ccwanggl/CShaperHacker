@@ -39,10 +39,6 @@ namespace BindingPath
 			this.textBox3.SetBinding(TextBox.TextProperty, binding2);
 
 
-			List<string> stringList = new List<string>() { "Tim", "Tom", "Blog" };
-			textBox111.SetBinding(TextBox.TextProperty, new Binding("/") { Source = stringList });
-			textBox222.SetBinding(TextBox.TextProperty, new Binding("/Length") { Source = stringList, Mode = BindingMode.OneWay });
-			textBox333.SetBinding(TextBox.TextProperty, new Binding("/[2]") { Source = stringList, Mode = BindingMode.OneWay });
 
 
 			City city = new City();
@@ -59,22 +55,11 @@ namespace BindingPath
 			this.textBox22.SetBinding(TextBox.TextProperty, new Binding("/ProvinceList/Name") { Source = countryList });
 			this.textBox33.SetBinding(TextBox.TextProperty, new Binding("/ProvinceList/CityList/Name") { Source = countryList });
 
+
+			List<string> stringList = new List<string>() { "Tim", "Tom", "Blog" };
+			textBox111.SetBinding(TextBox.TextProperty, new Binding("/") { Source = stringList });
+			textBox222.SetBinding(TextBox.TextProperty, new Binding("/Length") { Source = stringList, Mode = BindingMode.OneWay });
+			textBox333.SetBinding(TextBox.TextProperty, new Binding("/[1]") { Source = stringList, Mode = BindingMode.OneWay });
 		}
-	}
-
-	class City
-	{
-		public string Name { get; set; }
-	}
-	class Province
-	{
-		public string Name { get; set; }
-		public List<City> CityList { get; set; }
-	}
-
-	class Country
-	{
-		public string Name { get; set; }
-		public List<Province> ProvinceList { get; set; }
 	}
 }

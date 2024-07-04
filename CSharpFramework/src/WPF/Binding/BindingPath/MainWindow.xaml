@@ -8,92 +8,92 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
     Width="600"
-    Height="800"
+    Height="Auto"
     mc:Ignorable="d">
-    <Grid ShowGridLines="True">
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0">
-            <!--  Bind Binding to the source property  -->
-            <TextBox
+	<Grid ShowGridLines="True">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<StackPanel Grid.Row="0" Background="AliceBlue">
+			<!--  Bind Binding to the source property  -->
+			<TextBox
                 x:Name="textBox1"
                 Margin="5"
                 BorderBrush="Black"
                 Text="{Binding Path=Value, ElementName=slider1}" />
-            <Slider
+			<Slider
                 x:Name="slider1"
                 Margin="5"
                 Maximum="100"
                 Minimum="0" />
-        </StackPanel>
+		</StackPanel>
 
-        <StackPanel Grid.Row="1">
-            <TextBox x:Name="textBox2" Margin="5" />
-            <Slider
+		<StackPanel Grid.Row="1" Background="AntiqueWhite">
+			<TextBox x:Name="textBox2" Margin="5" />
+			<Slider
                 x:Name="slider2"
                 Margin="5"
                 Maximum="100"
                 Minimum="0" />
-        </StackPanel>
+		</StackPanel>
 
-        <StackPanel Grid.Row="2">
-            <TextBox x:Name="textBox3" Margin="5" />
-            <Slider
+		<StackPanel Grid.Row="2" Background="Azure">
+			<TextBox x:Name="textBox3" Margin="5" />
+			<Slider
                 x:Name="slider3"
                 Margin="5"
                 Maximum="100"
                 Minimum="0" />
-        </StackPanel>
-        <StackPanel Grid.Row="3">
-            <TextBox
+		</StackPanel>
+		<StackPanel Grid.Row="3" Background="Beige">
+			<TextBox
                 x:Name="textBox4"
                 Margin="5"
                 BorderBrush="Red" />
-            <TextBox
+			<TextBox
                 x:Name="textBox5"
                 Margin="5"
                 BorderBrush="Black"
                 Text="{Binding Path=Text.Length, ElementName=textBox4, Mode=OneWay}" />
-        </StackPanel>
-        <StackPanel Grid.Row="4">
-            <TextBox
+		</StackPanel>
+		<StackPanel Grid.Row="4" Background="BlanchedAlmond">
+			<TextBox
                 x:Name="textBox6"
                 Margin="5"
                 BorderBrush="Red"
                 Text="ABCDEFGHIJKLMNOPQRSTUVWXYZ" />
-            <TextBox
+			<TextBox
                 x:Name="textBox7"
                 Margin="5"
                 BorderBrush="Black"
                 Text="{Binding Path=Text[3], ElementName=textBox6, Mode=OneWay}" />
-        </StackPanel>
-        <StackPanel Grid.Row="5">
-            <StackPanel.Resources>
-                <System:String x:Key="myString">
-                    This is a static resource string!
-                </System:String>
-            </StackPanel.Resources>
-            <TextBlock
+		</StackPanel>
+		<StackPanel Grid.Row="5" Background="Bisque">
+			<StackPanel.Resources>
+				<System:String x:Key="myString">
+					This is a static resource string!
+				</System:String>
+			</StackPanel.Resources>
+			<TextBlock
                 x:Name="textBlock1"
                 Margin="5"
                 FontSize="28"
                 Text="{Binding Path=., Source={StaticResource ResourceKey=myString}}"
                 TextWrapping="Wrap" />
-            <TextBox x:Name="textBox11" Margin="5" />
-            <TextBox x:Name="textBox22" Margin="5" />
-            <TextBox x:Name="textBox33" Margin="5" />
-        </StackPanel>
-        <StackPanel Grid.Row="6">
-            <TextBox x:Name="textBox111" Margin="5" />
-            <TextBox x:Name="textBox222" Margin="5" />
-            <TextBox x:Name="textBox333" Margin="5" />
-        </StackPanel>
-    </Grid>
+			<TextBox x:Name="textBox11" Margin="5" />
+			<TextBox x:Name="textBox22" Margin="5" />
+			<TextBox x:Name="textBox33" Margin="5" />
+		</StackPanel>
+		<StackPanel Grid.Row="6" Background="CadetBlue">
+			<TextBox x:Name="textBox111" Margin="5" />
+			<TextBox x:Name="textBox222" Margin="5" />
+			<TextBox x:Name="textBox333" Margin="5" />
+		</StackPanel>
+	</Grid>
 </Window>
