@@ -65,6 +65,7 @@ group "CSharpFramework/WPF/Template"
 group ""
 
 group "CSharpFramework/WPF/Resource"
+	include "src/WPF/Resource/HelloResource"
 group ""
 
 group "CSharpFramework/WinForm"
