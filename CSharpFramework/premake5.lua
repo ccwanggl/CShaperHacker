@@ -50,6 +50,7 @@ group ""
 group "CSharpFramework/WPF/Property"
 	include "src/WPF/Property/HelloProperty"
 	include "src/WPF/Property/AttachedProperties"
+	include "src/WPF/Property/MyButton"
 group ""
 
 group "CSharpFramework/WPF/Event"
