@@ -23,17 +23,13 @@ namespace HelloProperty
 		public MainWindow()
 		{
 			InitializeComponent();
-			Person person = new Person();
-			person.SetBinding(Person.nameProperty, new Binding("Text") { Source = textbox1 });
-			textbox2.SetBinding(TextBox.TextProperty, new Binding("Name") { Source = person });
-
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 			Person person = new Person();
-			person.Name = textbox1.Text;
-			textbox2.Text = person.Name;
+			person.Name = textbox1.Text;        // SetValue
+			textbox2.Text = person.Name;        // GetValue
 		}
 	}
 
@@ -56,11 +52,6 @@ namespace HelloProperty
 			{
 				SetValue(nameProperty, value);
 			}
-		}
-
-		public BindingExpressionBase SetBinding(DependencyProperty dp, BindingBase binding)
-		{
-			return BindingOperations.SetBinding(this, dp, binding);
 		}
 	}
 }
