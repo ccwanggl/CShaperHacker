@@ -15,17 +15,17 @@ using System.Windows.Shapes;
 
 namespace NoPathBinding
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
 
-			string str = "this is a string";
-			textBlock4.SetBinding(TextBlock.TextProperty, new Binding(".") { Source = str});
-        }
-    }
+			string str = "Binding with method \"SetBinding\"";
+			textBlock4.SetBinding(TextBlock.TextProperty, new Binding(".") { Source = str });
+		}
+	}
 }

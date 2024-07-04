@@ -10,79 +10,73 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Grid ShowGridLines="True">
+	<Grid ShowGridLines="True">
 
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0">
-            <StackPanel.Resources>
-                <System:String x:Key="myString">
-                    菩提本无树，明镜亦非台。
+		<StackPanel Grid.Row="0">
+			<StackPanel.Resources>
+				<System:String x:Key="myString">
+					菩提本无树，明镜亦非台。
                     本来无一物，何处惹尘埃。
-                </System:String>
-            </StackPanel.Resources>
+				</System:String>
+			</StackPanel.Resources>
 
-            <!--  Binding 源本身就是且不需要 Path 来指明  -->
-            <TextBlock
+			<!--  Binding 源本身就是且不需要 Path 来指明  -->
+			<TextBlock
                 x:Name="textBlock1"
                 Margin="5"
                 FontSize="16"
                 Text="{Binding Path=., Source={StaticResource ResourceKey=myString}}"
                 TextWrapping="Wrap" />
-        </StackPanel>
+		</StackPanel>
 
-        <StackPanel Grid.Row="1">
-            <StackPanel.Resources>
-                <System:String x:Key="myString">
-                    菩提本无树，明镜亦非台。
+		<StackPanel Grid.Row="1">
+			<StackPanel.Resources>
+				<System:String x:Key="myString">
+					菩提本无树，明镜亦非台。
                     本来无一物，何处惹尘埃。
-                </System:String>
-            </StackPanel.Resources>
+				</System:String>
+			</StackPanel.Resources>
 
-            <!--  Binding 源本身就是且不需要 Path 来指明  -->
-            <TextBlock
+			<!--  Binding 源本身就是且不需要 Path 来指明  -->
+			<TextBlock
                 x:Name="textBlock2"
                 Margin="5"
                 FontSize="16"
                 Text="{Binding ., Source={StaticResource ResourceKey=myString}}"
                 TextWrapping="Wrap" />
-        </StackPanel>
+		</StackPanel>
 
-        <StackPanel Grid.Row="2">
-            <StackPanel.Resources>
-                <System:String x:Key="myString">
-                    菩提本无树，明镜亦非台。
+		<StackPanel Grid.Row="2">
+			<StackPanel.Resources>
+				<System:String x:Key="myString">
+					菩提本无树，明镜亦非台。
                     本来无一物，何处惹尘埃。
-                </System:String>
-            </StackPanel.Resources>
+				</System:String>
+			</StackPanel.Resources>
 
-            <!--  Binding 源本身就是且不需要 Path 来指明  -->
-            <TextBlock
+			<!--  Binding 源本身就是且不需要 Path 来指明  -->
+			<TextBlock
                 x:Name="textBlock3"
                 Margin="5"
                 FontSize="16"
                 Text="{Binding Source={StaticResource ResourceKey=myString}}"
                 TextWrapping="Wrap" />
-        </StackPanel>
-        <StackPanel Grid.Row="3">
-            <StackPanel.Resources>
-                <System:String x:Key="myString">
-                    菩提本无树，明镜亦非台。
-                    本来无一物，何处惹尘埃。
-                </System:String>
-            </StackPanel.Resources>
-
-            <!--  Binding 源本身就是且不需要 Path 来指明  -->
-            <TextBlock
+		</StackPanel>
+		<StackPanel Grid.Row="3">
+			<!--  Binding 源本身就是且不需要 Path 来指明  -->
+			<TextBlock
                 x:Name="textBlock4"
                 Margin="5"
                 FontSize="16"
+                Text="{Binding}"
                 TextWrapping="Wrap" />
-        </StackPanel>
-    </Grid>
+		</StackPanel>
+	</Grid>
 </Window>
