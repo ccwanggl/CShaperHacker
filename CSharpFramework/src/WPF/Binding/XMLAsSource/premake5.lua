@@ -13,6 +13,7 @@ project "08_XMLAsSource"
 	{
 		"**.cs",
 		"**.xaml",
+		"**.xml",
 		"Properties/**.cs"
 	}
 
@@ -30,6 +31,9 @@ project "08_XMLAsSource"
 		"System.Xml",
 		"System.Xml.Linq",
 	}
+
+	filter "files:**.xml"
+		buildaction "Resource"
 	
 	filter "configurations:Debug"
 		optimize "Off"

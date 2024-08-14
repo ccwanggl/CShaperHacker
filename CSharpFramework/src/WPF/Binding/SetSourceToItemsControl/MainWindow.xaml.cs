@@ -44,7 +44,7 @@ namespace SetSourceToItemsControl
 			this.listBoxStudents2.ItemsSource = stuList;
 			//		this.listBoxStudents.DisplayMemberPath = "Name";
 
-			Binding binding2 = new Binding("SelectedItem.Id") { Source = this.listBoxStudents2 }
+			Binding binding2 = new Binding("SelectedItem.Id") { Source = this.listBoxStudents2 };
 			this.textBoxId2.SetBinding(TextBox.TextProperty, binding2);
 		}
 	}
