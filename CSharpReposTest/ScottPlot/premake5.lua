@@ -3,10 +3,13 @@ project "ScottPlotTest"
 	language "C#"
 	dotnetframework "4.8"
 
-	targetdir ("../../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	flags {"WPF"}
+	flags 
+	{
+		"WPF"
+	}
 	
 	nuget 
 	{
@@ -16,22 +19,24 @@ project "ScottPlotTest"
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**.cs",
+		"Properties/**.settings",
+		"Properties/**.resx"
 	}
 
 	links
 	{
-		"Microsoft.Csharp",
-		"PresentationCore",
-		"PresentationFramework",
-		"WindowsBase",
 		"System",
 		"System.Core",
 		"System.Data",
 		"System.Data.DataSetExtensions",
 		"System.Xaml",
 		"System.Xml",
-		"System.Xml.Linq"
+		"System.Xml.Linq",
+		"Microsoft.Csharp",
+		"PresentationCore",
+		"PresentationFramework",
+		"WindowsBase",
 	}
 	
 	filter "configurations:Debug"

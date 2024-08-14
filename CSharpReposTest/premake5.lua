@@ -1,5 +1,7 @@
 group "CSharpReposTest"
 	group "CSharpReposTest/WPF"
-		include "CSharpReposTest/ScottPlot"
+		group "CSharpReposTest/WPF/ScottPlot"
+			include "CSharpReposTest/ScottPlot"
+		group ""
 	group ""
 group ""
