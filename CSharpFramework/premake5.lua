@@ -45,6 +45,7 @@ group "CSharpFramework/WPF/Binding"
 	include "src/WPF/Binding/LINQAsSource"
 	include "src/WPF/Binding/ObjectDataProviderAsSource"
 	include "src/WPF/Binding/RelativeSource"
+	include "src/WPF/Binding/MultiBinding"
 group ""
 
 group "CSharpFramework/WPF/Property"
