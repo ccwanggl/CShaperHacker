@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HelloBinding
+namespace SetBindingSrcCLR
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
