@@ -17,6 +17,7 @@ project "01_HelloEvent"
 	{
 		"System",
 		"System.Windows.Forms",
+		"System.Drawing",
 	}
 	
 	filter "configurations:Debug"

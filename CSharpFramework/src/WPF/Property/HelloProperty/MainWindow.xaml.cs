@@ -33,13 +33,19 @@ namespace HelloProperty
 		}
 	}
 
+	// ! DependencyProperty must be used in the DependencyObject
 	public class Person : DependencyObject
 	{
+		// ! use public static readonly to 
 		public static readonly DependencyProperty nameProperty;
 
 		static Person()
 		{
-			nameProperty = DependencyProperty.Register("Name", typeof(string), typeof(Person));
+			//! not use "new", use "Register" to create property
+			nameProperty = DependencyProperty.Register(
+				"Name",                     // which CLR property as wrapper
+				typeof(string),             // what type that DependencyProperty will store
+				typeof(Person));            // what the DependencyProperty belong to
 		}
 
 		public string Name
@@ -52,6 +58,11 @@ namespace HelloProperty
 			{
 				SetValue(nameProperty, value);
 			}
+		}
+
+		public BindingExpressionBase SetBinding(DependencyProperty dp, BindingBase binding)
+		{
+			return BindingOperations.SetBinding(this, dp, binding);
 		}
 	}
 }
