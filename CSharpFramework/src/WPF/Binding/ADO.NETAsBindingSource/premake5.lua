@@ -1,4 +1,4 @@
-project "07_ADO.NETAsBindingSource"
+project "05.003_ADO.NETAsBindingSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"

@@ -1,4 +1,4 @@
-project "06_SetSourceToItemsControl"
+project "05.002_SetSourceToItemsControl"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"

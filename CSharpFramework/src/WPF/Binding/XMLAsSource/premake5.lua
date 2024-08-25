@@ -1,4 +1,4 @@
-project "08_XMLAsSource"
+project "05.004_XMLAsSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
@@ -33,7 +33,8 @@ project "08_XMLAsSource"
 	}
 
 	filter "files:**.xml"
-		buildaction "Resource"
+		buildaction "Embed"
+		buildaction "Copy"
 	
 	filter "configurations:Debug"
 		optimize "Off"
