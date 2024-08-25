@@ -1,4 +1,4 @@
-project "11_RelativeSource"
+project "05.008_RelativeSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"

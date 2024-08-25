@@ -1,4 +1,4 @@
-project "10_ObjectDataProviderAsSource"
+project "05.009_ObjectDataProviderAsSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"

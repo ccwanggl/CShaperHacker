@@ -1,4 +1,4 @@
-project "09_LINQAsSource"
+project "05.010_LINQAsSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
