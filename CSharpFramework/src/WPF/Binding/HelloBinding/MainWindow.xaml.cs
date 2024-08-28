@@ -35,23 +35,27 @@ namespace HelloBinding
 			binding.Source = stu;
 			binding.Path = new PropertyPath("Name");
 
-			// Use binding to connect the source and the target
-			// NOTE: 
-			// arg1: target
-			// arg2: target property that receive data
-			// arg3: Binding instance
-			BindingOperations.SetBinding(this.textBoxName, TextBox.TextProperty, binding);
+			// NOTE 1: Use binding to connect the source and the target
+			BindingOperations.SetBinding(
+				this.textBoxName,               //	target
+				TextBox.TextProperty,           //  target property that receive data
+				binding                         //  Binding instance
+				);
 
-			// NOTE
+			// NOTE 2: Use SetBinding to connect the source and the target
 			/*
-			this.textBoxName.SetBinding(TextBox.TextProperty, new Binding("Name") { Source = stu = new Student() });
+			this.textBoxName.SetBinding(
+				TextBox.TextProperty, 
+				new Binding("Name") 
+					{ 
+						Source = stu = new Student() 
+					});
 			*/
 
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			// 属性值的变化源
 			stu.Name += "Name";
 		}
 	}
@@ -69,7 +73,8 @@ namespace HelloBinding
 				name = value;
 				if (PropertyChanged != null)
 				{
-					PropertyChanged.Invoke(this, new PropertyChangedEventArgs("Name"));
+					//PropertyChanged.Invoke(this, new PropertyChangedEventArgs("Name"));
+					PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Name)));
 				}
 			}
 		}
