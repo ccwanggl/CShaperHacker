@@ -1,4 +1,4 @@
-project "12_NoSourceBindingDataContextAsSource"
+project "05.006_NoSourceBindingDataContextAsSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
