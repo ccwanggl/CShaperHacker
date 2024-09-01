@@ -10,68 +10,68 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0">
-            <StackPanel.DataContext>
-                <local:Student
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<StackPanel Grid.Row="0">
+			<StackPanel.DataContext>
+				<local:Student
                     Name="Tim"
                     Age="29"
                     Id="6" />
-            </StackPanel.DataContext>
-            <Grid>
-                <StackPanel>
-                    <TextBox Margin="5" Text="{Binding Path=Id}" />
-                    <TextBox Margin="5" Text="{Binding Path=Name}" />
-                    <TextBox Margin="5" Text="{Binding Path=Age}" />
-                </StackPanel>
-            </Grid>
-        </StackPanel>
+			</StackPanel.DataContext>
+			<Grid>
+				<StackPanel>
+					<TextBox Margin="5" Text="{Binding Path=Id}" />
+					<TextBox Margin="5" Text="{Binding Path=Name}" />
+					<TextBox Margin="5" Text="{Binding Path=Age}" />
+				</StackPanel>
+			</Grid>
+		</StackPanel>
 
-        <StackPanel Grid.Row="1">
-            <StackPanel.DataContext>
-                <local:Student
+		<StackPanel Grid.Row="1">
+			<StackPanel.DataContext>
+				<local:Student
                     Name="Tim"
                     Age="29"
                     Id="6" />
-            </StackPanel.DataContext>
-            <Grid>
-                <StackPanel>
-                    <TextBox Margin="5" Text="{Binding Id}" />
-                    <TextBox Margin="5" Text="{Binding Name}" />
-                    <TextBox Margin="5" Text="{Binding Age}" />
-                </StackPanel>
-            </Grid>
-        </StackPanel>
-        <StackPanel Grid.Row="2">
-            <StackPanel.DataContext>
-                <System:String>Hello DataContext (Binding Path=.)!</System:String>
-            </StackPanel.DataContext>
-            <Grid>
-                <StackPanel>
-                    <TextBox Margin="5" Text="{Binding Path=.}" />
-                    <TextBox Margin="5" Text="{Binding Path=.}" />
-                    <TextBox Margin="5" Text="{Binding Path=.}" />
-                </StackPanel>
-            </Grid>
-        </StackPanel>
+			</StackPanel.DataContext>
+			<Grid>
+				<StackPanel>
+					<TextBox Margin="5" Text="{Binding Id}" />
+					<TextBox Margin="5" Text="{Binding Name}" />
+					<TextBox Margin="5" Text="{Binding Age}" />
+				</StackPanel>
+			</Grid>
+		</StackPanel>
+		<StackPanel Grid.Row="2">
+			<StackPanel.DataContext>
+				<System:String>Hello DataContext (Binding Path=.)!</System:String>
+			</StackPanel.DataContext>
+			<Grid>
+				<StackPanel>
+					<TextBox Margin="5" Text="{Binding Path=.}" />
+					<TextBox Margin="5" Text="{Binding Path=.}" />
+					<TextBox Margin="5" Text="{Binding Path=.}" />
+				</StackPanel>
+			</Grid>
+		</StackPanel>
 
-        <StackPanel Grid.Row="3">
-            <StackPanel.DataContext>
-                <System:String>Hello DataContext (Binding)!</System:String>
-            </StackPanel.DataContext>
-            <Grid>
-                <StackPanel>
-                    <TextBlock Margin="5" Text="{Binding}" />
-                    <TextBlock Margin="5" Text="{Binding}" />
-                    <TextBlock Margin="5" Text="{Binding}" />
-                </StackPanel>
-            </Grid>
-        </StackPanel>
-    </Grid>
+		<StackPanel Grid.Row="3">
+			<StackPanel.DataContext>
+				<System:String>Hello DataContext (Binding)!</System:String>
+			</StackPanel.DataContext>
+			<Grid>
+				<StackPanel>
+					<TextBlock Margin="5" Text="{Binding}" />
+					<TextBlock Margin="5" Text="{Binding}" />
+					<TextBlock Margin="5" Text="{Binding}" />
+				</StackPanel>
+			</Grid>
+		</StackPanel>
+	</Grid>
 </Window>
