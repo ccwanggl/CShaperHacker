@@ -34,7 +34,6 @@ namespace ControlBindingDirAndDataUpdate
 
 			//BindingOperations.SetBinding(this.textBox2, TextBox.TextProperty, binding);
 			TextBox2.SetBinding(TextBox.TextProperty, binding);
-
 		}
 	}
 }
