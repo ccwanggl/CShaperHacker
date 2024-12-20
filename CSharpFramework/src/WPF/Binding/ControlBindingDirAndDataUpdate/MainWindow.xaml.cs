@@ -24,18 +24,17 @@ namespace ControlBindingDirAndDataUpdate
 		{
 			InitializeComponent();
 
-
-			Binding binding = new Binding();
-			binding.Source = slider2;
-
-			// NOTE The type of the binding Path is PropertyPath, not string.
-			binding.Path = new PropertyPath("Value");
-
-			binding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
-			binding.Mode = BindingMode.TwoWay;
+			var binding = new Binding
+			{
+				Source = Slider2,
+				// NOTE The type of the binding Path is PropertyPath, not string.
+				Path = new PropertyPath("Value"),
+				UpdateSourceTrigger = UpdateSourceTrigger.LostFocus,
+				Mode = BindingMode.TwoWay
+			};
 
 			//BindingOperations.SetBinding(this.textBox2, TextBox.TextProperty, binding);
-			textBox2.SetBinding(TextBox.TextProperty, binding);
+			TextBox2.SetBinding(TextBox.TextProperty, binding);
 
 		}
 	}
