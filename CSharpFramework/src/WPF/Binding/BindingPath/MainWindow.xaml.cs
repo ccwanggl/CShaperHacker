@@ -46,6 +46,7 @@ namespace BindingPath
 
 			List<City> cities = new List<City> { city };
 			Province province = new Province() { Name = "吉林", CityList = cities };
+
 			List<Province> provinces = new List<Province> { province };
 			Country country = new Country() { Name = "中国", ProvinceList = provinces };
 

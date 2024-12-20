@@ -15,27 +15,18 @@ using System.Windows.Shapes;
 
 namespace ObjectDataProviderAsSource
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
+		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			ObjectDataProvider odp = new ObjectDataProvider();
-
-			odp.ObjectInstance = new Calculator();
-			odp.MethodName = "Add";
-			odp.MethodParameters.Add("100");
-			odp.MethodParameters.Add("200");
-			MessageBox.Show(odp.Data.ToString());
-
-
 			this.SetBinding();
 		}
 
@@ -43,9 +34,10 @@ namespace ObjectDataProviderAsSource
 		{
 			ObjectDataProvider odp = new ObjectDataProvider();
 			odp.ObjectInstance = new Calculator();
+
 			odp.MethodName = "Add";
-			odp.MethodParameters.Add("0");
-			odp.MethodParameters.Add("0");
+			odp.MethodParameters.Add("100");
+			odp.MethodParameters.Add("200");
 
 			Binding bindingToArg1 = new Binding("MethodParameters[0]")
 			{
@@ -61,7 +53,7 @@ namespace ObjectDataProviderAsSource
 				UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged
 			};
 
-			Binding bindingToResult = new Binding() { Source = odp };
+			Binding bindingToResult = new Binding(".") { Source = odp };
 
 			// Binding 关联到 UI 元素上
 			arg1.SetBinding(TextBox.TextProperty, bindingToArg1);
@@ -78,7 +70,7 @@ namespace ObjectDataProviderAsSource
 			double y = 0;
 			double z = 0;
 
-			if(double.TryParse(arg1, out x) && double.TryParse(arg2, out y))
+			if (double.TryParse(arg1, out x) && double.TryParse(arg2, out y))
 			{
 				z = x + y;
 				return z.ToString();
