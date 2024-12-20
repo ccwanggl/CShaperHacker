@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ControlBindingDirAndDataUpdate
 {
@@ -32,6 +21,16 @@ namespace ControlBindingDirAndDataUpdate
 				UpdateSourceTrigger = UpdateSourceTrigger.LostFocus,
 				Mode = BindingMode.TwoWay
 			};
+
+			if (binding.NotifyOnSourceUpdated)
+			{
+				
+			}
+
+			if (binding.NotifyOnTargetUpdated)
+			{
+				
+			}
 
 			//BindingOperations.SetBinding(this.textBox2, TextBox.TextProperty, binding);
 			TextBox2.SetBinding(TextBox.TextProperty, binding);
