@@ -1,19 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace HelloBinding
 {
@@ -22,26 +10,30 @@ namespace HelloBinding
 	/// </summary>
 	public partial class MainWindow : Window
 	{
-		Student stu;
+		private readonly Student _stu;
 		public MainWindow()
 		{
 			InitializeComponent();
 
 			// Create Data source
-			stu = new Student();
+			_stu = new Student();
 
 			// Ready to bind
-			Binding binding = new Binding();
-			binding.Source = stu;
-			binding.Path = new PropertyPath("Name");
+			var binding = new Binding
+			{
+				Source = _stu,
+				Path = new PropertyPath("Name"),
+				Mode = BindingMode.TwoWay
+			};
 
 			// NOTE 1: Use binding to connect the source and the target
 			BindingOperations.SetBinding(
-				this.textBoxName,               //	target
-				TextBox.TextProperty,           //  target property that receive data
-				binding                         //  Binding instance
+				this.textBoxName,						//	target
+				TextBox.TextProperty,				//  target property that receive data
+				binding									//  Binding instance
 				);
 
+			
 			// NOTE 2: Use SetBinding to connect the source and the target
 			/*
 			this.textBoxName.SetBinding(
@@ -51,31 +43,25 @@ namespace HelloBinding
 						Source = stu = new Student() 
 					});
 			*/
-
 		}
-
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			stu.Name += "Name";
+			_stu.Name += "event  ";
 		}
 	}
 
-	class Student : INotifyPropertyChanged
+	internal class Student : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
-		private string name;
+		private string _name;
 
 		public string Name
 		{
-			get { return name; }
+			get { return _name; }
 			set
 			{
-				name = value;
-				if (PropertyChanged != null)
-				{
-					//PropertyChanged.Invoke(this, new PropertyChangedEventArgs("Name"));
-					PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Name)));
-				}
+				_name = value;
+				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Name)));
 			}
 		}
 	}
