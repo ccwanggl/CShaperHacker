@@ -13,7 +13,7 @@ namespace ControlAsBindingSrc
 		{
 			InitializeComponent();
 
-			this.textBox2.SetBinding(TextBox.TextProperty, new Binding("Value") { ElementName = "slider2" });
+			this.TextBox2.SetBinding(TextBox.TextProperty, new Binding("Value") { ElementName = "Slider2" });
 		}
 	}
 }
