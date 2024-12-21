@@ -15,9 +15,6 @@ using System.Windows.Navigation;
 
 namespace TreeViews
 {
-
-	
-
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
@@ -42,33 +39,33 @@ namespace TreeViews
 		{
 			foreach (var derive in Directory.GetLogicalDrives() )
 			{
-				var item = new TreeViewItem();
-
-				item.Header = derive;
-				item.Tag = derive;
+				var item = new TreeViewItem
+				{
+					Header = derive,
+					Tag = derive
+				};
 
 				item.Items.Add(null);
 				item.Expanded += Folder_Expanded;
 
-
 				FolderView.Items.Add( item );
 			}
 		}
-
-		private void Folder_Expanded(object sender, RoutedEventArgs e)
+		private static void Folder_Expanded(object sender, RoutedEventArgs e)
 		{
 			var item = (TreeViewItem)sender;
 
 			// note: If the item only contains the dummy data
 			if (item.Items.Count != 1 || item.Items[0] != null)
+			{
 				return;
+			}
 
 			// note: clear dummy data
 			item.Items.Clear();
 
 			// note Get folder name
 			var fullPath = (string)item.Tag;
-
 			var directories = new List<string>();
 
 			try
@@ -80,7 +77,10 @@ namespace TreeViews
 					directories.AddRange(dirs);
 				}
 			}
-			catch { }
+			catch
+			{
+				// ignored
+			}
 
 			// For each directory ...
 			directories.ForEach(directoryPath =>
@@ -99,26 +99,22 @@ namespace TreeViews
 				
 				});
 		}
-
 		private void SubItem_Expanded(object sender, RoutedEventArgs e)
 		{
 			throw new NotImplementedException();
 		}
-
-		public static string GetFileFolderName(string path)
+		private static string GetFileFolderName(string path)
 		{
-			if(string.IsNullOrEmpty(path)) 
+			if(string.IsNullOrEmpty(path))
+			{
 				return string.Empty;
+			}
 
 			var normalizedPath = path.Replace('/', '\\');
 			var lastIndex = normalizedPath.LastIndexOf('\\');
 
-			if (lastIndex <= 0)
-				return path;
-
-			return path.Substring(lastIndex + 1);
+			return lastIndex <= 0 ? path : path.Substring(lastIndex + 1);
 		}
-
 		#endregion
 	}
 }
