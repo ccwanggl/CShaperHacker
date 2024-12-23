@@ -2,7 +2,7 @@ project "HelloWPF"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
-
+	namespace "HelloWPF"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")

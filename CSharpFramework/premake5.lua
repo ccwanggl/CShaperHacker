@@ -7,29 +7,6 @@ group "CSharpFramework/WPF"
 	group ""
 group ""
 
-group "CSharpFramework/WPF/XAML"
-	include "src/WPF/XAML/AttributeEvent"
-	include "src/WPF/XAML/HelloXAML"
-	include "src/WPF/XAML/PropertyAssignment"
-	include "src/WPF/XAML/TypeConvert"
-	include "src/WPF/XAML/MarkupExtension"
-	include "src/WPF/XAML/ControlLibrary"
-	include "src/WPF/XAML/Xnamespace"
-	include "src/WPF/XAML/CallDll"
-
-	group "CSharpFramework/WPF/XAML/Control_and_Layout"
-		-- layout control
-		include "src/WPF/XAML/LayoutGrid"
-		include "src/WPF/XAML/LayoutStackpanel"
-		include "src/WPF/XAML/LayoutCanvas"
-		include "src/WPF/XAML/LayoutDockPanel"
-		include "src/WPF/XAML/LayoutWrapPanel"
-		include "src/WPF/XAML/LayoutContent"
-
-		-- content control
-		include "src/WPF/XAML/ContentControl"
-	group ""
-group ""
 
 group "CSharpFramework/WPF/Binding"
 	include "src/WPF/Binding/ADO.NETAsBindingSource"
@@ -49,11 +26,8 @@ group "CSharpFramework/WPF/Binding"
 	include "src/WPF/Binding/MultiBinding"
 group ""
 
-group "CSharpFramework/WPF/Property"
-	include "src/WPF/Property/HelloProperty"
-	include "src/WPF/Property/AttachedProperties"
-	include "src/WPF/Property/MyButton"
-group ""
+include "src/WPF/XAML"
+include "src/WPF/Property"
 
 group "CSharpFramework/WPF/Event"
 	include "src/WPF/Event/DirectAccessEvent"
