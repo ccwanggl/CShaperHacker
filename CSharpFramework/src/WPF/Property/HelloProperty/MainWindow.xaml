@@ -1,7 +1,7 @@
 ﻿<Window
-    Height="450"
+    Height="135"
     Title="MainWindow"
-    Width="800"
+    Width="260"
     mc:Ignorable="d"
     x:Class="HelloProperty.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -11,6 +11,5 @@
     <StackPanel>
         <TextBox Margin="5" x:Name="Textbox1" />
         <TextBox Margin="5" x:Name="Textbox2" />
-        <Button Click="Button_Click" Content="OK" />
     </StackPanel>
 </Window>
