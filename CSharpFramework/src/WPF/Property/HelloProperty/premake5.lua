@@ -4,8 +4,9 @@ project "00_HelloProperty"
 	dotnetframework "4.8"
 	namespace "HelloProperty"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (PropertyOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (PropertyOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
+
 
 	flags {"WPF"}
 	

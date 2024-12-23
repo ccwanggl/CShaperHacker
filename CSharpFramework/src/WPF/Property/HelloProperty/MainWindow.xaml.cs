@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
+﻿using System.Windows;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace HelloProperty
 {
@@ -27,9 +15,11 @@ namespace HelloProperty
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			Person person = new Person();
-			person.Name = textbox1.Text;        // SetValue
-			textbox2.Text = person.Name;        // GetValue
+			Person person = new Person
+			{
+				Name = Textbox1.Text			// SetValue
+			};
+			Textbox2.Text = person.Name;        // GetValue
 		}
 	}
 
@@ -37,12 +27,12 @@ namespace HelloProperty
 	public class Person : DependencyObject
 	{
 		// ! use public static readonly to 
-		public static readonly DependencyProperty nameProperty;
+		public static readonly DependencyProperty NameProperty;
 
 		static Person()
 		{
 			//! not use "new", use "Register" to create property
-			nameProperty = DependencyProperty.Register(
+			NameProperty = DependencyProperty.Register(
 				"Name",                     // which CLR property as wrapper
 				typeof(string),             // what type that DependencyProperty will store
 				typeof(Person));            // what the DependencyProperty belong to
@@ -52,11 +42,11 @@ namespace HelloProperty
 		{
 			get
 			{
-				return (string)GetValue(nameProperty);
+				return (string)GetValue(NameProperty);
 			}
 			set
 			{
-				SetValue(nameProperty, value);
+				SetValue(NameProperty, value);
 			}
 		}
 
