@@ -32,6 +32,7 @@ include "src/WPF/Property"
 group "CSharpFramework/WPF/Event"
 	include "src/WPF/Event/DirectAccessEvent"
 	include "src/WPF/Event/RoutedEvent"
+	include "src/WPF/Event/CustomRoutedEvent"
 group ""
 
 group "CSharpFramework/WPF/Command"
