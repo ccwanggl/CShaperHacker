@@ -34,6 +34,7 @@ group "CSharpFramework/WPF/Event"
 	include "src/WPF/Event/RoutedEvent"
 	include "src/WPF/Event/CustomRoutedEvent"
 	include "src/WPF/Event/RoutedEventArgs"
+	include "src/WPF/Event/AttachedEvent"
 group ""
 
 group "CSharpFramework/WPF/Command"
