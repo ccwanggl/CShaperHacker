@@ -47,6 +47,7 @@ group ""
 
 group "CSharpFramework/WPF/Resource"
 	include "src/WPF/Resource/HelloResource"
+	include "src/WPF/Resource/StaticDynamicResource"
 group ""
 
 group "CSharpFramework/WinForm"
