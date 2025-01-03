@@ -39,6 +39,7 @@ group ""
 
 group "CSharpFramework/WPF/Command"
 	include "src/WPF/Command/HelloCommand"
+	include "src/WPF/Command/CommandParameter"
 group ""
 
 group "CSharpFramework/WPF/Template"
