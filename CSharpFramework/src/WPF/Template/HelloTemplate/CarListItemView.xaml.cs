@@ -34,7 +34,7 @@ namespace HelloTemplate
 				_car = value;
 				this.textBlockName.Text = _car.Name;
 				this.textBlockYear.Text = _car.Year;
-				string uriStr = string.Format(@"/Resources/Logos/{0}.jpg", _car.Automaker);
+				string uriStr = string.Format(@"/Resources/Logos/{0}.png", _car.Automaker);
 				this.imageLogo.Source = new BitmapImage(new Uri(uriStr, UriKind.Relative));
 			}
 		}

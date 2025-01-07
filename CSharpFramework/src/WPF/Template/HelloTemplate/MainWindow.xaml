@@ -13,7 +13,7 @@
 		<local:CarDetailView x:Name="detailView" />
 		<ListBox
             x:Name="listBoxCars"
-            Width="180"
+            Width="220"
             Margin="5,0"
             SelectionChanged="listBoxCars_SelectionChanged" />
 	</StackPanel>
