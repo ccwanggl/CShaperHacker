@@ -1,8 +1,8 @@
-project "01_StaticDynamicResource"
+project "00_HelloTemplate"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
-	namespace "StaticDynamicResource"
+	namespace "HelloTemplate"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
@@ -14,7 +14,8 @@ project "01_StaticDynamicResource"
 		"**.cs",
 		"**.xaml",
 		"Properties/**.cs",
-		"Properties/**"
+		"Properties/**",
+		"Resources/**"
 	}
 
 	links
@@ -32,9 +33,6 @@ project "01_StaticDynamicResource"
 		"System.Xml.Linq"
 	}
 	
-	filter "files:Resources/**.png or files:Resources/**.jpg"
-		buildaction "Resource"
-
 	filter "configurations:Debug"
 		optimize "Off"
 		symbols "Default"

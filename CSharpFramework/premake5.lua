@@ -43,6 +43,7 @@ group "CSharpFramework/WPF/Command"
 group ""
 
 group "CSharpFramework/WPF/Template"
+	include "src/WPF/Template/HelloTemplate"
 group ""
 
 group "CSharpFramework/WPF/Resource"
