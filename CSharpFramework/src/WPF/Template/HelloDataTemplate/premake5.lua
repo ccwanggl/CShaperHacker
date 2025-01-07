@@ -1,8 +1,8 @@
-project "00_HelloTemplate"
+project "01_HelloDataTemplate"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
-	namespace "HelloTemplate"
+	namespace "HelloDataTemplate"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
@@ -35,7 +35,7 @@ project "00_HelloTemplate"
 
 	filter "files:Resources/**.png or files:Resources/**.jpg"
 		buildaction "Resource"
-	
+
 	filter "configurations:Debug"
 		optimize "Off"
 		symbols "Default"

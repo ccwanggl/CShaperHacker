@@ -44,6 +44,7 @@ group ""
 
 group "CSharpFramework/WPF/Template"
 	include "src/WPF/Template/HelloTemplate"
+	include "src/WPF/Template/HelloDataTemplate"
 group ""
 
 group "CSharpFramework/WPF/Resource"
