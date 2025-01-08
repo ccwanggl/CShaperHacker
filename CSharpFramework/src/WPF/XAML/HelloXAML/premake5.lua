@@ -15,7 +15,7 @@ project "00_HelloXAML"
 		"**.cs",
 		"**.xaml",
 		"Properties/**.cs",
-		"*.png"
+		"Resources/**.png"
 	}
 
 	links
