@@ -1,20 +1,19 @@
-project "02_TypeConvert"
+project "02_TypeConverter"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	namespace "MyTypeConverter"
 
-
-	targetdir ("../../../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (XAMLOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (XAMLOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
 	flags {"WPF"}
-	namespace "TypeConvert"
-	
-	files 
+
+	files
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links

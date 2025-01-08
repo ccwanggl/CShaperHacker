@@ -13,7 +13,7 @@ project "01_PropertyAssignment"
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links
