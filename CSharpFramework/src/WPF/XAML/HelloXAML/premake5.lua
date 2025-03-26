@@ -13,6 +13,8 @@ project "00_HelloXAML"
 		"**.cs",
 		"**.xaml",
 		"Properties/**.cs",
+		"Properties/**.settings",
+		"Properties/**.resx",
 		"Resources/**.png"
 	}
 
