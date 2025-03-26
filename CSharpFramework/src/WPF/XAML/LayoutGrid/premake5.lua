@@ -2,13 +2,12 @@ project "08_LayoutGrid"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 	namespace "LayoutGrid"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (XAMLOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (XAMLOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	flags {"WPF"}
-	
 	files 
 	{
 		"**.cs",

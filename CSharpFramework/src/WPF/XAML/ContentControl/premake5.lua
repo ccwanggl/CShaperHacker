@@ -2,12 +2,11 @@ project "07_ContentControl"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 	namespace "ContentControl"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
-
-	flags {"WPF"}
+	targetdir (XAMLOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (XAMLOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 	
 	files 
 	{

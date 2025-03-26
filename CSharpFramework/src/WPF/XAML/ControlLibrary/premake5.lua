@@ -2,11 +2,10 @@ project "ControlLibrary"
 	kind "SharedLib"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 
-	targetdir ("../../../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")
-
-	flags {"WPF"}
+	targetdir (XAMLOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (XAMLOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 	
 	files 
 	{

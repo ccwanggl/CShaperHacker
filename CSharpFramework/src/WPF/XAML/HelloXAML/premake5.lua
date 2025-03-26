@@ -2,13 +2,11 @@ project "00_HelloXAML"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
-
+	dotnetsdk "WindowsDesktop"
+	namespace "HelloXAML"
 
 	targetdir (XAMLOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (XAMLOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
-
-	flags {"WPF"}
-	namespace "HelloXAML"
 
 	files 
 	{

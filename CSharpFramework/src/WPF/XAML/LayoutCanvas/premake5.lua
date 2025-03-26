@@ -2,13 +2,12 @@ project "10_LayoutCanvas"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 	namespace "LayoutCanvas"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (XAMLOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (XAMLOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	flags {"WPF"}
-	
 	files 
 	{
 		"**.cs",

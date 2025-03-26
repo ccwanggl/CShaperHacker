@@ -2,12 +2,11 @@ project "09_LayoutStackpanel"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 	namespace "LayoutStackpanel"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
-
-	flags {"WPF"}
+	targetdir (XAMLOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (XAMLOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 	
 	files 
 	{

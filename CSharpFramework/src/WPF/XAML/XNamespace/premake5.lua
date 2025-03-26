@@ -7,7 +7,6 @@ project "06_Xnamespace"
 	targetdir (XAMLOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (XAMLOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	flags {"WPF"}
 	files 
 	{
 		"**.cs",

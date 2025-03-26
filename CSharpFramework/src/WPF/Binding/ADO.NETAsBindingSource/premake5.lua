@@ -2,12 +2,11 @@ project "05.003_ADO.NETAsBindingSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 	namespace "ADO.NETAsBindingSource"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
-
-	flags {"WPF"}
 	
 	files 
 	{

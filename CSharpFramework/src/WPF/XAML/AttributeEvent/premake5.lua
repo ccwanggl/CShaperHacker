@@ -2,12 +2,11 @@ project "04_AttributeEvent"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
-
-	targetdir ("../../../../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../../../../bin-int/" .. outputdir .. "/%{prj.name}")
-
-	flags {"WPF"}
+	dotnetsdk "WindowsDesktop"
 	namespace "AttributeEvent"
+
+	targetdir (XAMLOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (XAMLOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 	
 	files 
 	{
