@@ -12,7 +12,7 @@ project "03_MarkupExtension"
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links

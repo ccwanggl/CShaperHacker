@@ -11,7 +11,7 @@ project "ControlLibrary"
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links

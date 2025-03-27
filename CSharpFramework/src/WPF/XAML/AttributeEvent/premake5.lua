@@ -12,7 +12,7 @@ project "04_AttributeEvent"
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links

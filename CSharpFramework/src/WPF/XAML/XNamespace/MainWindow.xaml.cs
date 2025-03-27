@@ -23,7 +23,7 @@ namespace XNamespace
         public MainWindow()
         {
             InitializeComponent();
-			tb.Text = "Hello";
+			TextBox1.Text = "Hello";
         }
 
 		private void Button_Click(object sender, RoutedEventArgs e)

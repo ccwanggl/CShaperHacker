@@ -8,21 +8,21 @@
     Width="700"
     Height="700"
     mc:Ignorable="d">
-	<Grid>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="*" />
-			<ColumnDefinition Width="*" />
-			<ColumnDefinition Width="*" />
-		</Grid.ColumnDefinitions>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-		<Grid.RowDefinitions>
-			<RowDefinition Height="200" />
-			<RowDefinition Height="*" />
-		</Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
-		<!--  Rectangle 1  -->
-		<TextBlock Grid.Column="0" Text="标签的 Attribute 为对象属性赋值" />
-		<Rectangle
+        <!--  Rectangle 1  -->
+        <TextBlock Grid.Column="0" Text="标签的 Attribute 为对象属性赋值" />
+        <Rectangle
             x:Name="Rectangle1"
             Grid.Row="0"
             Grid.Column="0"
@@ -30,68 +30,68 @@
             Height="120"
             Fill="Blue" />
 
-		<!--  Rectangle 2  以对象形式为属性赋值  -->
-		<TextBlock
+        <!--  Rectangle 2  以对象形式为属性赋值  -->
+        <TextBlock
             Grid.Row="0"
             Grid.Column="1"
             Text="属性元素 1" />
-		<Rectangle
+        <Rectangle
             x:Name="Rectangle2"
             Grid.Row="0"
             Grid.Column="1"
             Width="200"
             Height="120">
-			<Rectangle.Fill>
-				<SolidColorBrush Color="Yellow" />
-			</Rectangle.Fill>
-		</Rectangle>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Yellow" />
+            </Rectangle.Fill>
+        </Rectangle>
 
-		<!--  Rectangle 3  以对象形式为属性赋值  -->
-		<TextBlock
+        <!--  Rectangle 3  以对象形式为属性赋值  -->
+        <TextBlock
             Grid.Row="0"
             Grid.Column="2"
             Text="属性元素 2" />
-		<Rectangle
+        <Rectangle
             x:Name="Rectangle3"
             Grid.Row="0"
             Grid.Column="2"
             Width="200"
             Height="120">
-			<Rectangle.Fill>
-				<LinearGradientBrush>
-					<LinearGradientBrush.StartPoint>
-						<Point X="0" Y="0" />
-					</LinearGradientBrush.StartPoint>
-					<LinearGradientBrush.EndPoint>
-						<Point X="1" Y="1" />
-					</LinearGradientBrush.EndPoint>
-					<LinearGradientBrush.GradientStops>
-						<GradientStopCollection>
-							<GradientStop Offset="0.2" Color="LightBlue" />
-							<GradientStop Offset="0.7" Color="Blue" />
-							<GradientStop Offset="1.0" Color="DarkBlue" />
-						</GradientStopCollection>
-					</LinearGradientBrush.GradientStops>
-				</LinearGradientBrush>
-			</Rectangle.Fill>
-		</Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <LinearGradientBrush.StartPoint>
+                        <Point X="0" Y="0" />
+                    </LinearGradientBrush.StartPoint>
+                    <LinearGradientBrush.EndPoint>
+                        <Point X="1" Y="1" />
+                    </LinearGradientBrush.EndPoint>
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                            <GradientStop Offset="0.2" Color="LightBlue" />
+                            <GradientStop Offset="0.7" Color="Blue" />
+                            <GradientStop Offset="1.0" Color="DarkBlue" />
+                        </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
 
-		<!--  椭圆  -->
-		<Ellipse
+        <!--  椭圆  -->
+        <Ellipse
             Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="3"
             Width="450"
             Height="450">
-			<Ellipse.Fill>
-				<RadialGradientBrush GradientOrigin="0.25 0.25" RadiusX="0.75" RadiusY="0.75">
-					<RadialGradientBrush.GradientStops>
-						<GradientStop Offset="0" Color="White" />
-						<GradientStop Offset="0.65" Color="Black" />
-						<GradientStop Offset="0.8" Color="Gray" />
-					</RadialGradientBrush.GradientStops>
-				</RadialGradientBrush>
-			</Ellipse.Fill>
-		</Ellipse>
-	</Grid>
+            <Ellipse.Fill>
+                <RadialGradientBrush GradientOrigin="0.25 0.25" RadiusX="0.75" RadiusY="0.75">
+                    <RadialGradientBrush.GradientStops>
+                        <GradientStop Offset="0" Color="White" />
+                        <GradientStop Offset="0.65" Color="Black" />
+                        <GradientStop Offset="0.8" Color="Gray" />
+                    </RadialGradientBrush.GradientStops>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
 </Window>

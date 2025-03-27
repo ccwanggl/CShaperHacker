@@ -1,4 +1,5 @@
-﻿<Window
+﻿<!--  x:Class 编译时和哪个 C# 编译的类合并  -->
+<Window
     x:Class="XNamespace.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -10,11 +11,12 @@
     Height="450"
     x:ClassModifier="internal"
     mc:Ignorable="d">
-	<StackPanel>
-		<TextBox x:Name="TextBox1" Margin="5" />
-		<Button
+    <StackPanel>
+        <TextBox x:Name="TextBox1" Margin="5" />
+        <Button
             Margin="5"
             Click="Button_Click"
             Content="OK" />
-	</StackPanel>
+    </StackPanel>
 </Window>
+
