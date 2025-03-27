@@ -12,7 +12,7 @@ project "07_ContentControl"
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links
