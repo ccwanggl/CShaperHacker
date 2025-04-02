@@ -20,6 +20,7 @@ namespace SetBindingSrcCLR
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
+	//NOTE: Binding 的源是数据的来源，所以，只要一个对象包含数据并能通过属性把数据暴露出来，它就能当作 Binding 的源。
 	public partial class MainWindow : Window
 	{
 		Student stu;
@@ -35,14 +36,13 @@ namespace SetBindingSrcCLR
 			binding.Source = stu;
 			binding.Path = new PropertyPath("Name");
 
-			// Use binding to connect the source and the target
-			// NOTE: 
+			// NOTE:  xx
 			// arg1: target
 			// arg2: target property that receive data
 			// arg3: Binding instance
 			BindingOperations.SetBinding(this.textBoxName, TextBox.TextProperty, binding);
 
-			// NOTE
+			// NOTE: xxxxxxxxxxxxxxxx
 			/*
 			this.textBoxName.SetBinding(TextBox.TextProperty, new Binding("Name") { Source = stu = new Student() });
 			*/
@@ -59,17 +59,17 @@ namespace SetBindingSrcCLR
 	class Student : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
-		private string name;
+		private string _name;
 
 		public string Name
 		{
-			get { return name; }
+			get { return _name; }
 			set
 			{
-				name = value;
+				_name = value;
 				if (PropertyChanged != null)
 				{
-					PropertyChanged.Invoke(this, new PropertyChangedEventArgs("Name"));
+					PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name"));
 				}
 			}
 		}
