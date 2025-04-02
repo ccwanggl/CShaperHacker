@@ -20,6 +20,7 @@
                 BorderBrush="Black"
                 Margin="5"
                 Text="{Binding Path=Value, Mode=Default, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True, ElementName=Slider1}"
+				TargetUpdated="OnTargetUpdated"
                 x:Name="TextBox1" />
             <Slider
                 Margin="5"

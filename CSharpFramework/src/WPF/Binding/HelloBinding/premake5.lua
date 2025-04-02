@@ -5,8 +5,8 @@ project "00_HelloBinding"
 	dotnetsdk "WindowsDesktop"
 	namespace "HelloBinding"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (BindingOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (BindingOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files 
 	{

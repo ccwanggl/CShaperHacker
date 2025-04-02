@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Diagnostics;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 
@@ -19,21 +21,24 @@ namespace ControlBindingDirAndDataUpdate
 				// NOTE The type of the binding Path is PropertyPath, not string.
 				Path = new PropertyPath("Value"),
 				UpdateSourceTrigger = UpdateSourceTrigger.LostFocus,
-				Mode = BindingMode.TwoWay
+				Mode = BindingMode.TwoWay,
+				NotifyOnTargetUpdated = true,
+				NotifyOnSourceUpdated = true
 			};
 
-			if (binding.NotifyOnSourceUpdated)
-			{
-				
-			}
-
-			if (binding.NotifyOnTargetUpdated)
-			{
-				
-			}
 
 			//BindingOperations.SetBinding(this.textBox2, TextBox.TextProperty, binding);
 			TextBox2.SetBinding(TextBox.TextProperty, binding);
+
+			TextBox2.SourceUpdated += OnSourceUpdated;
+			Slider2.TargetUpdated += OnTargetUpdated;
+		}
+
+		private void OnSourceUpdated(object sender, DataTransferEventArgs e) => Debug.WriteLine("SourceUpdated\n");
+
+		private void OnTargetUpdated(object sender, DataTransferEventArgs e)
+		{
+			Debug.WriteLine("TargetUpdated\n");
 		}
 	}
 }

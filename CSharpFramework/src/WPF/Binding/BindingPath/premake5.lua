@@ -2,18 +2,17 @@ project "03_BindingPath"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
-	namespace "BindingPath"	
+	dotnetsdk "WindowsDesktop"
+	namespace "BindingPath"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
-
-	flags {"WPF"}
+	targetdir (BindingOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (BindingOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 	
 	files 
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links
