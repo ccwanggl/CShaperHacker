@@ -24,6 +24,7 @@ namespace NoPathBinding
 		{
 			InitializeComponent();
 
+			//NOTE: C# 代码中的 "." 不能省略
 			string str = "Binding with method \"SetBinding\"";
 			textBlock4.SetBinding(TextBlock.TextProperty, new Binding(".") { Source = str });
 		}
