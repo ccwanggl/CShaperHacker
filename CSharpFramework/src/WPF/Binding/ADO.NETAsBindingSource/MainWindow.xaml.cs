@@ -21,6 +21,8 @@ namespace ADO.NETAsBindingSource
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		DataTable dt = new DataTable ("myTable");
+
 		public MainWindow()
 		{
 			InitializeComponent();
@@ -28,7 +30,6 @@ namespace ADO.NETAsBindingSource
 
 		private void Button_Click1(object sender, RoutedEventArgs e)
 		{
-			DataTable dt = new DataTable ("myTable");
 			dt.Columns.Add ("Id",  typeof (int));	
 			dt.Columns.Add ("Name",  typeof (string));	
 			dt.Columns.Add ("Age",  typeof (int));
@@ -44,7 +45,6 @@ namespace ADO.NETAsBindingSource
 
 		private void Button_Click2(object sender, RoutedEventArgs e)
 		{
-			DataTable dt = new DataTable ("myTable");
 			dt.Columns.Add ("Id",  typeof (int));	
 			dt.Columns.Add ("Name",  typeof (string));	
 			dt.Columns.Add ("Age",  typeof (int));
@@ -59,7 +59,6 @@ namespace ADO.NETAsBindingSource
 
 		private void Button_Click3(object sender, RoutedEventArgs e)
 		{
-			DataTable dt = new DataTable ("myTable");
 			dt.Columns.Add ("Id",  typeof (int));	
 			dt.Columns.Add ("Name",  typeof (string));	
 			dt.Columns.Add ("Age",  typeof (int));
