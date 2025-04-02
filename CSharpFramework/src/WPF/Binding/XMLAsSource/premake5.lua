@@ -2,19 +2,18 @@ project "05.004_XMLAsSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 	namespace "XMLAsSource"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
-
-	flags {"WPF"}
+	targetdir (BindingOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (BindingOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 	
 	files 
 	{
 		"**.cs",
 		"**.xaml",
 		"**.xml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links
