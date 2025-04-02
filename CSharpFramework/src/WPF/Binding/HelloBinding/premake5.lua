@@ -12,7 +12,7 @@ project "00_HelloBinding"
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links

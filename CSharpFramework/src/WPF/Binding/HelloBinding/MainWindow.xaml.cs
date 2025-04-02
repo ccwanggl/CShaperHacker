@@ -19,6 +19,7 @@ namespace HelloBinding
 			_stu = new Student();
 
 			// Ready to bind
+			//! "Path" 指定要绑定的属性
 			var binding = new Binding
 			{
 				Source = _stu,
