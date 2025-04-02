@@ -2,18 +2,17 @@ project "01_ControlAsBindingSrc"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 	namespace "ControlAsBindingSrc"
 
 	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
-	flags {"WPF"}
-	
 	files 
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links
