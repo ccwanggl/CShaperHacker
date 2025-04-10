@@ -2,18 +2,17 @@ project "05.006_NoSourceBindingDataContextAsSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 	namespace "NoSourceBindingDataContextAsSource"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (BindingOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (BindingOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	flags {"WPF"}
-	
 	files 
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links
