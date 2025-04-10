@@ -2,18 +2,17 @@ project "05.009_ObjectDataProviderAsSource"
 	kind "WindowedApp"
 	language "C#"
 	dotnetframework "4.8"
+	dotnetsdk "WindowsDesktop"
 	namespace "ObjectDataProviderAsSource"
 
-	targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (BindingOutputDir .. "/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (BindingOutputDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	flags {"WPF"}
-	
 	files 
 	{
 		"**.cs",
 		"**.xaml",
-		"Properties/**.cs"
+		"Properties/**"
 	}
 
 	links

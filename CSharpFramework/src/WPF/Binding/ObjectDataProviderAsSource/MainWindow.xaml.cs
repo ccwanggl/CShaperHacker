@@ -27,11 +27,12 @@ namespace ObjectDataProviderAsSource
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			this.SetBinding();
+			this.SetCalculatorBinding();
 		}
 
-		private void SetBinding()
+		private void SetCalculatorBinding()
 		{
+			//NOTE: 很难保证一个类的所有数据都使用属性暴露出来，比如我们需要的数据可能是方法的返回值。可以使用 ObjectDataProvider 来包装作为 Binding 源的数据对象了。
 			ObjectDataProvider odp = new ObjectDataProvider();
 			odp.ObjectInstance = new Calculator();
 
