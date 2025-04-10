@@ -9,29 +9,88 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Grid
-        x:Name="g1"
-        Margin="10"
-        Background="Red">
-        <DockPanel
-            x:Name="d1"
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid
+            x:Name="g1"
+            Grid.Row="0"
             Margin="10"
-            Background="Orange">
-            <Grid
-                x:Name="g2"
+            Background="Red">
+            <DockPanel
+                x:Name="d1"
                 Margin="10"
-                Background="Yellow">
-                <DockPanel
-                    x:Name="d2"
+                Background="Orange">
+                <Grid
+                    x:Name="g2"
                     Margin="10"
-                    Background="LawnGreen">
-                    <TextBox
-                        x:Name="textBox1"
+                    Background="Yellow">
+                    <DockPanel
+                        x:Name="d2"
                         Margin="10"
-                        FontSize="24"
-                        Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type Grid}}, Path=Name}" />
-                </DockPanel>
-            </Grid>
-        </DockPanel>
+                        Background="LawnGreen">
+                        <TextBox
+                            x:Name="textBox1"
+                            Margin="10"
+                            FontSize="24"
+                            Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type Grid}}, Path=Name}" />
+                    </DockPanel>
+                </Grid>
+            </DockPanel>
+        </Grid>
+        <Grid
+            x:Name="g11"
+            Grid.Row="1"
+            Margin="10"
+            Background="Red">
+            <DockPanel
+                x:Name="d11"
+                Margin="10"
+                Background="Orange">
+                <Grid
+                    x:Name="g22"
+                    Margin="10"
+                    Background="Yellow">
+                    <DockPanel
+                        x:Name="d22"
+                        Margin="10"
+                        Background="LawnGreen">
+                        <TextBox
+                            x:Name="textBox11"
+                            Margin="10"
+                            FontSize="24"
+                            Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type Grid}}, Path=Name}" />
+                    </DockPanel>
+                </Grid>
+            </DockPanel>
+        </Grid>
+        <Grid
+            x:Name="g111"
+            Grid.Row="2"
+            Margin="10"
+            Background="Red">
+            <DockPanel
+                x:Name="d111"
+                Margin="10"
+                Background="Orange">
+                <Grid
+                    x:Name="g222"
+                    Margin="10"
+                    Background="Yellow">
+                    <DockPanel
+                        x:Name="d222"
+                        Margin="10"
+                        Background="LawnGreen">
+                        <TextBox
+                            x:Name="textBox111"
+                            Margin="10"
+                            FontSize="24" />
+                    </DockPanel>
+                </Grid>
+            </DockPanel>
+        </Grid>
     </Grid>
 </Window>

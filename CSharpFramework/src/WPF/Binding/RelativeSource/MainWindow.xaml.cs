@@ -23,6 +23,17 @@ namespace RelativeSource
         public MainWindow()
         {
             InitializeComponent();
-        }
+
+			System.Windows.Data.RelativeSource rs = new System.Windows.Data.RelativeSource();
+			rs.AncestorLevel = 2;
+			rs.AncestorType = typeof(DockPanel);
+			Binding binding = new Binding("Name") { RelativeSource = rs };
+			this.textBox11.SetBinding(TextBox.TextProperty, binding);
+
+			System.Windows.Data.RelativeSource rs1 = new System.Windows.Data.RelativeSource();
+			rs1.Mode = RelativeSourceMode.Self;
+			Binding binding1 = new Binding("Name") { RelativeSource = rs1 };
+			this.textBox111.SetBinding(TextBox.TextProperty, binding1);
+		}
     }
 }
